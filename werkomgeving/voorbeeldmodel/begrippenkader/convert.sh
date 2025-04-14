@@ -15,17 +15,17 @@ if [ ! -f "../../libs/csv2skos.yaml" ]; then
   curl -L -k https://raw.githubusercontent.com/architolk/rdf2rdf/refs/heads/master/csv2skos.yaml -o ../../libs/csv2skos.yaml
 fi
 if [ ! -f "../../libs/skos2md.xsl" ]; then
-  curl -L -k https://raw.githubusercontent.com/architolk/rdf2xml/refs/head/main/skos2md.xsl -o ../../libs/skos2md.xsl
+  curl -L -k https://raw.githubusercontent.com/architolk/rdf2xml/refs/heads/main/skos2md.xsl -o ../../libs/skos2md.xsl
 fi
 if [ ! -f "../../libs/dct2md.xsl" ]; then
-  curl -L -k https://raw.githubusercontent.com/architolk/rdf2xml/refs/head/main/dct2md.xsl -o ../../libs/dct2md.xsl
+  curl -L -k https://raw.githubusercontent.com/architolk/rdf2xml/refs/heads/main/dct2md.xsl -o ../../libs/dct2md.xsl
 fi
 if [ ! -f "../../libs/skos2graphml.xsl" ]; then
-  curl -L -k https://raw.githubusercontent.com/architolk/rdf2xml/refs/head/main/dct2md.xsl -o ../../libs/skos2graphml.xsl
+  curl -L -k https://raw.githubusercontent.com/architolk/rdf2xml/refs/heads/main/dct2md.xsl -o ../../libs/skos2graphml.xsl
 fi
 
 # Convert: .xlsx to .ttl (csv in rdf)
-java -jar ../../libs/excel2rdf.jar Fietsenwinkel.xlsx fietsenwinkel-csv.ttl
+java -jar ../../libs/excel2rdf.jar -i Fietsenwinkel.xlsx -o fietsenwinkel-csv.ttl
 # Convert: csv in rdf to skos
 java -jar ../../libs/rdf2rdf.jar -i fietsenwinkel-csv.ttl -o fietsenwinkel-skos.ttl -c ../../libs/csv2skos.yaml
 # - Publicatie
