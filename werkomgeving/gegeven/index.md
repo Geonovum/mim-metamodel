@@ -5,8 +5,8 @@
 Een gegeven is *een vastgelegde uitspraak over een getypeerde eigenschap van een object*. Kenmerkend aan een gegeven zijn een aantal elementen:
 
 1. Een gegeven is **vastgelegd**: op papier, in steen, in een digitale vorm. In elk van deze vormen van sprake zijn van meer of minder mate van vluchtigheid of persistentie: gegevens in een bericht zullen minder persistent zijn dan gegevens die duurzaam worden opgeslagen in een administratie.
-2. Een gegeven is een **uitspraak**: zo'n uitspraak kan een bewering, stelling of waarneming zijn en zo'n uitspraak kan gedaan worden door een mens of een sensor. Ook kan zo'n uitspraak betrekking hebben op een berekening of afleiding.
-3. Een gegeven gaat over een **object**: het gaat over *iets*: de objecten die relevant zijn in het domein waarover we gegevens verwerken.
+2. Een gegeven gaat over een **object**: het gaat over *iets*: de objecten die relevant zijn in het domein waarover we gegevens verwerken.
+3. Een gegeven is een **uitspraak**: zo'n uitspraak kan een bewering, stelling of waarneming zijn en zo'n uitspraak kan gedaan worden door een mens of een sensor. Ook kan zo'n uitspraak betrekking hebben op een berekening of afleiding.
 4. Een gegeven betreft een **eigenschap** van dat object: het gegeven legt een uitspraak vast over een eigenschap die het object heeft. Dit kan zowel een kenmerk van het object zelf betreffen, als een relatie die een object heeft met een ander object.
 
 > Vijf voorbeelden van een gegeven:
@@ -66,7 +66,7 @@ Ook kunnen er gegevens opgenomen worden in het gegevensobject over andere object
 Een gegevensobjecttype is *een typering van gelijksoortige gegevensobjecten*. Met een gegevensobjecttype beschrijven we hoe een afzonderlijk gegevensobject er uit ziet, als groepering van gegevens. Van een gegevensobjecttype wil je de volgende zaken weten:
 
 1. Welke gegevenstypen zijn onderdeel van dit gegevensobjecttype?
-2. Welke gegevenstypen zijn beoogd voor de identificatie van het object waarover de gegevens gaat? (dwz: welke gegevenstypen vormen de sleutel)
+2. Welke van die gegevenstypen zijn beoogd voor de identificatie van het object waarover de gegevens gaan? (dwz: welke gegevenstypen vormen de sleutel)
 3. Welke metagegevenstypen worden toegevoegd aan het gegevensobjecttype?
 4. Welke gegevenstypen gaan over andere objecten dan het gegevensobjecttype zelf? En hoe is het toegangspad van dit object naar het object waarover deze objecttypen gaat? (zoals in het «naam van de woonplaats» voorbeeld: dit gegevenstype gaat niet over het hoofdonderwerp [Jan] maar over zijn woonplaats)
 5. (Optioneel - relatie naar het CIM): welk objecttype is het *hoofdonderwerp* van dit gegevensobjecttype, dwz: over welk type objecten *gaan* gegevensobjecten van dit gegevensobjecttype?
@@ -77,7 +77,7 @@ Een gegevensobjecttype is *een typering van gelijksoortige gegevensobjecten*. Me
 
 Ja. Een gegeven zonder metagegevens is een gegeven. Wel is de bruikbaarheid van dit gegeven twijfelachtig. Je zult dan uit de context deze metagegevens moeten kunnen achterhalen om de gegevens correct te kunnen interpreteren. In een logisch gegevensmodel zou duidelijk moeten zijn, hoe je dit kunt doen.
 
-**Hoe gaan we om naar gegevens die niet terug te zijn herleiden naar een object?**
+**Hoe gaan we om met gegevens die niet terug te zijn herleiden naar een object?**
 
 Stel ik maak een rapportage van bv. de meest voorkomende voornaam in Nederland en daarin staat "Jan". De rapportage is geen object uit de werkelijkheid en de voornamen zijn niet te relateren aan objecten uit de werkelijkheid. Valt dit dan nog onder de definitie van een gegeven?
 
