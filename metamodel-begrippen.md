@@ -273,8 +273,6 @@ Deze zes uitspraken zijn zes gegevens die gegroepeerd kunnen worden tot één ge
 
 ### Rol, rolinvulling en relatie-domeinobject
 
-In onze kijk op het domein hebben we het slechts over objecten en eigenschappen van objecten gehad. En hoewel we relaties hebben besproken, komt relatie niet terug in ons voorbeeld. Alleen de rol komt terug.
-
 In onze kijk op het beschouwingsdomein hebben we het over domeinobjecten gehad die eigenschappen kunnen hebben en waarbij sprake kan zijn van relaties tussen domeinobjecten. En hoewel we het kunnen hebben over een relatie (zoals de "arbeidsrelatie"), zagen we die relatie niet als "bijzonder" genoeg om deze daadwerkelijk te identificeren. Maar dat hoeft niet: dit hangt sterk af van hoe we tegen het domein aan willen kijken.
 
 Als we de relatie *zelf* willen onderkennen, dan kunnen we de relatie simpelweg als een domeinobject beschouwen.
