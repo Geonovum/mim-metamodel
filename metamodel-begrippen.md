@@ -77,8 +77,8 @@ Onderstaand figuur laat concreet zien hoe we dit begrippenkader opstellen. We on
 ```mermaid
 quadrantChart
     title Onderdelen MIM begrippenkader
-    x-axis Beschouwingsdomein -> Verwerkingsdomein
-    y-axis Concrete zaken -> Typering van zaken
+    x-axis Beschouwingsdomein --> Verwerkingsdomein
+    y-axis Concrete zaken --> Typering van zaken
     quadrant-1 Typering verwerkingsdomein
     quadrant-2 Typering beschouwingsdomein
     quadrant-3 Concrete zaken beschouwingsdomein
