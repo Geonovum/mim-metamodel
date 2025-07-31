@@ -79,10 +79,10 @@ quadrantChart
     title Onderdelen MIM begrippenkader
     x-axis Beschouwingsdomein --> Verwerkingsdomein
     y-axis Concrete zaken --> Typering van zaken
-    quadrant-1 (4)
-    quadrant-2 (3)
-    quadrant-3 (1)
-    quadrant-4 (2)
+    quadrant-1 "(4)"
+    quadrant-2 "(3)"
+    quadrant-3 "(1)"
+    quadrant-4 "(2)"
     Domeinobject: [0.25, 0.25]
     Gegevensobject: [0.75, 0.25]
     Objecttype: [0.25, 0.75]
