@@ -63,6 +63,35 @@ Voor dit document gebruiken we een voorbeeld, een casus op basis waarvan we de o
 
 **TODO: Voorbeeld nog verder uitwerken. Liefst ook met een stukje wet- en regelgeving, bijvoorbeeld arbeidsrecht**
 
+## De opzet van dit begrippenkader
+
+Onderstaand figuur laat concreet zien hoe we dit begrippenkader opstellen. We onderscheiden vier onderdelen:
+
+1. De concrete zaken uit het beschouwingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de onderwerpen van gesprek te benoemen die concreet in het beschouwingsdomein bestaan. Een voorbeeld is het begrip «domeinobject»;
+2. De concrete zaken uit het verwerkingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de onderwerpen van gesprek te benoemen die concreet in het verwerkingsdomein bestaan. Een voorbeeld is het begrip «gegevensobject»;
+3. De typering van zaken uit het beschouwingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de elementen te benoemen die in modellen van het beschouwingsdomein te vinden zijn. Een voorbeeld is het begrip «objecttype»;
+4. De typering van zaken uit het verwerkingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de elementen te benoemen die in modellen van het verwerkingsdomein te vinden zijn. Een voorbeeld is het begrip «gegevensobjecttype».
+
+<figure id="Mermaidvoorbeeld">
+
+```mermaid
+quadrantChart
+    title Onderdelen MIM begrippenkader
+    x-axis Beschouwingsdomein -> Verwerkingsdomein
+    y-axis Concrete zaken -> Typering van zaken
+    quadrant-1 Typering verwerkingsdomein
+    quadrant-2 Typering beschouwingsdomein
+    quadrant-3 Concrete zaken beschouwingsdomein
+    quadrant-4 Concrete zaken verwerkingsdomein
+    Domeinobject: [0.25, 0.25]
+    Gegevensobject: [0.75, 0.25]
+    Objecttype: [0.25, 0.75]
+    Gegevensobjecttype: [0.75, 0.75]
+```
+<figcaption>Onderdelen MIM begrippenkader</figcaption>
+</figure>
+
+
 ## De concrete zaken uit het beschouwingsdomein
 
 De termen "beschouwingsdomein" "beschouwde domein" en "domein" kunnen in dit document als synoniem van elkaar worden gelezen met de volgende betekenis:
