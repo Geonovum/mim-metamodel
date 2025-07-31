@@ -287,6 +287,13 @@ En ook de rol(invulling) zelf kunnen we zien als een domeinobject. Zo is een eig
 
 Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typering. En eigenlijk zijn we daar ook al een beetje mee begonnen. Want eigenschappen en klassen zijn eigenlijk ook al een vorm van typering (zoals we hieronder zullen zien).
 
+> [!CATION]
+> In de tekst hieronder hebben we zoveel mogelijk het MIM taalgebruik gehandhaafd. Je kunt je afvragen of dat nodig is of zelfs wenselijk: als we nu met MIM 2.0 toch een verandering doorvoeren, waarom dan niet consistent overal?
+> Dit zou onder meer betekenen dat de volgende termen mogelijk gewijzigd kunnen worden:
+> - "attribuutsoort" naar "attribuuttype"
+> - "relatiesoort" naar "relatietype"
+> - "relatiesoortrol" naar "roltype"
+
 ### Objecttype en attribuutsoorten
 
 > Een OBJECTTYPE is een typering van gelijksoortige DOMEINOBJECTen
@@ -299,7 +306,7 @@ Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typeri
 
 De oplettende lezer zal zich afvragen wat het verschil is tussen een klasse en een objecttype. En dat is terecht. Want vaak is iets zowel een klasse als een objecttype. Je kunt het bijvoorbeeld hebben over de klasse «Homo Sapiens» als een klasse bij de classificatie van levende wezens. Maar gelijktijdig kun je het hebben over het objecttype «Persoon» als typering van alle objecten van diezelfde klasse. Het gaat hier vooral om het doel waarom we typering. Een klasse wordt gebruikt als onderdeel van een gegeven, terwijl een objecttype juist bedoeld is om een beschrijving te geven in welke objecten we zijn geïnteresseerd, die we willen onderscheiden en informatie over wensen.
 
-Van een objecttype beschrijven we welke eigenschappen we relevant vinden om te kunnen *weten* van objecten die tot een dergelijk objecttype behoren. Van een klasse beschrijven we juist wanneer een object tot een klasse *behoort*.
+Van een objecttype beschrijven we welke eigenschappen we relevant vinden om te kunnen *weten* van objecten die tot een dergelijk objecttype behoren. Van een klasse beschrijven we juist wanneer een object tot een klasse *behoort*. Zo kent de BRT onder meer de objecttypen «Wegdeel», «Spoorbaandeel» en «Waterdeel». Elk van deze objecttypen heeft een classificerend attribuutsoort «fysiek voorkomen». De volgende klassen zijn daarbij onder meer mogelijk: «ondergronds», «overkluisd», «in tunnel», «op vast deel van brug». Niet elke klasse is mogelijk bij ieder objecttype. En hoewel het objecttype «Wegdeel in tunnel» opgenomen had kunnen worden in de BRT, is hiervoor niet gekozen.
 
 > Een ATTRIBUUTSOORT is een typering van een KENMERK van een DOMEINOBJECT, behorende tot een OBJECTTYPE
 
@@ -327,7 +334,7 @@ We kunnen relaties tussen objecten typeren. Echter, als het gaat om gegevens, da
 
 ### Condities
 
-De typering van objecttypen bestaat niet alleen uit het toewijzen van een eigenschap aan een objecttype. Het is ook relevant om te weten onder welke condities zo'n eigenschap geldt voor een domeinobject. En ook of een domeinobject behoort tot de populatie van een objecttype kunnen we conditioneren.
+De beschrijving van objecttypen bestaat niet alleen uit het toewijzen van een eigenschap aan een objecttype. Het is ook relevant om te weten onder welke condities zo'n eigenschap geldt voor een domeinobject. En ook of een domeinobject behoort tot de populatie van een objecttype kunnen we conditioneren.
 
 > Een CONDITIE is een noodzakelijke voorwaarde die moet gelden voor een typering
 
