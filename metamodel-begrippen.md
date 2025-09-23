@@ -147,7 +147,7 @@ Merk op dat wat we intrinsiek vinden en wat we toegekend vinden vooral een domei
 
 Als we naar de eigenschappen van een domeinobject kijken, dan valt op dat er verschillende soorten eigenschappen zijn te onderkennen. Een eigenschap van een domeinobject kent één of meerdere invullingen. Zo is de invulling van de eigenschap «(heeft) lengte» van het domeinobject [Jan] uit ons voorbeeld gelijk aan "2 meter en 5 centimeter". En de invulling van de eigenschap «(heeft) werkgever» is [Bakkerij Broodjes]. Tenslotte is de invulling van de eigenschap «(heeft) geslacht» gelijk aan «man». Drie eigenschappen, maar geheel andere invullingen. We hebben het respectievelijk over een letterlijk kenmerk, een rol en een categorisch kenmerk. De nauwlettende lezer ziet dat we bij deze drie eigenschappen ook steeds een ander leesteken gebruiken!
 
-> Een KENMERK is een EIGENSCHAP van een DOMEINOBJECT waar een WAARDE aan kan worden toegekend
+> Een KENMERK is een EIGENSCHAP van een DOMEINOBJECT waar uitsluitend een WAARDE aan kan worden toegekend
 
 > Een LETTERLIJKE WAARDE is een WAARDE waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer
 
@@ -158,7 +158,7 @@ In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan
 > Een COMPLEXE WAARDE is een WAARDE die bestaat uit een aaneenschakeling van afzonderlijke LETTERLIJKE WAARDEn en/of CATGORIEën.
 
 > [!NOTE]
-> Merk op dat we met deze definitie van kenmerk nog niets zeggen over het aantal keer dat een kenmerk kan worden ingevuld voor een domeinobject. Zo kan [Jan] wel drie voornamen hebben, dus er zijn dan drie invullingen van het kenmerk «naam».
+> Merk op dat we met deze definitie van kenmerk nog niets zeggen over het aantal keer dat een kenmerk kan worden ingevuld voor een domeinobject. Zo kan [Jan] wel drie voornamen hebben, dus er zijn dan drie invullingen van het kenmerk «naam». Dergelijke beperkingen op het aantal keren dat een kenmerk ingevuld mag worden is onderdeel van de condities die beschreven zijn in het model, in dit geval de cardinaliteit. Zie hiervoor de sectie over condities hieronder.
 
 #### Rollen en relaties
 
@@ -321,7 +321,11 @@ Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typeri
 
 > Een OBJECTTYPE is een typering van gelijksoortige DOMEINOBJECTen
 
-Merk op dat doordat een domeinobject een onderscheidbaar en identificeerbaar iets is in de beschouwde werkelijkheid, we daarmee *ook* stellen dat als we een objecttype introduceren, we daarmee aangeven dat we domeinobjecten van dat objecttype wensen te onderscheiden EN te identificeren. Als we bijvoorbeeld in een domein de objecttypen «auto» en «fiets» introduceren, dan zijn we blijkbaar geïnteresseerd in specifieke eigenschappen waardoor auto's en fietsen van elkaar te onderscheiden zijn. Het zou echter ook kunnen dat we alleen geïnteresseerd zijn in voorkomens van het objecttype «voertuig» en voorkomens hiervan niet van elkaar hoeven te onderscheiden. Het kan overigens wel zijn dat je wilt weten van een voertuig DAT iets behoort tot de categorie van auto's of fietsen, zonder dat je voertuigen verder van elkaar wenst te onderscheiden, wenst te typeren.
+Merk op dat doordat een domeinobject een onderscheidbaar en identificeerbaar iets is in de beschouwde werkelijkheid, we daarmee *ook* stellen dat als we een objecttype introduceren, we daarmee aangeven dat we domeinobjecten van dat objecttype wensen te onderscheiden EN te identificeren. Dit is afhankelijk van de manier waarop we het domein willen beschouwen, welke keuzes we daarbij maken.
+
+Stel dat we het bijvoorbeeld in een domein willen hebben over auto's en fietsen. We hebben dan twee keuzes:
+- We zijn geïnteresseerd in specifieke eigenschappen om auto's en fietsen van elkaar te onderscheiden en te identificeren. In dat geval maken we de keuze om de objecttypen «Auto» en «Fiets» te onderkennen en afzonderlijk te beschrijven.
+- We zijn niet geinteresseerd in specifieke eigenschappen om auto's en fietsen van elkaar te onderscheiden en te indentificeren, maar we willen WEL kunnen aangeven dat een bepaald voertuig een auto of fiets is. In dat geval onderkennen we (slechts) het objecttype «Voertuig» met een categorisch kenmerk «soort voertuig» met de mogelijke waarden «auto» en «fiets».
 
 > [!NOTE]
 > Een objecttype is een typering van gelijksoortige domeinobjecten. Je zou het daarmee ook kunnen hebben over een "domeinobjecttype". Het heeft echter onze voorkeur om de kortere term "objecttype" te hanteren. *Wat* je typeert is afhankelijk van je beschouwingsdomein. Waar alles een object zou kunnen zijn, beschouwen we iets pas een domeinobject, iets dat relevant is in ons beschouwingsdomein, als we hiervoor een objecttype modelleren in een conceptueel model. Anders gezegd: als een modelleur iets een «Objecttype« noemt, dan doet de modelleur daarmee <b>altijd</b> een uitspraak over het beschouwingsdomein, daarover kan en mag geen verwarring zijn.
