@@ -245,11 +245,11 @@ Merk op: de identiteit van een gegevensobject is gerelateerd aan de identiteit v
 
 #### Gebruik van identificerende eigenschappen voor verwijzingen
 
-Een eigenschap kan een rol, een letterlijk kenmerk of categorisch kenmerk zijn. Een gegeven kan daarmee dus gaan over zowel kenmerken als rollen. Daarbij is duidelijk dat als je het over een eigenschap van een domeinobject hebt, je dit domeinobject zelf moet identificeren. Hiervoor kunnen we de identificerende eigenschappen van een domeinobject gebruikt. De invulling van de identificerende eigenschappen die we gebruiken om te verwijzen naar een specifiek domeinobject noemen we een (kandidaat) *sleutel*
+Een eigenschap kan een rol, een letterlijk kenmerk of categorisch kenmerk zijn. Een gegeven kan daarmee dus gaan over zowel kenmerken als rollen. Daarbij is duidelijk dat als je het over een eigenschap van een domeinobject hebt, je dit domeinobject zelf moet identificeren. Hiervoor kunnen we de identificerende eigenschappen van een domeinobject gebruikt. De invulling van de identificerende eigenschappen die we gebruiken om te verwijzen naar een specifiek domeinobject noemen we een *sleutelwaarde*
 
-> Een SLEUTEL is de invulling van één of meerdere EIGENSCHAPpen die gezamenlijk één enkel DOMEINOBJECT uniek aanduiden.
+> Een SLEUTELWAARDE is de invulling van één of meerdere EIGENSCHAPpen die gezamenlijk één enkel DOMEINOBJECT uniek aanduiden.
 
-Zo is de waarde "12345678" van een BSN een unieke sleutel voor een specifieke persoon in de werkelijkheid. Maar ook "Jan Janssen, geboren op 15 januari 2008" (de combinatie van de eigenschappen voornaam, achternaam en geboortedatum) kan een sleutel zijn voor een specifieke persoon in de werkelijkheid.
+Zo is de waarde "12345678" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Maar ook "Jan Janssen, geboren op 15 januari 2008" (de combinatie van de eigenschappen voornaam, achternaam en geboortedatum) kan een sleutelwaarde zijn voor een specifieke persoon in de werkelijkheid.
 
 Voor een gegeven dat gaat over een letterlijk kenmerk, kunnen we direct de waarde van dat kenmerk zelf gebruiken, zoals in het gegeven uit bovenstaand voorbeeld: "10 februari 1970" is de waarde van het kenmerk waarover dit gegeven gaat. De waarde zelf kan letterlijk gebruikt worden in het gegeven, er is geen verschil tussen de manier waarop aan de waarde *refereren* en wat de waarde *betekent*. Dit gaat niet op voor rollen en categorische kenmerken.
 
@@ -264,7 +264,7 @@ Daarnaast zie je bij relaties en rollen dat je hetzelfde gegeven in drie verschi
 </pre>
 
 > [!NOTE]
-Niet altijd is de voorkeurssleutel beschikbaar op het moment dat we gegevens vastleggen. Als bijvoorbeeld het BSN van een persoon niet bekend is, maar we willen WEL gegevens vastleggen over een persoon, dan missen we de sleutel en kunnen we slechts gegevens OVER een domeinobject registreren, zonder dat we voldoende identificerende eigenschappen hebben. Zo wisten we in bovenstaand voorbeeld wel dat Jan een werknemer was van bakkerij Broodjes, maar verder wisten we niet zoveel over Jan. In zo'n geval zal de rolinvulling bestaan uit een beschrijving van het domeinobject (in dit geval Jan), zonder dat we expliciet verwijzen door middel van een sleutel.
+Niet altijd is de sleutelwaarde beschikbaar die de voorkeur heeft op het moment dat we gegevens vastleggen. Als bijvoorbeeld het BSN van een persoon niet bekend is, maar we willen WEL gegevens vastleggen over een persoon, dan missen we de sleutelwaarde en kunnen we slechts gegevens OVER een domeinobject registreren, zonder dat we voldoende identificerende eigenschappen hebben. Zo wisten we in bovenstaand voorbeeld wel dat Jan een werknemer was van bakkerij Broodjes, maar verder wisten we niet zoveel over Jan. In zo'n geval zal de rolinvulling bestaan uit een beschrijving van het domeinobject (in dit geval Jan), zonder dat we expliciet verwijzen door middel van een sleutelwaarde.
 
 Bij een categorisatie is de invulling van een categorisch kenmerk geen letterlijke waarde, maar een benoemde categorie. Als we hierover gegevens willen vastleggen, dan volstaat het niet om te verwijzen naar de letterlijke waarde, maar hebben we een referentie nodig naar de categorie zelf. Het volstaat dan niet om de naam van de categorie te gebruiken als invulling voor deze eigenschap, immers: dan zou sprake zijn van een letterlijke waarde! We wensen daadwerkelijk te verwijzen naar de categorie zelf.
 
@@ -465,9 +465,9 @@ Gegevenstypen typeren gegevens die gaan over domeinobjecten. En objecttypen type
 
 #### Identificeren van gegevensobjecten: sleutels
 
-> Een SLEUTELGROEP is een GEGEVENSTYPEGROEP waarmee een unieke aanduiding voor het HOOFDONDERWERP van een GEGEVENSOBJECT kan worden gevormd
+> Een SLEUTEL is een groep van één of meer GEGEVENSTYPEn waarmee een unieke aanduiding voor het HOOFDONDERWERP van een GEGEVENSOBJECT kan worden gevormd
 
-Er kunnen meerdere sleutelgroepen zijn per gegevensobjecttype. Ook kan een sleutelgroep bestaan uit precies één gegevenstype. Een sleutelgroep voor het gegevensobjecttype «persoon» is bijvoorbeeld het gegevenstype «BSN», maar ook de gegevenstypegroep {«voornaam», «achternaam», «geboortedatum»} zou een sleutelgroep kunnen zijn voor dit gegevensobjecttype.
+Er kunnen meerdere (kandidaat) sleutels zijn per gegevensobjecttype. Ook kan een sleutel bestaan uit precies één gegevenstype. Een sleutel voor het gegevensobjecttype «persoon» is bijvoorbeeld het gegevenstype «BSN», maar ook de gegevenstypegroep {«voornaam», «achternaam», «geboortedatum»} zou een sleutel kunnen zijn voor dit gegevensobjecttype.
 
 #### Varianten van gegevenstypen
 Vier varianten van gegevenstypen kunnen we onderscheiden:
@@ -571,7 +571,7 @@ Merk op dat deze classificatielijst eenvoudig is te verdiepen tot een classifica
 |SPORT|Sport|..|
 
 #### Gegevenstypen en gegevens m.b.t. populaties
-Een gegevenstype dat gegevens typeert over populaties, kun je ook koppelen aan een referentielijst. Deze referentielijst bevat referentiewaarden. Anders dan "echte" waarden, verwijzen deze referentiewaarden naar afzonderlijke domeinobjecten uit deze populatie. Deze referentiewaarden zijn feitelijk de sleutel van het betreffende domeinobject. Zo kun je een gegevenstype specificeren van de rol "land van herkomst" met als referentielijst een lijst met referentiewaarden die refereren aan de hierboven genoemde landen met een ISO 3166-1 landencode. Relevante eigenschappen van deze landen kunnen daarbij bijvoorbeeld zijn: naam, alpha-2 en alpha-3. Daarbij is zowel de alpha-2 als alpha-3 eigenschap bruikbaar als referentiewaarde. De naam is de identificerende eigenschap zoals deze voor mensen herkenbaar is (in dit geval degenen die de Nederlandse taal machtig zijn). Deze referentielijst bestaat uit de volgende gegevens (alleen de gegevens van de eerste drie landen zijn hieronder getoond):
+Een gegevenstype dat gegevens typeert over populaties, kun je ook koppelen aan een referentielijst. Deze referentielijst bevat referentiewaarden. Anders dan "echte" waarden, verwijzen deze referentiewaarden naar afzonderlijke domeinobjecten uit deze populatie. Deze referentiewaarden zijn feitelijk de sleutelwaarden van het betreffende domeinobject. Zo kun je een gegevenstype specificeren van de rol "land van herkomst" met als referentielijst een lijst met referentiewaarden die refereren aan de hierboven genoemde landen met een ISO 3166-1 landencode. Relevante eigenschappen van deze landen kunnen daarbij bijvoorbeeld zijn: naam, alpha-2 en alpha-3. Daarbij is zowel de alpha-2 als alpha-3 eigenschap bruikbaar als referentiewaarde. De naam is de identificerende eigenschap zoals deze voor mensen herkenbaar is (in dit geval degenen die de Nederlandse taal machtig zijn). Deze referentielijst bestaat uit de volgende gegevens (alleen de gegevens van de eerste drie landen zijn hieronder getoond):
 
 |Waardelijstnaam|Alpha-2|Alpha-3|Naam|
 |----------|-------|-------|----|
