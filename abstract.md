@@ -1,1 +1,1 @@
-TODO: vul in abstract.md een abstract in.
+Dit document is onderdeel van de documentatieset met betrekking tot het MIM metamodel.
