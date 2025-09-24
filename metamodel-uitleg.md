@@ -179,7 +179,7 @@ De introductie van het begrip «rol» vereist ook dat we het moeten hebben over 
 
 > Een CATEGORISCH KENMERK is een EIGENSCHAP van een DOMEINOBJECT waar een CATEGORIE aan kan worden toegekend
 
-> Een CATEGORIE is een aanduiding van een groep DOMEINOBJECTen die een kwalitatieve eigenschap gemeen hebben
+> Een CATEGORIE is een aanduiding van een groep DOMEINOBJECTen die een kwaliteit gemeen hebben
 
 Voorbeelden van categorieën zijn: kleur, geslacht, type voertuig (auto, fiets, bus) of merk. Je kunt nog onderscheid maken tussen nominale categorische kenmerken (de categorieën hebben geen volgorde) en ordinale categorische kenmerken (er is een volgorde, bijvoorbeeld urgentie: laag, midden, hoog).
 
@@ -201,6 +201,8 @@ Categorieën zijn vaak begrippen die al zijn onderkend in het begrippenmodel. Oo
 In onze kijk op het beschouwingsdomein hebben we het over domeinobjecten gehad die eigenschappen kunnen hebben en waarbij sprake kan zijn van relaties tussen domeinobjecten. En hoewel we het kunnen hebben over een relatie (zoals de "arbeidsrelatie"), zagen we die relatie niet als "bijzonder" genoeg om deze daadwerkelijk te onderscheiden als afzonderlijk domeinobject. Uiteindelijk is dit een keuze hoe je het domein wilt beschouwen.
 
 Als we de relatie *zelf* willen onderkennen, dan beschouwen we de relatie als een speciaal soort domeinobject, een relatiedomeinobject.
+
+> Een RELATIEDOMEINOBJECT is een RELATIE die beschouwd wordt als DOMEINOBJECT
 
 Zo kunnen we het bijvoorbeeld over de huwelijksrelatie tussen Jan en Marie hebben. Zo'n huwelijksrelatie betreft dan een relatiedomeinobject. Het relatiedomeinobject heeft zelf eigenschappen, zoals de huwelijksdatum, de gehuwden en getuigen. En we zullen zo'n relatiedomeinobject moeten kunnen identificeren. In dit geval zou de combinatie van de identificerende eigenschappen van de huwelijkspartners en de huwelijksdatum daarvoor bruikbaar zijn. Het is echter ook denkbaar dat in het betreffende domein een afzonderlijk huwelijkskenmerk bestaat, bijvoorbeeld het nummer op de huwelijksakte.
 
