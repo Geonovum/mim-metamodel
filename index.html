@@ -7,12 +7,16 @@
   <script src="https://cdn.jsdelivr.net/gh/digitalbazaar/respec-mermaid@1.0.1/dist/main.js" class="remove"></script>
   <script src="https://tools.geostandaarden.nl/respec/config/geonovum-config.js" class="remove"></script>
   <script src="js/config.js" class="remove"></script>
-  <script class="remove">
+ <!-- <script class="remove">
     respecConfig.localBiblio = Object.assign(organisationConfig.localBiblio,respecConfig.localBiblio);
     respecConfig = {...organisationConfig, ...respecConfig};
-  </script>
+  </script> -->
+    <script class="remove"> respecConfig = {...organisationConfig, ...respecConfig}</script>
   <script>document.title = respecConfig.title</script>
-  <title>TODO: Vul hier de titel in</title>
+  
+  
+ 
+  <title>MIM-Metamodel</title>
   <link rel="shortcut icon" type="image/x-icon" href="https://tools.geostandaarden.nl/respec/style/logos/Geonovum.ico" />
   <script src="https://gitdocumentatie.logius.nl/publicatie/respec/builds/respec-nlgov.js" class="remove" async></script>
   <!-- De volgende regel zorgt ervoor dat plaatjes uit Imvertor niet geschaald
@@ -22,7 +26,7 @@
 
 <body>
   <section id="abstract" data-include-format="markdown" data-include="abstract.md"></section>
-  <section id="sotd"></section><!-- Wordt automatisch gevuld -->
+ <!-- <section id="sotd"></section><!-- Wordt automatisch gevuld -->
 
   <!-- TODO: voeg hier je eigen hoofdstukken toe -->
   <section data-include-format="markdown" data-include="inleiding.md"></section>
@@ -31,9 +35,9 @@
   <!-- <section data-include-format="markdown" data-include="termen, definities, afkortingen.md"></section> -->
   <section data-include-format="markdown" data-include="conformiteit.md"></section>
   <section data-include-format="markdown" data-include="metamodel.md"></section>
-  <div id="Objectcatalogus" data-include="data/mim-metamodel-cat.respec.catalog.xhtml" data-include-replace="true"></div>
-  
-  
+ 
+ <div id="Objectcatalogus" data-include="data/mim-metamodel-cat.respec.catalog.xhtml" data-include-replace="true"></div>
+ 
   <section data-include-format="markdown" data-include="ch01.md" class="informative"></section>
   <section data-include-format="markdown" data-include="ch02.md"></section>
   <section data-include-format="markdown" data-include="mermaid.md"></section>
