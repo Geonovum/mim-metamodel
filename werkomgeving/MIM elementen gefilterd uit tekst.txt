@@ -1,0 +1,70 @@
+Een BESCHOUWINGDOMEIN is een deel van de werkelijkheid dat we relevant vinden om te beschouwen vanuit een bepaalde context
+
+Een DOMEINOBJECT is een onderscheidbaar iets in de beschouwde werkelijkheid
+
+Een EIGENSCHAP is een verschijnsel dat toegekend kan worden aan bepaalde DOMEIN Objecten
+
+Een IDENTIFICERENDE EIGENSCHAP is een EIGENSCHAP waarmee de identiteit van een DOMEINOBJECT kan worden vastgesteld
+
+Een TOEGEKENDE IDENTIFICERENDE EIGENSCHAP is een IDENTIFICERENDE EIGENSCHAP die met dat doel is toegekend aan een DOMEINOBJECT
+
+Een KENMERK is een EIGENSCHAP van een DOMEINOBJECT waar een WAARDE aan kan worden toegekend
+
+Een LETTERLIJKE WAARDE is een WAARDE waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer
+
+Een COMPLEXE WAARDE is een WAARDE die bestaat uit een aaneenschakeling van afzonderlijke LETTERLIJKE WAARDEn en/of CLASSIFICATIEs.
+
+Een ROL is een EIGENSCHAP van een DOMEINOBJECT in een RELATIE met zichzelf of een ander DOMEINOBJECT
+
+Een RELATIE is een verbintenis tussen DOMEINOBJECTen
+
+Een CATEGORISEREND KENMERK is een EIGENSCHAP van een DOMEINOBJECT waar een CATEGORIE aan kan worden toegekend
+
+Een CATEGORIE is een aanduiding van een groep DOMEINOBJECTen die iets gemeen hebben
+
+
+Een VERWERKINGSDOMEIN is een deel van de waarneembare en/of sociale werkelijkheid waarin we gegevens verwerken over een specifiek beschouwingsdomein
+
+Een GEGEVEN is een vastgelegde uitdrukking over een EIGENSCHAP van een DOMEINOBJECT
+
+Een GEGEVENSGROEP is een groepering van GEGEVENs
+
+Een GEGEVENSOBJECT is een onderscheidbaar geheel van GEGEVENs over één of meerdere DOMEINOBJECTen
+
+Een HOOFDONDERWERP is een DOMEINOBJECT waarover een GEGEVENSOBJECT in hoofdzaak gaat
+
+Een OBJECTTYPE is een typering van gelijksoortige DOMEINOBJECTen
+
+Een POPULATIE is de verzameling van alle mogelijke DOMEINOBJECTen die te onderscheiden zijn als OBJECTTYPE
+
+
+Een ATTRIBUUTSOORT is een typering van een KENMERK van een DOMEINOBJECT, behorende tot een OBJECTTYPE
+
+Een WAARDETYPE is een typering van gelijksoortige WAARDEn
+
+Een CATEGORISEREND ATTRIBUUTSOORT is een ATTRIBUUTSOORT als typering van een CATEGORISEREND KENMERK
+
+Een CLASSIFICATIESCHEMA is een systematische ordening van DOMEINOBJECTen in CATEGORIEen
+
+Een COMPLEX WAARDETYPE is een typering van gelijksoortige COMPLEXE WAARDEn
+
+
+Een RELATIESOORT is een typering van een RELATIE
+
+Een RELATIESOORTROL is een typering van een ROL van een DOMEINOBJECT in een relatie, getypeerd door een RELATIESOORT en behorende tot een OBJECTTYPE
+
+Een CONDITIE is een noodzakelijke voorwaarde die moet gelden voor een typering
+
+Een GEGEVENSTYPE is een typering van gelijksoortige GEGEVENs.
+
+Een GEGEVENSOBJECTTYPE is een typering van gelijksoortige GEGEVENSOBJECTen
+
+Een GEGEVENSTYPEGROEP is een groepering van GEGEVENSTYPEN
+
+Een SLEUTEL is de verzameling van GEGEVENSTYPEn waarmee een unieke aanduiding voor een GEGEVENSOBJECT kan worden gevormd
+
+
+
+
+
+
