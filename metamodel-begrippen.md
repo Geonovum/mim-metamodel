@@ -252,7 +252,7 @@ Gerelateerd: [Relatiedomeinobject](#relatiedomeinobject)
 
 ### Rol
 
-> Een rol is een eigenschap van een domeinobject in een relatie met zichzelf of een ander domeinobject waarmee een functie, taak of gedragspatroon die dat domeinobject (zoals een object, systeem, dier, softwarecomponent, robot, enz.) vervult binnen een bepaald systeem of situatie wordt gekenmerkt.
+> Een rol is een eigenschap van een domeinobject in een relatie met zichzelf of een ander domeinobject waarmee een functie, taak of gedrag die dat domeinobject vervult binnen de relatie wordt gekenmerkt.
 
 Specialisatie van: [Eigenschap](#eigenschap)
 
