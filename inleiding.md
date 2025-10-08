@@ -33,14 +33,17 @@ De volgende modellen beschrijven het conceptuele niveau van het MIM metamodel, M
 
 - [MIM-Metamodel algemeen](#EAID_EFCDEE8E_15AE_4807_B4EC_95187A36BE95). Relatie tussen de verschillende MIM lagen.
 
-- [Conceptueel metamodel van de MIM 2 laag](#EAID_B7C06F11_4030_410f_A4BD_6D26082B33B9). Conform CIM.
+- [Conceptueel metamodel van de MIM 2 laag: CIM-CIM](#EAID_B7C06F11_4030_410f_A4BD_6D26082B33B9). Conform CIM.
 
-- [Conceptueel metamodel van de MIM 3 laag](#EAID_A1C8AF77_0457_48ce_9D23_426AC5411992). Conform CIM.
+- [Conceptueel metamodel van de MIM 3 laag: LGM-CIM](#EAID_A1C8AF77_0457_48ce_9D23_426AC5411992). Conform CIM.
+
 
 **Logische niveau**
 
 Het volgende model beschrijft het logische niveau van het MIM metamodel, MIM laag 3.
-Dit is het metamodel met de daadwerkelijke metaklassen waarmee een MIM conform informatiemodel gemaakt kan worden.
+Dit is het metamodel met de daadwerkelijke metaklassen waarmee een MIM conform informatiemodel als CIM en als LGM gemaakt kan worden.
 
 
-- [Logisch metamodel MIM. Conform CIM](nog niet toegevoegd). 
+- [Logisch metamodel van de MIM 2 laag: LGM-CIM.](#EAID_65E36413_AEA9_42f7_81D4_8478285401E2).
+ 
+- [Logisch metamodel van de MIM 3 laag: LGM-LGM.](#EAID_1C3FC765_E283_481c_8663_4006538A1965). 
