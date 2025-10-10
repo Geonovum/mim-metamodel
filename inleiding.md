@@ -7,7 +7,10 @@ Daarin staan een aantal MIM2.0 modellen. Een paar opmerkingen hierbij.
 
 Deze modellen zijn in ontwikkeling.
 
-De modellen zijn voor zoals dat kan uitgedrukt in MIM 1.2.
+De modellen zijn voor zover als dat kan uitgedrukt in MIM 1.2.
+
+
+**Het Logische Niveau is voor nu het meest uitgewerkt.**
 
 
 Er zijn de volgende modellen:
