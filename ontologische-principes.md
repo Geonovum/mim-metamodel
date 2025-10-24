@@ -1,6 +1,6 @@
 # Ontologische Principes
 
-Ontologische principes zijn kernideeën die ten grondslag liggen aan de manier waarop we de realiteit beschouwen. Hierin worden fundamentele aannames gedaan over wat er in de wereld bestaat, hoe entiteiten zijn gestructureerd, en welke categorieën kunnen worden georganiseerd om die entiteiten te vertegenwoordigen. Het zijn de leidende filosofische ideeën die bepalen hoe we (een deel van) de realiteit modelleren, welke ontwerpkeuzes we daarbij moeten maken en hoe we de resulterende modelelementen afhankelijk zijn van elkaar of anderszins met elkaar in verband moeten brengen.
+Ontologische principes zijn kernideeën die ten grondslag liggen aan de manier waarop we de realiteit beschouwen. Hierin worden fundamentele aannames gedaan over wat er in de wereld bestaat, hoe entiteiten zijn gestructureerd, en welke categorieën kunnen worden georganiseerd om die entiteiten te vertegenwoordigen. Het zijn de leidende filosofische ideeën die bepalen hoe we (een deel van) de realiteit modelleren, welke ontwerpkeuzes we daarbij moeten maken en hoe de resulterende modelelementen afhankelijk zijn van elkaar of anderszins met elkaar in verband gebracht moeten worden.
 
 ## Basisprincipes
 
