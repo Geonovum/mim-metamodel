@@ -92,7 +92,20 @@ We zoeken naar een ontologische verbinding voor het CIM metamodel waarbij tegeli
 
 ## Toepassing van ontologische principes op het CIM metamodel
 
+|             | Ontologische principes |||||||||| 
+| CIM element | **Sortaliteit** | **Rigiditeit** | **Causaliteit** | **Temporele extensie** | **Universalia vs particularia** | **Afhankelijkheid** | **Multipliciteit** | **Identiteitsvoorwaarde** | **(On)Gebondenheid** | **Mereologie** |
+| ------------------------------ | :-----: | :------: | :------: | :------: | :------: | :------: | :------: |  :-----: | :------: | :------: |
+| **Objecttype**                 |  **✓**  | **--<**  |          |  **✓**   |          |          |          |          |          |          |
+| **Domeinobject**               |         |          |          |          |          |          |          |          |          |          |
+| **Eigenschape**                |         |          |          |          |          |          |          |          |          |          |
+| **Identificerende eigenschap** |         |          |          |          |          |          |          |          |          |          |
 
+LEGENDA
+
+| Symbool | Betekenis                                                             |
+| :-----: | :-------------------------------------------------------------------- |
+| **✓** | Principe wordt ondersteund door CIM element     |
+| **--<** | Ondersteuning van principe vereist verdere specialisatie van CIM element |
 
 # Literatuur
 
