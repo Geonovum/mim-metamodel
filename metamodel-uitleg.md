@@ -4,7 +4,7 @@
 
 Dit document beschrijft de begrippen die relevant zijn voor het MIM Metamodel. Gezamenlijk vormen deze begrippen de terminologie, het vocabulaire die voor MIM 2.0 wordt gehanteerd.
 
-NB: Dit document bouwt het metamodel van MIM-begrippen beetje-bij-beetje op, door steeds iets meer van het model prijs te geven. Het volledige begrippenkader in samenhang is hier te vinden: [MIM-begrippenkader](/mim-metamodel/metamodel-begrippen.html). Het volledige metamodel in grafische vorm is hier te vinden: [MIM-metamodel](/mim-metamodel/metamodel.html).
+NB: Dit document bouwt het metamodel van MIM-begrippen beetje-bij-beetje op, door steeds iets meer van het model prijs te geven. Het volledige begrippenkader is hier te vinden: [MIM-begrippenkader](/mim-metamodel/metamodel-begrippen.html). Het volledige metamodel in grafische vorm is hier te vinden: [MIM-metamodel](/mim-metamodel/metamodel.html).
 
 Voor het beschrijven van de MIM-begrippen is de NL-SBB standaard gebruikt. Een belangrijk principe daarbij is het onderscheid tussen een «term», een «begrip» en de «definitie» van zo'n begrip:
 - Een «term» is (slechts) een woord of aaneenschakeling van woorden. De term is hetgeen we in een bepaalde context gebruiken om te verwijzen naar een specifiek begrip. Zo wordt de term "bank" gebruikt om te verwijzen naar het begrip «bank (financieel)», maar ook naar het begrip «bank (meubelstuk)».
