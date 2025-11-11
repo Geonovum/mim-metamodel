@@ -8,11 +8,16 @@
                        visibility="public">
          <packagedElement xmi:type="uml:Class" xmi:id="http://begrippen.mim-standaard.nl/mimbegripWaarde"
                           name="Waarde"
-                          visibility="public"/>
+                          visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen"/>
+         </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripSamengesteldMeervoudigGegevenstype"
                           name="Samengesteld meervoudig gegevenstype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een samengesteld meervoudig gegevenstype is een gegevenstype over meerdere eigenschappen van één of meerdere domeinobjecten"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSamengesteldMeervoudigGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
                             general="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
@@ -21,6 +26,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstype"
                           name="Direct gegevenstype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een direct gegevenstype is een gegevenstype over één eigenschap van een domeinobject, vastgelegd bij een gegevensobjectype dat dit domeinobject als hoofdonderwerp heeft"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:trgt"
                             visibility="public"
@@ -42,6 +49,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"
                           name="Domeinobject"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een domeinobject is een onderscheidbaar en identificeerbaar iets in de beschouwde werkelijkheid"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDomeinobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein:trgt"
                             visibility="public"
@@ -59,11 +68,16 @@
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein"
                           name="Beschouwingsdomein"
-                          visibility="public"/>
+                          visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een beschouwingsdomein is een afgebakend deel van de werkelijkheid dat we relevant vinden om te beschouwen vanuit een bepaalde context"/>
+         </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde"
                           name="Letterlijke waarde"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een letterlijke waarde is een waarde waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaardeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripWaarde"
                             general="http://begrippen.mim-standaard.nl/mimbegripWaarde"/>
@@ -72,6 +86,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegeven"
                           name="Gegeven"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een gegeven is een vastgelegde uitdrukking over hetzij een eigenschap van een domeinobject dan wel een relatie tussen domeinobjecten"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:trgt"
                             visibility="public"
@@ -116,6 +132,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripSleutelwaarde"
                           name="Sleutelwaarde"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een sleutelwaarde is de invulling van één of meerdere eigenschappen die gezamenlijk één enkel domeinobject uniek aanduiden."/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
@@ -147,6 +165,7 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripRelatie"
                           name="Relatie"
                           visibility="public">
+            <ownedComment xmi:id="-def1" body="Een relatie is een verbintenis tussen domeinobjecten"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
@@ -165,6 +184,7 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroep"
                           name="Gegevenstypegroep"
                           visibility="public">
+            <ownedComment xmi:id="-def1" body="Een gegevenstypegroep is een groepering van gegevenstypen"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:trgt"
                             visibility="public"
@@ -183,6 +203,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschap"
                           name="Identificerende eigenschap"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een identificerende eigenschap is een eigenschap waarmee de identiteit van een domeinobject kan worden vastgesteld"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
@@ -204,6 +226,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripRoltype"
                           name="Roltype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een roltype is een typering van een rol van een domeinobject in een relatie, getypeerd door een relatietype en behorende tot een objecttype"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"
                             visibility="public"
@@ -247,15 +271,23 @@
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripVerwerkingsdomein"
                           name="Verwerkingsdomein"
-                          visibility="public"/>
+                          visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een VERWERKINGSDOMEIN is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt"/>
+         </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripConditie"
                           name="Conditie"
-                          visibility="public"/>
+                          visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een conditie is een noodzakelijke voorwaarde die moet gelden voor een typering"/>
+         </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripCardinaliteit"
                           name="Cardinaliteit"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een cardinaliteit is een conditie waarbij van een eigenschap is gesteld hoeveel invullingen er voor één domeinobject minimaal en maximaal zijn"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
@@ -300,6 +332,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk"
                           name="Categorisch kenmerk"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een categorisch kenmerk is een eigenschap van een domeinobject waar een categorie aan kan worden toegekend"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:trgt"
                             visibility="public"
@@ -321,6 +355,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripComplexeWaarde"
                           name="Complexe waarde"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een complexe waarde is een waarde die bestaat uit een aaneenschakeling van afzonderlijke letterlijke waarden en/of categorieën."/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde:trgt"
                             visibility="public"
@@ -355,6 +391,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject"
                           name="Relatiedomeinobject"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een relatiedomeinobject is een relatie die beschouwd wordt als domeinobject"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
@@ -386,6 +424,7 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevensgroep"
                           name="Gegevensgroep"
                           visibility="public">
+            <ownedComment xmi:id="-def1" body="Een gegevensgroep is een groepering van gegevens"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"
                             visibility="public"
@@ -404,6 +443,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"
                           name="Hoofdonderwerp"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een hoofdonderwerp is een domeinobject waarover een gegevensobject in hoofdzaak gaat"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"
                             visibility="public"
@@ -425,6 +466,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripObjecttype"
                           name="Objecttype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een objecttype is een typering van gelijksoortige domeinobjecten"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripObjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
@@ -443,6 +486,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripIndirectGegevenstype"
                           name="Indirect gegevenstype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een indirect gegevenstype is een gegevenstype over één eigenschap van een domeinobject, vastgelegd bij een gegevensobjecttype dat dit domeinobject niet als hoofdonderwerp heeft"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIndirectGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
                             general="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
@@ -450,6 +495,8 @@
          <packagedElement xmi:type="uml:Class" xmi:id="http://begrippen.mim-standaard.nl/mimbegripRol"
                           name="Rol"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een rol is een eigenschap van een domeinobject in een relatie met zichzelf of een ander domeinobject"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:trgt"
                             visibility="public"
@@ -484,6 +531,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttype"
                           name="Eenduidig gegevensobjecttype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een eenduidig gegevensobjecttype is een gegevensobjecttype met precies één hoofdonderwerp waarvan de sleutel bekend is"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripSleutel:trgt"
                             visibility="public"
@@ -505,6 +554,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptype"
                           name="Gegevensgroeptype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een gegevensgroeptype is een typering van gelijksoortige gegevensgroepen"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensgroep:trgt"
                             visibility="public"
@@ -523,6 +574,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"
                           name="Gegevensobjecttype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een gegevensobjecttype is een typering van gelijksoortige gegevensobjecten"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"
                             visibility="public"
@@ -540,11 +593,16 @@
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripRelatietype"
                           name="Relatietype"
-                          visibility="public"/>
+                          visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een relatietype is een typering van gelijksoortige relaties"/>
+         </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripToegekendeIdentificerendeEigenschap"
                           name="Toegekende identificerende eigenschap"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een toegekende identificerende eigenschap is een identificerende eigenschap die met dat doel is toegekend aan een domeinobject"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripToegekendeIdentificerendeEigenschapskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschap"
                             general="http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschap"/>
@@ -553,6 +611,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripComplexWaardetype"
                           name="Complex waardetype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een complex waardetype is een typering van gelijksoortige complexe waarden"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripComplexeWaarde:trgt"
                             visibility="public"
@@ -571,6 +631,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripInformeleConditie"
                           name="Informatie conditie"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een informele conditie is een conditie die beschreven is in natuurlijk taal"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripInformeleConditieskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
                             general="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
@@ -579,6 +641,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripBeschrijvendGegevensobjecttype"
                           name="Beschrijvend gegevensobjecttype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een beschrijvend gegevensobjecttype is een gegevensobjecttype met precies één hoofdonderwerp, zonder dat de sleutel van het hoofdonderwerp bekend is"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripBeschrijvendGegevensobjecttypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"
                             general="http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"/>
@@ -587,6 +651,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripDatatype"
                           name="Datatype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een datatype is een conditie waarbij van een kenmerk of waarde is gesteld wat voor datatype de waarde of invulling van dat kenmerk mag zijn"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDatatypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
                             general="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
@@ -595,6 +661,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripFormeleConditie"
                           name="Formele conditie"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een formele conditie is een conditie die beschreven is in een machine-interpreteerbare taal"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripFormeleConditieskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
                             general="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
@@ -603,6 +671,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripPopulatie"
                           name="Populatie"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een populatie is de verzameling van alle mogelijke domeinobjecten die te onderscheiden zijn als objecttype"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"
                             visibility="public"
@@ -634,6 +704,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripSamengesteldEnkelvoudigGegevenstype"
                           name="Samengesteld enkelvoudig gegevenstype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een samengesteld enkelvoudig gegevenstype is een gegevenstype over één eigenschap van meerdere domeinobjecten"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSamengesteldEnkelvoudigGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
                             general="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
@@ -642,6 +714,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripStriktEenduidigGegevensobjecttype"
                           name="Strik eenduidig gegevensobjecttype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een strikt eenduidig gegevensobjecttype is een gegevensobjecttype over alleen eigenschappen van het hoofdonderwerp waarvan de sleutel bekend is"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripStriktEenduidigGegevensobjecttypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttype"
                             general="http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttype"/>
@@ -650,6 +724,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripAttribuuttype"
                           name="Attribuuttype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een attribuuttype is een typering van een kenmerk van een domeinobject, behorende tot een objecttype"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"
                             visibility="public"
@@ -681,6 +757,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripEigenschap"
                           name="Eigenschap"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een EIGENSCHAP is een verschijnsel dat toegekend kan worden aan bepaalde domeinobjecten."/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
@@ -699,6 +777,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttype"
                           name="Relatieobjecttype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een relatieobjecttype is een typering van gelijksoortige relatiedomeinobjecten"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject:trgt"
                             visibility="public"
@@ -717,6 +797,7 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripWaardetype"
                           name="Waardetype"
                           visibility="public">
+            <ownedComment xmi:id="-def1" body="Een waardetype is een typering van gelijksoortige waarden"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:trgt"
                             visibility="public"
@@ -735,6 +816,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevensobject"
                           name="Gegevensobject"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een gegevensobject is een onderscheidbaar geheel van gegevens over één of meerdere domeinobjecten"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"
                             visibility="public"
@@ -766,6 +849,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripKenmerk"
                           name="Kenmerk"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een kenmerk is een eigenschap van een domeinobject waar uitsluitend een waarde aan kan worden toegekend"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:trgt"
                             visibility="public"
@@ -787,6 +872,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripCategorie"
                           name="Categorie"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een categorie is een aanduiding van een groep domeinobjecten die een kwaliteit gemeen hebben"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
@@ -805,6 +892,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripSleutel"
                           name="Sleutel"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een sleutel is een groep van één of meer gegevenstypen waarmee een unieke aanduiding voor het hoofdonderwerp van een gegevensobject kan worden gevormd"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"
                             visibility="public"
@@ -849,6 +938,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAard"
                           name="Attribuuttype van classificerende aard"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een attribuuttype van classificerende aard is een attribuuttype als typering van een categorisch kenmerk"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk:trgt"
                             visibility="public"
@@ -879,6 +970,8 @@
          <packagedElement xmi:type="uml:Class" xmi:id="http://begrippen.mim-standaard.nl/mimbegripLengte"
                           name="Lengte"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een lengte is een conditie waarbij van een kenmerk of waarde is gesteld hoe lang de waarde of invulling van dat kenmerk mag zijn"/>
             <generalization xmi:type="uml:Generalization"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripLengteskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
                             general="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
@@ -887,6 +980,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"
                           name="Gegevenstype"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een gegevenstype is een typering van gelijksoortige gegevens"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"
                             visibility="public"
@@ -905,6 +1000,8 @@
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegripClassificatieschema"
                           name="Classificatieschema"
                           visibility="public">
+            <ownedComment xmi:id="-def1"
+                          body="Een classificatieschema is een systematische ordening van domeinobjecten in categorieën"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
                             visibility="public"
