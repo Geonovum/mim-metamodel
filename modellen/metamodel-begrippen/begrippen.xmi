@@ -1,0 +1,1917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:thecustomprofile="http://www.sparxsystems.com/profiles/thecustomprofile/1.0"
+         xmlns:xmi="http://schema.omg.org/spec/XMI/2.1"
+         xmlns:uml="http://schema.omg.org/spec/UML/2.1"
+         xmi:version="2.1">
+   <uml:Model xmi:type="uml:Model" name="EA_Model" visibility="public">
+      <packagedElement xmi:type="uml:Package" xmi:id="urn:name:package" name="Begrippen"
+                       visibility="public">
+         <packagedElement xmi:type="uml:Class" xmi:id="http://begrippen.mim-standaard.nl/mimbegripWaarde"
+                          name="Waarde"
+                          visibility="public"/>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripSamengesteldMeervoudigGegevenstype"
+                          name="Samengesteld meervoudig gegevenstype"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSamengesteldMeervoudigGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                            general="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstype"
+                          name="Direct gegevenstype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"/>
+            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                            general="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="Domeinobject"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDomeinobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDomeinobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein"
+                          name="Beschouwingsdomein"
+                          visibility="public"/>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde"
+                          name="Letterlijke waarde"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaardeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripWaarde"
+                            general="http://begrippen.mim-standaard.nl/mimbegripWaarde"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegeven"
+                          name="Gegeven"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatie"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripEigenschap"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripSleutelwaarde"
+                          name="Sleutelwaarde"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripEigenschap"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripRelatie"
+                          name="Relatie"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroep"
+                          name="Gegevenstypegroep"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschap"
+                          name="Identificerende eigenschap"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                            general="http://begrippen.mim-standaard.nl/mimbegripEigenschap"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripRoltype"
+                          name="Roltype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripObjecttype"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatietype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatietype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatietype"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRol:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRol"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRol"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripVerwerkingsdomein"
+                          name="Verwerkingsdomein"
+                          visibility="public"/>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripConditie"
+                          name="Conditie"
+                          visibility="public"/>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripCardinaliteit"
+                          name="Cardinaliteit"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripEigenschap"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk"
+                          name="Categorisch kenmerk"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCategorie"/>
+            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                            general="http://begrippen.mim-standaard.nl/mimbegripEigenschap"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripComplexeWaarde"
+                          name="Complexe waarde"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCategorie"/>
+            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripWaarde"
+                            general="http://begrippen.mim-standaard.nl/mimbegripWaarde"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject"
+                          name="Relatiedomeinobject"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripRelatie:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatie"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevensgroep"
+                          name="Gegevensgroep"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegeven"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"
+                          name="Hoofdonderwerp"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensobject"/>
+            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            general="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                          name="Objecttype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripObjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripObjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripIndirectGegevenstype"
+                          name="Indirect gegevenstype"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIndirectGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                            general="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class" xmi:id="http://begrippen.mim-standaard.nl/mimbegripRol"
+                          name="Rol"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatie"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                            general="http://begrippen.mim-standaard.nl/mimbegripEigenschap"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttype"
+                          name="Eenduidig gegevensobjecttype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripSleutel:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripSleutel"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripSleutel"/>
+            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"
+                            general="http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptype"
+                          name="Gegevensgroeptype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensgroep:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensgroep"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensgroep"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"
+                          name="Gegevensobjecttype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripRelatietype"
+                          name="Relatietype"
+                          visibility="public"/>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripToegekendeIdentificerendeEigenschap"
+                          name="Toegekende identificerende eigenschap"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripToegekendeIdentificerendeEigenschapskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschap"
+                            general="http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschap"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripComplexWaardetype"
+                          name="Complex waardetype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripComplexeWaarde:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripComplexeWaarde"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripComplexeWaarde"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripInformeleConditie"
+                          name="Informatie conditie"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripInformeleConditieskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
+                            general="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripBeschrijvendGegevensobjecttype"
+                          name="Beschrijvend gegevensobjecttype"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripBeschrijvendGegevensobjecttypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"
+                            general="http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripDatatype"
+                          name="Datatype"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDatatypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
+                            general="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripFormeleConditie"
+                          name="Formele conditie"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripFormeleConditieskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
+                            general="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripPopulatie"
+                          name="Populatie"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripObjecttype"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripSamengesteldEnkelvoudigGegevenstype"
+                          name="Samengesteld enkelvoudig gegevenstype"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSamengesteldEnkelvoudigGegevenstypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                            general="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripStriktEenduidigGegevensobjecttype"
+                          name="Strik eenduidig gegevensobjecttype"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripStriktEenduidigGegevensobjecttypeskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttype"
+                            general="http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttype"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripAttribuuttype"
+                          name="Attribuuttype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripObjecttype"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripKenmerk:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripKenmerk"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripKenmerk"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                          name="Eigenschap"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttype"
+                          name="Relatieobjecttype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripWaardetype"
+                          name="Waardetype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripWaarde"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                          name="Gegevensobject"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegeven"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripKenmerk"
+                          name="Kenmerk"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripWaarde"/>
+            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                            general="http://begrippen.mim-standaard.nl/mimbegripEigenschap"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripCategorie"
+                          name="Categorie"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripSleutel"
+                          name="Sleutel"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensobject"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAard"
+                          name="Attribuuttype van classificerende aard"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripAttribuuttype:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripAttribuuttype"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripAttribuuttype"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class" xmi:id="http://begrippen.mim-standaard.nl/mimbegripLengte"
+                          name="Lengte"
+                          visibility="public">
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripLengteskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
+                            general="http://begrippen.mim-standaard.nl/mimbegripConditie"/>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                          name="Gegevenstype"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegeven"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Class"
+                          xmi:id="http://begrippen.mim-standaard.nl/mimbegripClassificatieschema"
+                          name="Classificatieschema"
+                          visibility="public">
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripCategorie:trgt"
+                            visibility="public"
+                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                            isStatic="false"
+                            isReadOnly="false"
+                            isDerived="false"
+                            isOrdered="false"
+                            isUnique="true"
+                            isDerivedUnion="false"
+                            aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCategorie"/>
+            </ownedAttribute>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDirectGegevenstype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDomeinobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDomeinobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDomeinobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDomeinobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripDomeinobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripBeschouwingsdomein"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripDomeinobject"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegeven"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegeven"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegeven"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripSleutelwaarde"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelwaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripSleutelwaarde"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatie"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                          name="skosthes:narrowerPartitive"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevenstypegroep"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripIdentificerendeEigenschap"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRoltype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatietype"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatietype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatietype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatietype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatietype"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRoltype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRol"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRol:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRol:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRol:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRoltypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRol"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRoltype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCardinaliteit"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripEigenschap"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCardinaliteit"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
+                          name="skos:broaderGeneric"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripConditie"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCardinaliteit"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripLetterlijkeWaarde"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripComplexeWaarde"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripComplexeWaarde"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:broaderGeneric"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                          name="skos:broaderGeneric"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripRelatie:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripRelatie:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripRelatie:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobjectskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                          name="skosthes:narrowerPartitive"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensgroep"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                          name="skosthes:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerpskosthes:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripObjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripObjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripObjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripObjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripObjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripObjecttype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatie"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRol"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRolskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRol"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripSleutel"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripSleutel:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripSleutel:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripSleutel:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripSleutel"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripEenduidigGegevensobjecttype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensgroep"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensgroep:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensgroep:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensgroep:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensgroep"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensgroeptype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensobjecttype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripComplexeWaarde"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripComplexeWaarde:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripComplexeWaarde:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripComplexeWaarde:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripComplexWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripComplexeWaarde"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripComplexWaardetype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripPopulatie"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripPopulatieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripPopulatie"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripObjecttype"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripAttribuuttype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripKenmerk"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripKenmerk:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripKenmerk:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripKenmerk:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripKenmerk"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripAttribuuttype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripEigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripEigenschap"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripRelatiedomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripRelatieobjecttype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripWaardetypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripWaardetype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                          name="skosthes:narrowerPartitive"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensobject"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevensobjectskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevensobject"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripKenmerkskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripWaarde"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripKenmerk"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripCategorieskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripCategorie"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegevensobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripSleutel"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripHoofdonderwerp"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripSleutel"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                          name="skosthes:narrowerPartitive"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripSleutelskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripGegevenstype"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripSleutel"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripCategorischKenmerk"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAard"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripAttribuuttype"
+                          name="skos:broaderGeneric"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripAttribuuttype:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripAttribuuttype:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripAttribuuttype:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAardskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegripAttribuuttype"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripAttribuuttypeVanClassificerendeAard"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegeven:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegeven:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegeven:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripGegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripGegeven"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripGegevenstype"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                          name="skos:related"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:relatedhttp://begrippen.mim-standaard.nl/mimbegripDomeinobject"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripClassificatieschema"/>
+            </ownedEnd>
+         </packagedElement>
+         <packagedElement xmi:type="uml:Association"
+                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                          name="skos:narrowerPartitive"
+                          visibility="public">
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripCategorie:trgt"/>
+            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripCategorie:src"/>
+            <ownedEnd xmi:type="uml:Property"
+                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripCategorie:src"
+                      visibility="public"
+                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegripClassificatieschemaskos:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegripCategorie"
+                      isStatic="false"
+                      isReadOnly="false"
+                      isDerived="false"
+                      isOrdered="false"
+                      isUnique="true"
+                      isDerivedUnion="false"
+                      aggregation="none">
+               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegripClassificatieschema"/>
+            </ownedEnd>
+         </packagedElement>
+      </packagedElement>
+   </uml:Model>
+</xmi:XMI>
