@@ -1,0 +1,84 @@
+@prefix fbm: <http://bp4mc2.org/def/fbm#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+@prefix ft: <http://example.org/ft#>.
+@prefix ot: <http://example.org/ot#>.
+@prefix vt: <http://example.org/vt#>.
+@prefix role: <http://example.org/role#>.
+
+ot:klant a fbm:Objecttype;
+  rdfs:label "Klant";
+  fbm:role [
+    fbm:playedBy vt:knummer;
+  ]
+.
+vt:knummer a fbm:Valuetype;
+  rdfs:label "klantnummer";
+.
+
+ot:bestelling a fbm:Facttype;
+  fbm:role role:besteller;
+  fbm:role role:bestelling;
+  fbm:constraint [
+    a fbm:MandatoryConstraint;
+    fbm:restricts role:bestelling
+  ];
+  fbm:constraint [
+    a fbm:UniquenessConstraint;
+    fbm:restricts role:besteller
+  ];
+  fbm:predicate [
+    fbm:ordersRole [fbm:role role:besteller; fbm:atPosition 1];
+    fbm:ordersRole [fbm:role role:bestelling; fbm:atPosition 2];
+    fbm:reading [
+      fbm:text "[Klant] plaatst [Order]";
+      fbm:parts (role:besteller "plaatst" role:bestelling)
+    ]
+  ];
+.
+role:besteller a fbm:Role;
+  fbm:playedBy ot:klant;
+  rdfs:label "besteller"
+.
+role:bestelling a fbm:Role;
+  fbm:playedBy ot:order;
+  rdfs:label "order"
+.
+
+ot:order a fbm:Objecttype;
+  rdfs:label "Order";
+  fbm:role [
+    fbm:playedBy vt:onummer;
+  ]
+.
+vt:onummer a fbm:Valuetype;
+  rdfs:label "ordernummer";
+.
+
+ot:orderregel a fbm:Objecttype;
+  rdfs:label "Orderregel";
+  fbm:role role:order;
+  fbm:role role:regelnummer;
+  fbm:constraint [
+    a fbm:MandatoryConstraint;
+    fbm:restricts role:order
+  ];
+  fbm:constraint [
+    a fbm:UniquenessConstraint;
+    fbm:restricts role:order, role:regelnummer
+  ];
+  fbm:predicate [
+    fbm:ordersRole [fbm:role role:order; fbm:atPosition 1];
+    fbm:ordersRole [fbm:role role:regelnummer; fbm:atPosition 2];
+  ];
+.
+role:order a fbm:Role;
+  rdfs:label "order";
+  fbm:playedBy ot:order;
+.
+role:regelnummer a fbm:Role;
+  fbm:playedBy vt:regelnummer;
+.
+vt:regelnummer a fbm:Valuetype;
+  rdfs:label "regelnummer";
+.

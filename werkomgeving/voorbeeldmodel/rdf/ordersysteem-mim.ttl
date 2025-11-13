@@ -1,0 +1,86 @@
+PREFIX fbm:  <http://bp4mc2.org/def/fbm#>
+PREFIX ft:   <http://example.org/ft#>
+PREFIX mim:  <http://modellen.mim-standaard.nl/def/mim#>
+PREFIX ot:   <http://example.org/ot#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX role: <http://example.org/role#>
+PREFIX vt:   <http://example.org/vt#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+vt:onummer  a           mim:PrimitiefDatatype;
+        rdfs:label      "ordernummer";
+        mim:identifier  "T" .
+
+vt:knummer  a           mim:PrimitiefDatatype;
+        rdfs:label      "klantnummer";
+        mim:identifier  "T" .
+
+vt:regelnummer  a       mim:PrimitiefDatatype;
+        rdfs:label      "regelnummer";
+        mim:identifier  "T" .
+
+ot:bestelling  a             mim:Relatiesoort;
+        rdfs:label           "[Klant] bestelt [Order]";
+        mim:bron             ot:klant;
+        mim:doel             ot:order;
+        mim:identifier       "T";
+        mim:relatierol       [ a                  mim:RelatierolDoel;
+                               rdfs:label         "order";
+                               mim:doel           ot:order;
+                               mim:kardinaliteit  "0..*"
+                             ];
+        mim:relatierol       [ a                  mim:RelatierolBron;
+                               rdfs:label         "besteller";
+                               mim:bron           ot:klant;
+                               mim:kardinaliteit  "1..1"
+                             ];
+        mim:toelichting      "[Klant] bestelt [Order]";
+        mim:unidirectioneel  false .
+
+role:order  a                mim:Relatiesoort;
+        rdfs:label           "Orderregel in relatie met Order";
+        mim:bron             ot:orderregel;
+        mim:doel             ot:order;
+        mim:identifier       "T";
+        mim:kardinaliteit    "1..1";
+        mim:relatierol       [ a                  mim:RelatierolDoel;
+                               rdfs:label         "order";
+                               mim:doel           ot:order;
+                               mim:kardinaliteit  "1..1"
+                             ];
+        mim:relatierol       [ a                  mim:RelatierolBron;
+                               mim:bron           ot:orderregel;
+                               mim:kardinaliteit  "1..*"
+                             ];
+        mim:unidirectioneel  true .
+
+role:regelnummer  a        mim:Attribuutsoort;
+        rdfs:label         "regelnummer";
+        mim:identifier     "T";
+        mim:kardinaliteit  "1..1";
+        mim:type           vt:regelnummer .
+
+ot:order  a             mim:Objecttype;
+        rdfs:label      "Order";
+        mim:attribuut   [ a                  mim:Attribuutsoort;
+                          rdfs:label         "ordernummer";
+                          mim:identifier     "T";
+                          mim:kardinaliteit  "1..1";
+                          mim:type           vt:onummer
+                        ];
+        mim:identifier  "T" .
+
+ot:orderregel  a        mim:Objecttype;
+        rdfs:label      "Orderregel";
+        mim:attribuut   role:regelnummer;
+        mim:identifier  "T" .
+
+ot:klant  a             mim:Objecttype;
+        rdfs:label      "Klant";
+        mim:attribuut   [ a                  mim:Attribuutsoort;
+                          rdfs:label         "klantnummer";
+                          mim:identifier     "T";
+                          mim:kardinaliteit  "1..1";
+                          mim:type           vt:knummer
+                        ];
+        mim:identifier  "T" .
