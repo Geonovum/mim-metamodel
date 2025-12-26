@@ -75,7 +75,7 @@ Onderstaand figuur laat concreet zien hoe we dit begrippenkader opstellen. We on
 3. De typering van zaken uit het beschouwingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de elementen te benoemen die in modellen van het beschouwingsdomein te vinden zijn. Een voorbeeld is het begrip «objecttype»;
 4. De typering van zaken uit het verwerkingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de elementen te benoemen die in modellen van het verwerkingsdomein te vinden zijn. Een voorbeeld is het begrip «gegevensobjecttype».
 
-![](/media/mim-quadranten-light.svg)#gh-light-mode-only![](/media/mim-quadranten-dark.svg)#gh-dark-mode-only
+![](/media/mim-quadranten-light.svg#gh-light-mode-only)![](/media/mim-quadranten-dark.svg#gh-dark-mode-only)
 
 ### De concrete zaken uit het beschouwingsdomein
 
