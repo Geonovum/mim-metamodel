@@ -30,7 +30,7 @@ Enerzijds kunnen we het hebben over het domein *waarover* we gegevens willen ver
 
 We gebruiken hier steeds het begrip «verwerken». We hebben het dan ook over zowel het lezen, gebruiken, uitwisselen, creëren, opslaan, wijzigen, duurzaam bewaren als vernietigen van gegevens.
 
-Aangezien gegevens over de dingen in het beschouwingsdomein gaan, zullen we die dingen moeten kunnen herkennen. Dit lijkt vaak makkelijk, maar dat is het niet. Zo is het relatief makkelijk om te bepalen wie een mens is en wie niet. Maar als het om meer abstracte zaken gaat (wanneer ben je Belastingplichtige, Verdachte of Eigenaar?), dan wordt het moeilijk. En als we dingen niet alleen willen herkennen (antwoord op de vraag: "is het er zo eentje?"), maar ook identificeren (antwoord op de vraag: "is het die ene?"), dan wordt het nog een stuk moeilijker. Modelleren is een hulpmiddel om deze complexiteit behapbaar te maken.
+Aangezien gegevens over de dingen in het beschouwingsdomein gaan, zullen we die dingen moeten kunnen herkennen. Dit lijkt vaak makkelijk, maar dat is het niet. Zo is het relatief makkelijk om te bepalen wie een mens is en wie niet. Maar als het om meer abstracte zaken gaat (wanneer ben je Belastingplichtige, Verdachte of Eigenaar?), dan wordt het moeilijk. En als we dingen niet alleen willen onderscheiden (antwoord op de vraag: "is het er eentje? (en niet twee)", of herkennen (antwoord op de vraag: "is het er zo eentje?"), maar ook identificeren (antwoord op de vraag: "is het die ene?"), dan wordt het nog een stuk moeilijker. Modelleren is een hulpmiddel om deze complexiteit behapbaar te maken.
 
 ### Soorten modellen
 
@@ -75,23 +75,7 @@ Onderstaand figuur laat concreet zien hoe we dit begrippenkader opstellen. We on
 3. De typering van zaken uit het beschouwingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de elementen te benoemen die in modellen van het beschouwingsdomein te vinden zijn. Een voorbeeld is het begrip «objecttype»;
 4. De typering van zaken uit het verwerkingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de elementen te benoemen die in modellen van het verwerkingsdomein te vinden zijn. Een voorbeeld is het begrip «gegevensobjecttype».
 
-<figure id="Mermaidvoorbeeld">
-
-```mermaid
-quadrantChart
-    title Onderdelen MIM begrippenkader
-    x-axis Beschouwingsdomein --> Verwerkingsdomein
-    y-axis Concrete zaken --> Typering van zaken
-    quadrant-1 "(4)"
-    quadrant-2 "(3)"
-    quadrant-3 "(1)"
-    quadrant-4 "(2)"
-    Domeinobject: [0.25, 0.25]
-    Gegevensobject: [0.75, 0.25]
-    Objecttype: [0.25, 0.75]
-    Gegevensobjecttype: [0.75, 0.75]
-```
-</figure>
+![](/media/mim-quadranten-light.svg)#gh-light-mode-only![](/media/mim-quadranten-dark.svg)#gh-dark-mode-only
 
 ### De concrete zaken uit het beschouwingsdomein
 

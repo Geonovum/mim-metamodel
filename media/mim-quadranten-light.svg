@@ -1,0 +1,19 @@
+<svg width="350" height="370" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {font-family:helvetica; fill:black; text-anchor:middle}
+    rect {fill:white; stroke-width:2; stroke:black}
+  </style>
+  <rect width="160" height="160" x="25" y="25"/>
+  <rect width="160" height="160" x="185" y="25"/>
+  <rect width="160" height="160" x="25" y="185"/>
+  <rect width="160" height="160" x="185" y="185"/>
+  <text x="185" y="20">Onderdelen MIM begrippenkader</text>
+  <text x="105" y="105">Objecttype</text>
+  <text x="265" y="105">Gegevensobjecttype</text>
+  <text x="105" y="265">Domeinobject</text>
+  <text x="265" y="265">Gegevensobject</text>
+  <text x="10" y="105" transform="rotate(90,10,105)">Typering van zaken</text>
+  <text x="10" y="265" transform="rotate(90,10,265)">Concrete zaken</text>
+  <text x="105" y="365">Beschouwingsdomein</text>
+  <text x="265" y="365">Verwerkingsdomein</text>
+</svg>
