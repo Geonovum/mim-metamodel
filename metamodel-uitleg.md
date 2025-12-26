@@ -75,7 +75,7 @@ Onderstaand figuur laat concreet zien hoe we dit begrippenkader opstellen. We on
 3. De typering van zaken uit het beschouwingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de elementen te benoemen die in modellen van het beschouwingsdomein te vinden zijn. Een voorbeeld is het begrip «objecttype»;
 4. De typering van zaken uit het verwerkingsdomein. Hierbij gaat het om de begrippen die we gebruiken om de elementen te benoemen die in modellen van het verwerkingsdomein te vinden zijn. Een voorbeeld is het begrip «gegevensobjecttype».
 
-![](/media/mim-quadranten-light.svg#gh-light-mode-only)![](/media/mim-quadranten-dark.svg#gh-dark-mode-only)
+![](media/mim-quadranten-light.svg#gh-light-mode-only)![](media/mim-quadranten-dark.svg#gh-dark-mode-only)
 
 ### De concrete zaken uit het beschouwingsdomein
 
@@ -111,6 +111,9 @@ De definities van «domeinobject» en «kenmerk» zijn vrij ruim. Er kan van all
 3. Een kenmerk is typisch voor bepaalde objecten in het domein. Dus bepaalde domeinobjecten *hebben* zo'n kenmerk. Zo'n kenmerk is overigens niet voorbehouden aan één type domeinobjecten. Zo kan het kenmerk «haarkleur» een kenmerk zijn van zowel (het haar van een voorkomen van) een mens, een konijn of zelfs een knuffelbeertje. We stellen hiermee alleen dat die objecten iets gemeen hebben: een haarkleur.
 4. Wat een kenmerk is, is ook domeinspecifiek. In het vorige voorbeeld zou je ook kunnen stellen dat mensen, konijnen en knuffelbeertjes geen «haarkleur» hebben, maar dat «haarkleur» een kenmerk is van «haar», en dat een kenmerk van mensen, konijnen en knuffelbeertjes is dat ze «haar» kunnen hebben. Dat laatste is net wat preciezer, maar mogelijk niet relevant in jouw domein. Andersom kan het ook zijn dat we het juist (alleen) relevant vinden wie de kenmerk «rood haar» heeft. Als we dat domein beschouwen, dan kennen we alleen de kenmerk «rood haar», en kunnen we wel objecten onderscheiden in objecten die rood haar hebben, en de objecten die dat niet hebben. In dit domein kunnen we dan niet de objecten onderscheiden met een specifieke andere haarkleur.
 
+> [!NOTE]
+> Over een kenmerk van een domeinobject kun je uitspraken doen (ook wel *proposities* genoemd), zoals de uitpraak "De «haarkleur» van [Jan] is rood". In dit voorbeeld is [Jan] het domeinobject en «haarkleur» het kenmerk waarover we een uitspraak doen. Maar ook de volgende uitspraak is mogelijk: "[Jan] heeft «rood haar»". In dat laatste geval gaat het om het kenmerk «rood haar». Dit zijn twee verschillende manieren om tegen het domein te beschouwen. Bij het eerste voorbeeld was het blijkbaar van belang om verschillende haarkleuren van elkaar te kunnen onderscheiden. Bij het tweede voorbeeld was alleen van belang OF er sprake was van rood haar.
+
 #### Identificerend kenmerk en identificatoren
 
 Als we het over objecten in de fysieke werkelijkheid hebben, dan kunnen we die objecten aanwijzen. Zoals in de zin: "Hij daar, is de eigenaar". Stel dat die zin wordt uitgesproken in de winkel van Bakkerij Broodjes en er staan 5 mensen in die winkel, dan zul je de juiste persoon moeten aanwijzen! Je kunt ook gebruik maken van kenmerken die de juiste persoon identificeren, zoals in de zin: "Die lange man met rood haar daar, is Jan, de eigenaar". We willen het ook vaak kunnen hebben over objecten die we niet kunnen aanwijzen, maar we wel willen kunnen identificeren. Bijvoorbeeld het huwelijk tussen [Jan] en [Marie]. Ook dan hebben we kenmerken van dat huwelijk nodig om het juiste huwelijk te kunnen identificeren.
@@ -121,7 +124,7 @@ Eén enkele identificerend kenmerk is vaak niet voldoende. Zo is in ons voorbeel
 
 > Een IDENTIFICATOR is een geheel van één of meerdere IDENTIFICERENDE KENMERKen waarmee de identiteit van een DOMEINOBJECT uniek kan worden vastgesteld.
 
-Een identificator zou bijvoorbeeld kunnen bestaan uit de geboortedatum, voor- en achternaam van een persoon. Daarnaast is denkbaar dat een afzonderlijk kenmerk wordt toegekend aan een object, juist om deze uniek te identificeren. Zo'n kenmerk is vaak niet rechtstreeks met het object verbonden, maar wordt erbij gehouden. De enige manier om zo'n toekend kenmerk daadwerkelijk aan het domeinobject te verbinden is door het er letterlijk op te plakken. Bijvoorbeeld een serienummer dat gegraveerd wordt in het chassis van een voertuig of een straatnaambordje dat langs een weg wordt geplaatst.
+Een identificator zou bijvoorbeeld kunnen bestaan uit de geboortedatum, geboorteplaats, voornaam en achternaam van een persoon. Daarnaast is denkbaar dat een afzonderlijk kenmerk wordt toegekend aan een object, juist om deze uniek te identificeren. Zo'n kenmerk is vaak niet rechtstreeks met het object verbonden, maar wordt erbij gehouden. De enige manier om zo'n toekend kenmerk daadwerkelijk aan het domeinobject te verbinden is door het er letterlijk op te plakken. Bijvoorbeeld een serienummer dat gegraveerd wordt in het chassis van een voertuig of een straatnaambordje dat langs een weg wordt geplaatst.
 
 Veel identificerende kenmerken zijn, goed beschouwd, vaak geen intrinsiek kenmerk van het object dat zij identificeren. Zo is een kenmerk van een motorvoertuig bijvoorbeeld dat het een motor heeft, wielen heeft, een kleur, een maximum snelheid, etc. Maar het kenteken van een motorvoertuig is geen echte kenmerk van dat motorvoertuig. Dit noemen we toegekende (identificerende) kenmerken. Het zijn kenmerken die we *beschouwen als kenmerk van* het object, terwijl ze feitelijk zijn toegekend. Het kenteken van een motorvoertuig is zo'n kenmerk.
 
@@ -129,20 +132,22 @@ Veel identificerende kenmerken zijn, goed beschouwd, vaak geen intrinsiek kenmer
 
 Om expliciet aan te geven dat een kenmerk niet is toegekend, maar dat we vinden dat deze daadwerkelijk **eigen** is aan een object, kunnen we de term "intrinsiek kenmerk" gebruiken.
 
-Merk op dat wat we intrinsiek vinden en wat we toegekend vinden vooral een domeinaangelegenheid is: het is maar net hoe je er naar kijkt. Dat is dan ook precies wat we in een conceptueel model aan het doen zijn. Zo kun je stellen dat de naam van een persoon een intrinsiek kenmerk is, maar feitelijk is ook die maar toegekend ("en we noemen haar..."). En ook van het geslacht van een persoon kun je stellen dat dit een intrinsiek kenmerk is, terwijl er ook beschouwingsdomeinen zijn waar dit eerder als een toegekend kenmerk wordt gezien. Van belang is dus meer *of* er in de beschouwde werkelijkheid sprake is van een kenmerk van een domeinobject, en niet zozeer of dit een intrinsieke dan wel toegekende is.
+Merk op dat wat we intrinsiek vinden en wat we toegekend vinden vooral een domeinaangelegenheid is: het is maar net hoe je er naar kijkt. Dat is dan ook precies wat we in een conceptueel model aan het doen zijn. Zo kun je stellen dat de naam van een persoon een intrinsiek kenmerk is, maar feitelijk is ook die maar toegekend ("en we noemen haar..."). En ook van het geslacht van een persoon kun je stellen dat dit een intrinsiek kenmerk is, terwijl er ook beschouwingsdomeinen zijn waar dit eerder als een toegekend kenmerk wordt gezien. Van belang is dus meer *of* er in de beschouwde werkelijkheid sprake is van een kenmerk van een domeinobject, en niet zozeer of dit een intrinsieke dan wel toegekend is.
 
 #### Kenmerken en invullingen
 
 Als we naar de kenmerken van een domeinobject kijken, dan valt op dat er verschillende soorten kenmerken zijn te onderkennen. Een kenmerk van een domeinobject kent één of meerdere invullingen. We leggen dit uit aan de hand van vier voorbeeld-zinnen:
 
 1. [Jan] heeft «lengte» "2 meter en 5 centimeter";
-2. [Jan] is een «man»;
+2. [Jan] heeft «geslacht» «man»;
 3. [Jan] heeft «werkgever» [Bakkerij Broodjes];
 4. [Jan] heeft «beroep» «Bakker».
 
-De eerste en derde zin betreffen kenmerken van Jan waarvan de invulling *concreet* is. In de eerste zin gaat het om een letterlijke waarde, en in de derde zin gaat het om een ander domeinobject. De tweede en vierder zin betreffen kenmerken van Jan waarvan de invulling *conceptueel* is. Er wordt verwezen naar een bepaald begrip dat in dit beschouwingsdomein bestaat, het verwijst naar een achterliggende betekenis, de betekenis van wat een «man» is of wat een «Bakker» is.
+De eerste en derde zin betreffen kenmerken van Jan waarvan de invulling *concreet* is. In de eerste zin gaat het om een letterlijke waarde, en in de derde zin gaat het om een ander domeinobject. De tweede en vierde zin betreffen kenmerken van Jan waarvan de invulling *conceptueel* is. Er wordt verwezen naar een bepaald begrip dat in dit beschouwingsdomein bestaat, het verwijst naar een achterliggende betekenis, de betekenis van wat een «man» is of wat een «Bakker» is.
 
 De eerste en tweede zin betreffen *inherente* kenmerken van Jan. De kenmerken kunnen mogelijk van waarde veranderen, maar dat hangt volledig af van het domeinobject Jan zelf. De derde en vierde zin betreffen *relationele* kenmerken van Jan. De kenmerken zijn afhankelijk van de relatie die Jan heeft met zijn omgeving. In de derde zin gaat het om een relatie met een ander domeinobject, in de vierde zin gaat het om een relatie met de uitoefening van een beroep.
+
+![](media/mim-kenmerken-light.svg#gh-light-mode-only)![](media/mim-kenmerken-dark.svg#gh-dark-mode-only)
 
 Met deze twee onderscheidene elementen (concreet/conceptueel, inherent/relationeel) kunnen we vier soorten kenmerken onderscheiden. De invulling van deze vier soorten kenmerken verschilt, zoals ook zichtbaar is in de voorbeelden. De nauwlettende lezer ziet dat we bij de invullingen steeds andere leestekens gebruiken!
 
