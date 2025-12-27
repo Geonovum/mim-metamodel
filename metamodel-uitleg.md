@@ -334,7 +334,7 @@ Deze zes uitspraken zijn zes gegevens die gegroepeerd kunnen worden tot één ge
 
 ### Typering van domeinobjecten
 
-Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typering. Typering is de manier om in MIM om aan te geven wat we wensen te identificeren en te onderscheiden, dwz: welke domeinobjecten dit zijn. Dit gebeurt door te beschrijven wat de overeenkomstige kenmerken zijn die domeinobjecten van een bepaald type gemeen hebben en hoe je deze domeinobjecten kunt identificeren met behulp van deze kenmerken.
+Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typering. Typering is de manier in MIM om aan te geven wat we wensen te identificeren en te onderscheiden, dwz: welke domeinobjecten dit zijn. Dit gebeurt door te beschrijven wat de overeenkomstige kenmerken zijn die domeinobjecten van een bepaald type gemeen hebben en hoe je deze domeinobjecten kunt identificeren met behulp van deze kenmerken.
 
 > [!CAUTION]
 > In de tekst hieronder hebben de terminologie voor typering zo consistent mogelijk doorgevoerd. Dit betekent daarmee ook dat we een aantal termen uit de huidige versie van MIM hebben aangepast, zonder direct een andere betekenis te beogen. Het gaat om de volgende termen:
@@ -343,22 +343,24 @@ Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typeri
 > - "relatiesoortrol" naar "rolinvulling"
 > - "relatieklasse" naar "relatietype met kenmerken"
 
-#### Objecttype en attribuuttypen
+#### Objecttype en populatie
 
 > Een OBJECTTYPE is een typering van gelijksoortige DOMEINOBJECTen
 
-Merk op dat doordat een domeinobject een onderscheidbaar en identificeerbaar iets is in de beschouwde werkelijkheid, we daarmee *ook* stellen dat als we een objecttype introduceren, we daarmee aangeven dat we domeinobjecten van dat objecttype wensen te onderscheiden EN te identificeren. Dit is afhankelijk van de manier waarop we het domein willen beschouwen, welke keuzes we daarbij maken.
+> Een POPULATIE is de verzameling van alle mogelijke DOMEINOBJECTen die te onderscheiden zijn als OBJECTTYPE
+
+Eerder hebben we een domeinobject beschreven als iets dat we willen onderscheiden in het domein. *De* manier om aan te geven dat we dat willen, is juist door het onderkennen van objecttypen. Immers: domeinobjecten bestaan in de werkelijkheid: die zullen we slechts beschrijven, nooit daadwerkelijk *zelf* opnemen in een model (!). Met het beschrijven van objecttypen geven we aan welke domeinobjecten we willen onderscheiden en identificeren. Dit is afhankelijk van de manier waarop we de werkelijkheid willen beschouwen: er is (dus) niet één unieke manier. Het is een keuze van de modelleur, gedreven door de kennis die er over dat domein nodig is.
 
 Stel dat we het bijvoorbeeld in een domein willen hebben over auto's en fietsen. We hebben dan twee keuzes:
 - We zijn geïnteresseerd in specifieke kenmerken om auto's en fietsen van elkaar te onderscheiden en te identificeren. In dat geval maken we de keuze om de objecttypen «Auto» en «Fiets» te onderkennen en afzonderlijk te beschrijven.
-- We zijn niet geinteresseerd in specifieke kenmerken om auto's en fietsen van elkaar te onderscheiden en te indentificeren, maar we willen WEL kunnen aangeven dat een bepaald voertuig een auto of fiets is. In dat geval onderkennen we (slechts) het objecttype «Voertuig» met een categorisch kenmerk «soort voertuig» met als mogelijke waarden de categorieën «auto» en «fiets».
+- We zijn niet geïnteresseerd in specifieke kenmerken om auto's en fietsen van elkaar te onderscheiden en te identificeren, maar we willen WEL kunnen aangeven dat een bepaald voertuig een auto of fiets is. In dat geval onderkennen we (slechts) het objecttype «Voertuig» met een categorisch kenmerk «soort voertuig» met als mogelijke waarden de categorieën «auto» en «fiets».
 
 > [!NOTE]
 > Een objecttype is een typering van gelijksoortige domeinobjecten. Je zou het daarmee ook kunnen hebben over een "domeinobjecttype". Het heeft echter onze voorkeur om de kortere term "objecttype" te hanteren. *Wat* je typeert is afhankelijk van je beschouwingsdomein. Waar alles een object zou kunnen zijn, beschouwen we iets pas een domeinobject, iets dat relevant is in ons beschouwingsdomein, als we hiervoor een objecttype modelleren in een conceptueel model. Anders gezegd: als een modelleur iets een «Objecttype« noemt, dan doet de modelleur daarmee <b>altijd</b> een uitspraak over het beschouwingsdomein, daarover kan en mag geen verwarring zijn.
 
 #### Categoriseren of typeren: objecttype vs categorie
 
-De oplettende lezer zal zich afvragen wat het verschil is tussen een categorie en een objecttype. En dat is terecht. Want vaak is iets zowel een categorie als een objecttype. Je kunt het bijvoorbeeld hebben over de categorie «Homo Sapiens» als een categorie bij de indeling van levende wezens. Maar gelijktijdig kun je het hebben over het objecttype «Persoon» als typering van alle domeinobjecten die behoren tot die categorie. Het gaat om het doel waarvoor we typeren. Een categorie wordt gebruikt als onderdeel van een gegeven, terwijl een objecttype juist bedoeld is om een beschrijving te geven in welke objecten we zijn geïnteresseerd, die we willen onderscheiden en informatie over wensen.
+De oplettende lezer zal zich afvragen wat het verschil is tussen een categorie en een objecttype. En dat is terecht. Want vaak is iets zowel een categorie als een objecttype. Je kunt het bijvoorbeeld hebben over de categorie «Homo Sapiens» als een categorie bij de indeling van levende wezens. Maar gelijktijdig kun je het hebben over het objecttype «Persoon» als typering van alle domeinobjecten die behoren tot die categorie. Het gaat om het doel waarvoor we typeren. Een categorie wordt gebruikt als onderdeel van een gegeven, terwijl een objecttype juist bedoeld is om een beschrijving te geven in welke domeinobjecten we zijn geïnteresseerd, die we willen onderscheiden en informatie over wensen.
 
 - Met het introduceren van een objecttype beschrijf je dat je domeinobjecten wilt identificeren die van dit specifieke objecttype zijn en van deze domeinobjecten wil je afzonderlijke kenmerken en relaties onderkennen.
 - Met het introduceren van een categorie beschrijf je dat je domeinobjecten wilt groeperen tot één categorie. Je wilt daarbij kunnen aangeven dat bepaalde domeinobjecten tot een specifieke categorie behoren, zonder daarbij daadwerkelijk domeinobjecten te willen zien als voorkomen van zo'n categorie.
@@ -377,7 +379,16 @@ Algemeen gesproken kun je stellen dat voor elk objecttype een overeenkomstige ca
 > [!NOTE]
 > Dit onderscheid tussen typen en voorkomens verschilt per technische realisatie. Zo is in een relationele database een strikt onderscheid aanwezig tussen typen en voorkomens (respectievelijk tabellen en rijen) en ook in UML wordt dit onderscheid expliciet gemaakt (M0 versus M1). In RDF is dit onderscheid echter niet aanwezig en kunnen typen en voorkomens door elkaar gebruikt worden. Wel kan dit leiden tot beperkingen in de mogelijkheden voor inferencing (op basis van regels afleiden van nieuwe gegevens).
 
-> Een POPULATIE is de verzameling van alle mogelijke DOMEINOBJECTen die te onderscheiden zijn als OBJECTTYPE
+#### Feiten, gegevens, informatie en kennis
+In MIM beschouwen we gegevens als concrete zaken: ze bestaan als vastgelegde uitdrukkingen over de feiten in de beschouwde werkelijkheid. Een feit is daarbij hetgeen waar is in die beschouwde werkelijkheid. Daarmee hoeft een gegeven nog niet geldig te zijn: een gegeven kan ook een verkeerde uitdrukking zijn van die feiten: de feiten kun je niet vastleggen, alleen uitspraken *over* de feiten, over de kenmerken van de domeinobjecten in de beschouwde werkelijkheid.
+
+Een logisch gegevensmodel is dan ook een model van de (behoefte tot) uitwisseling, vastlegging en verwerking van deze gegevens. Een conceptueel informatiemodel is juist een model van de beschouwde werkelijkheid in termen van de typen domeinobjecten die we wensen te onderscheiden en de kenmerken waarover onze informatiebehoefte gaat. Een conceptueel informatiemodel beschouwt de werkelijkheid, voor zover we een informatiebehoefte over die werkelijkheid hebben. En die informatiebehoefte leidt (uiteindelijk) tot de verwerking van gegevens: een informatie*behoefte* wordt vervuld door een gegevens*verwerking*.
+
+Kennis gaat niet over de feiten zoals die zich in beschouwde werkelijkheid voordoen. Kennis betreft juist de interpretatie, de betekenis die aan dergelijke feiten moet worden gegeven. Zo zou je het over het volgende feit kunnen hebben: "[Jan] kwam op de savanne een dier tegen. Het betrof een «leeuw»". Kennis over een dier van de biologische soort «leeuw» leert ons dat [Jan] in gevaar is, hij doet er verstandig aan om naar een veilige plek te gaan.
+
+Dergelijke kennis kun je ook uitdrukken in gegevens. In zo'n geval leg je kenmerken vast van de categorie «leeuw». Gegevens over categorieën zijn uitdrukkingen van kennis. Zo kunnen we onderscheid maken in gegevens over de beschouwde werkelijkheid en gegevens over kennis van de beschouwde werkelijkheid.
+
+#### Attribuuttypen en waarden
 
 > Een ATTRIBUUTTYPE is een typering van een KENMERK, behorende tot een OBJECTTYPE of RELATIETYPE
 
@@ -410,15 +421,15 @@ Een complex waardetype kan omschreven worden als de aaneenschakeling van de afzo
 
 Een relatie is gelijksoortig als sprake is van dezelfde rolinvullingen en gelijksoortige proposities uitgedrukt kunnen worden met betrekking tot deze relaties. Daarom is onderdeel van de typering van de relatie ook de beschrijving van de rolinvullingen en de verwoording(en) waarmee de proposities kunnen worden uitgedrukt.
 
-> Een ROLINVULLING is een beschrijving van de invulling van een ROL in een RELATIETYPE door een OBJECTTYPE
+> Een ROLINVULLING is een beschrijving van de invulling van een ROL in een RELATIETYPE door voorkomens van een OBJECTTYPE
 
 > Een VERWOORDING is een beschrijving van de manier waarop een voorkomen van een RELATIETYPE kan worden uitgedrukt in een propositie
 
-De verwoording maakt gebruik van de rollen die worden ingevuld bij het betreffende relatietype.
+Bij een verwoording kan gebruik worden gemaakt van de rollen die worden ingevuld bij het betreffende relatietype.
 
 In een voorbeeld:
 
-- De relatie tussen [Jan] en [Bakkerij broodjes] is te typeren als het relatietype «arbeidsrelatie»
+- De relatie tussen [Jan] en [Bakkerij broodjes] is te typeren als het relatietype met de naam "arbeidsrelatie"
 - Het domeinobject [Jan] is een voorkomen van het objecttype «Persoon»
 - Het domeinobject [Bakkerij broodjes] is een voorkomen van het objecttype «Organisatie»
 - De rol «werkgever» wordt ingevuld door voorkomens van het objecttype «Organisatie» binnen het relatietype «Arbeidsrelatie» (organisaties zijn werkgevers bij een arbeidsrelatie)
@@ -429,10 +440,10 @@ In een voorbeeld:
 
 > [!NOTE]
 > Een relatie kent altijd minimaal twee rolinvullingen. Het is daarbij niet verplicht dat een rolinvulling ook daadwerkelijk benoemd is, een naam heeft. Zo zou je een model kunnen maken waren je beschrijft dat een persoon woont in een plaats, zonder te beschrijven hoe je de rolinvulling van de persoon noemt, dus:
-> - De relatie tussen [Jan] en [Amersfoort] is te typeren als het relatietype «is-woonachtig-in»;
+> - De relatie tussen [Jan] en [Amersfoort] is te typeren als een relatietype
 > - Het domeinobject [Amersfoort] is een voorkomen van het objecttype «Plaats»
-> - De relatie kan verwoord worden als: «Persoon» is woonachtig in «Plaats»
-> - De eerste rol wordt ingevuld door voorkmens van het objecttype «Persoon»
+> - Het relatietype kan verwoord worden als: «Persoon» is woonachtig in «Plaats»
+> - De eerste rol wordt ingevuld door voorkomens van het objecttype «Persoon»
 > - De tweede rol wordt ingevuld door voorkomens van het objecttype «Plaats»
 > In dit voorbeeld heeft de relatie niet echt een naam (maar wel een verwoording) en ook de rollen zijn niet benoemd.
 
@@ -511,17 +522,29 @@ Om het hoofdonderwerp van een gegevensobject te identificeren gebruiken we een s
 
 > Een SLEUTEL is een groep van één of meer GEGEVENSTYPEn waarmee een unieke aanduiding voor het HOOFDONDERWERP van een GEGEVENSOBJECT kan worden gevormd
 
-Er kunnen meerdere (kandidaat) sleutels zijn voor een gegevensobjecttype. Een sleutel bestaan uit precies één gegevenstype, maar ook uit meerdere gegevenstypen. Een sleutel voor het gegevensobjecttype «persoon» is bijvoorbeeld het gegevenstype «Persoon.BSN», maar ook de gegevenstypegroep {«Persoon.voornaam», «Persoon.achternaam», «Persoon.geboortedatum»} zou een sleutel kunnen zijn voor dit gegevensobjecttype.
+Er kunnen meerdere (kandidaat) sleutels zijn voor een gegevensobjecttype. Een sleutel kan bestaan uit precies één gegevenstype, maar ook uit meerdere gegevenstypen. Een sleutel voor het gegevensobjecttype «persoon» is bijvoorbeeld het gegevenstype «Persoon.BSN», maar ook de gegevenstypegroep {«Persoon.voornaam», «Persoon.achternaam», «Persoon.geboortedatum», «Persoon.geboorteplaats»} zou een sleutel kunnen zijn voor dit gegevensobjecttype.
 
 #### Varianten van gegevenstypen
 Vier varianten van gegevenstypen kunnen we onderscheiden:
 
-1. Gegevenstypen waarbij sprake is van *letterlijke waarden*. Een gegevenstype over het kenmerk «leeftijd» of «BSN-nummer» zijn voorbeelden van dergelijke gegevenstypen. Deze gegevenstypen zijn gerelateerd aan attribuuttypen.
-2. Gegevenstypen waarbij sprake is van *categorieën*. Bij dit gegevenstype is geen sprake van een letterlijke waarde en refereert de waarde aan een betekenis die meer is dan de letterlijke waarde zelf. Een gegevenstype over de eigenschap «geslacht» is een voorbeeld van een dergelijk gegevenstype. Deze gegevenstypen zijn gerelateerd aan attribuuttypen van classificerende aard.
+1. Gegevenstypen waarbij sprake is van *letterlijke waarden*. Een gegevenstype over de eigenschap «leeftijd» of «BSN-nummer» zijn voorbeelden van dergelijke gegevenstypen. Deze gegevenstypen zijn gerelateerd aan attribuuttypen.
+2. Gegevenstypen waarbij sprake is van *categorieën*. Bij dit gegevenstype is geen sprake van een letterlijke waarde en refereert de waarde aan een betekenis die meer is dan de letterlijke waarde zelf. Een gegevenstype over het categorisch kenmerk «geslacht» is een voorbeeld van een dergelijk gegevenstype. Deze gegevenstypen zijn gerelateerd aan attribuuttypen van classificerende aard.
 3. Gegevenstypen waarbij sprake is van *complexe waarden*. Bij dit gegevenstype is sprake van een waarde die is opgebouwd uit enkele afzonderlijke onderdelen die gezamenlijk de complexe waarde vormen. Een gegevenstype over de eigenschap «lengte» is een voorbeeld van een dergelijke gegevenstype (in dit geval bestaat de complexe waarde uit een getal en een eenheid). Deze gegevenstypen zijn gerelateerd aan attribuuttypen met complexe waardetypen.
-4. Gegevenstypen waarbij sprake is van een *waarde die refereert aan een ander domeinobject*. Bij dit gegevenstype is sprake van een sleutelwaarde die een referentie betreft naar dit andere domeinobject. Deze gegevenstypen zijn gerelateerd aan roltypen.
+4. Gegevenstypen waarbij sprake is van een *sleutelwaarde die refereert aan een ander domeinobject*. Bij dit gegevenstype is sprake van een sleutelwaarde die een referentie betreft naar dit andere domeinobject. Deze gegevenstypen zijn gerelateerd aan verwoordingen van relaties en rolinvullingen.
 
 Merk op: er bestaat op het niveau van gegevens (dus) slechts gegevensobjecttypen en gegevenstypen. Er bestaat niet zoiets als een gegevensrelatietype. En hoewel je in een plaatje een lijntje kunt tekenen die "lijkt" op een relatietype, betreft dit lijntje niets meer of minder dan een gegevenstype van variant (4). Een dergelijk lijntje **MOET** dan ook altijd gericht zijn: vertrekken vanuit het gegevensobjecttype waar het betreffende gegevenstype toe behoort.
+
+#### Gegevens over relaties
+In een logisch gegevensmodel bestaan slechts gegevensobjecttypen. Terwijl in een conceptueel informatiemodel zowel objecttypen als relatietypen bestaan. Je kunt je dan ook de vraag stellen hoe we omgaan met gegevens over relaties: hoe leg je die vast?
+
+Daarvoor heb je als gegevensmodelleur vier keuzes. Welke keuze je kiest, hangt sterk af van de manier waarop je de gegevens wilt verwerken. Stel we beschouwen het relatietype «arbeidsrelatie» uit de voorgaande secties. We hebben dan de volgende mogelijkheden in het gegevensmodel:
+
+1. We leggen de gegevens over de arbeidsrelatie alleen vast bij het gegevensobjecttype {Persoon}, een gegevensobjecttype met als hoofdonderwerp voorkomens van het objecttype «Persoon». Dit zou kunnen leiden tot een gegevenstype over het relationele kenmerk «werkgever», zoals in het gegeven "[Jan] heeft «werknemer» [Bakkerij Broodjes]".
+2. We leggen de gegevens over de arbeidsrelatie alleen vast bij het gegevensobjecttype {Organisatie}, een gegevensobjecttype met als hoofdonderwerp voorkomens van het objecttype «Organisatie». Dit zou kunnen leiden tot een gegevenstype over het relationele kenmerk «werknemer», zoals in het gegeven "[Bakkerij Broodjes] heeft «werknemer» [Jan]".
+3. We leggen de gegevens over de arbeidsrelatie bij zowel het gegevensobjecttype {Persoon} als {Organisatie} vast. In dit geval is sprake van redundantie: de twee gegevens gaan over hetzelfde feit uit de werkelijkheid. Bij de verwerking van de gegevens is extra aandacht nodig om te voorkomen dat dit leidt tot onduidelijkheid over de geldigheid van deze twee gegevens.
+4. We introduceren een nieuw gegevensobjecttype {Arbeidsrelatie} dat de gegevens omvat met betrekking tot de relatie tussen [Jan] en [Bakkerij Broodjes]. Dit zou kunnen leiden tot twee gegevenstypen met betrekking tot de kenmerken van de arbeidsrelatie, zoals in de twee gegevens: "[Arbeidsrelatie tussen [Jan] en [Bakkerije Broodjes]] betreft «werknemer» [Jan]" en [Arbeidsrelatie tussen [Jan] en [Bakkerij Broodjes]] betreft «werkgever» [Bakkerij Broodjes]".
+
+Merk op dat als een relatietype eigen kenmerken heeft (zoals bijvoorbeeld de begindatum van de arbeidsrelatie) alleen keuze (4) nog overblijft.
 
 #### Speciaal soort gegevensobjecttypen
 
