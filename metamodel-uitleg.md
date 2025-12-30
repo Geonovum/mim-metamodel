@@ -100,7 +100,7 @@ We gebruiken hier bewust het woord "domeinobject" om expliciet te maken dat we h
 > [!NOTE]
 > Stel dat we een conceptueel model zouden maken van de Java programmeertaal. Het beschouwingsdomein is dan (dus) de Java programmeertaal. En de domeinobjecten zijn dan (dus) onder meer de Java-objecten (en classes, interfaces, functions, etc). Op diezelfde manier kunnen we *ook* een conceptueel model maken van de gegevensverwerking. De domeinobjecten zijn dan (dus) onder meer de gegevensobjecten. Vaak worden dergelijke modellen ook wel *meta*modellen genoemd, omdat we de gegevensverwerking zelf beschouwen, dwz: een model-van-een-model, en gegevens-over-gegevens.
 
-> Een KENMERK is een verschijnsel dat toegekend kan worden aan bepaalde DOMEINOBJECTen.
+> Een KENMERK is een verschijnsel dat toegekend kan worden aan bepaalde DOMEINOBJECTen
 
 Als je het over een bepaald domeinobject hebt (bijvoorbeeld [Jan]), dan heb je het over bepaalde kenmerken van Jan. Zoals het feit dat Jan een bepaalde lengte heeft, of getrouwd is, of ergens werkt. Dit zijn kenmerken van Jan, verschijnselen die we aan hem kunnen toekennen.
 
@@ -118,11 +118,11 @@ De definities van «domeinobject» en «kenmerk» zijn vrij ruim. Er kan van all
 
 Als we het over objecten in de fysieke werkelijkheid hebben, dan kunnen we die objecten aanwijzen. Zoals in de zin: "Hij daar, is de eigenaar". Stel dat die zin wordt uitgesproken in de winkel van Bakkerij Broodjes en er staan 5 mensen in die winkel, dan zul je de juiste persoon moeten aanwijzen! Je kunt ook gebruik maken van kenmerken die de juiste persoon identificeren, zoals in de zin: "Die lange man met rood haar daar, is Jan, de eigenaar". We willen het ook vaak kunnen hebben over objecten die we niet kunnen aanwijzen, maar we wel willen kunnen identificeren. Bijvoorbeeld het huwelijk tussen [Jan] en [Marie]. Ook dan hebben we kenmerken van dat huwelijk nodig om het juiste huwelijk te kunnen identificeren.
 
-> Een IDENTIFICERENDE KENMERK is een KENMERK waarmee de identiteit van een DOMEINOBJECT mede kan worden vastgesteld
+> Een IDENTIFICEREND KENMERK is een KENMERK waarmee de identiteit van een DOMEINOBJECT mede kan worden vastgesteld
 
 Eén enkele identificerend kenmerk is vaak niet voldoende. Zo is in ons voorbeeld het niet voldoende om Jan daadwerkelijk uniek te kunnen identificeren: er zijn meer lange roodharige mannen op de wereld die Jan heten.
 
-> Een IDENTIFICATOR is een geheel van één of meerdere IDENTIFICERENDE KENMERKen waarmee de identiteit van een DOMEINOBJECT uniek kan worden vastgesteld.
+> Een IDENTIFICATOR is een geheel van één of meerdere IDENTIFICERENDE KENMERKen waarmee de identiteit van een DOMEINOBJECT uniek kan worden vastgesteld
 
 Een identificator zou bijvoorbeeld kunnen bestaan uit de geboortedatum, geboorteplaats, voornaam en achternaam van een persoon. Daarnaast is denkbaar dat een afzonderlijk kenmerk wordt toegekend aan een object, juist om deze uniek te identificeren. Zo'n kenmerk is vaak niet rechtstreeks met het object verbonden, maar wordt erbij gehouden. De enige manier om zo'n toekend kenmerk daadwerkelijk aan het domeinobject te verbinden is door het er letterlijk op te plakken. Bijvoorbeeld een serienummer dat gegraveerd wordt in het chassis van een voertuig of een straatnaambordje dat langs een weg wordt geplaatst.
 
@@ -167,7 +167,7 @@ Een eigenschap is een kenmerk waar "slechts" een (letterlijke) waarde aan kan wo
 
 In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een waarde die refereert aan een categorie (de valutacategorie «euro»). Een dergelijke waarde noemen we een complexe waarde.
 
-> Een COMPLEXE WAARDE is een WAARDE die bestaat uit een aaneenschakeling van afzonderlijke LETTERLIJKE WAARDEn en/of CATGORIEën.
+> Een COMPLEXE WAARDE is een WAARDE die bestaat uit een aaneenschakeling van afzonderlijke LETTERLIJKE WAARDEn en/of CATGORIEën
 
 > [!NOTE]
 > Merk op dat we met deze definitie van kenmerk nog niets zeggen over het aantal keer dat een kenmerk kan worden ingevuld voor een domeinobject. Zo kan [Jan] wel drie voornamen hebben, dus er zijn dan drie invullingen van het kenmerk «naam». Dergelijke beperkingen op het aantal keren dat een kenmerk ingevuld mag worden is onderdeel van de condities die beschreven zijn in het model, in dit geval de cardinaliteit. Zie hiervoor de sectie over condities hieronder.
@@ -293,7 +293,7 @@ Merk op: hoewel de identiteit van een gegevensobject gerelateerd is aan de ident
 
 Een gegeven gaat over een kenmerk van een domeinobject of relatie tussen domeinobjecten. Van belang is dan ook om naar zo'n domeinobject te kunnen verwijzen. Hiervoor kunnen we de identificator, de identificerende kenmerken van een domeinobject gebruikt. De invulling van de identificerende kenmerken die we gebruiken om te verwijzen naar een specifiek domeinobject noemen we een *sleutelwaarde*
 
-> Een SLEUTELWAARDE is de invulling van één of meerdere KENMERKen die gezamenlijk één enkel DOMEINOBJECT uniek aanduiden.
+> Een SLEUTELWAARDE is de invulling van één of meerdere KENMERKen die gezamenlijk één enkel DOMEINOBJECT uniek aanduiden
 
 Zo is de waarde "12345678" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Maar ook "Jan Janssen, geboren op 15 januari 2008" (de combinatie van de eigenschappen voornaam, achternaam en geboortedatum) kan een sleutelwaarde zijn voor een specifieke persoon in de werkelijkheid.
 
@@ -405,7 +405,7 @@ Een categorisch kenmerk heeft als invulling een categorie. Een attribuuttype van
 > [!CATION]
 > In de huidige versie van MIM geef je bij een attribuuttype op of deze classificerend is (ja/nee). Er is geen afzonderlijke term voor geïntroduceerd. Vandaar de term "attribuuttype van classificerende aard" in dit metamodel. Mogelijk is een andere term beter.
 
-> Een CLASSIFICATIESCHEMA is een systematische ordening van DOMEINOBJECTen in CATEGORIEen
+> Een CLASSIFICATIESCHEMA is een systematische ordening van DOMEINOBJECTen in CATEGORIEën
 
 Een eenvoudig voorbeeld van een classificatieschema is de lijst van primaire kleuren «rood», «geel», «blauw». Een voorbeeld van een hiërarchische classificatieschema is de [biologische indeling van dieren](https://nl.wikipedia.org/wiki/Taxonomie_(biologie)) of de [indeling van boeken in een bibliotheek](https://nl.wikipedia.org/wiki/SISO).
 
@@ -500,7 +500,7 @@ Dergelijke lijstjes lijken bij de gegevensverwerking dan ook sterk op waardetype
 
 Na de typering van de onderwerpen uit het beschouwingsdomeinen, is de typering van de onderwerpen uit het verwerkingsdomein aan de beurt: gegevens en gegevensobjecten.
 
-> Een GEGEVENSTYPE is een typering van gelijksoortige GEGEVENs.
+> Een GEGEVENSTYPE is een typering van gelijksoortige GEGEVENs
 
 Er kan sprake zijn van gelijksoortige gegevens, als deze gegevens over hetzelfde kenmerk van gelijksoortige domeinobjecten gaat. Dus bijvoorbeeld gegevenstypen die gaan over het kenmerk geboortedatum van een objecttype persoon. Er is sprake van een ander gegevenstype, als het kenmerk verschilt, of als het over een ander objecttype gaat.
 
