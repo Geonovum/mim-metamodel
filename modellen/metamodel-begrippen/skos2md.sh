@@ -23,7 +23,7 @@ java -jar ../../werkomgeving/libs/rdf2xml.jar begrippen.ttl ../../metamodel-begr
 java -jar ../../werkomgeving/libs/rdf2xml.jar begrippen.ttl ../../metamodel-begrippenlijst.md ../../werkomgeving/libs/skos2md-lijst.xsl
 
 # Create diagram
-java -jar ../../werkomgeving/libs/rdf2xml.jar begrippen.ttl begrippen.graphml ../../werkomgeving/libs/skos2graphml.xsl ext
+java -jar ../../werkomgeving/libs/rdf2xml.jar begrippen.ttl begrippen.graphml ../../werkomgeving/libs/skos2graphml.xsl ext begrippen-edited.graphml
 
 # Create XMI export
 java -jar ../../werkomgeving/libs/rdf2xml.jar begrippen.ttl begrippen.xmi ../../werkomgeving/libs/skos2xmi.xsl

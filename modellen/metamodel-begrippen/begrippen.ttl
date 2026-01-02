@@ -92,7 +92,7 @@ mimbegrip:IdentificerendKenmerk a skos:Concept;
   skos:inScheme schema:Beschouwingsdomein;
   skos:definition "Een identificerend kenmerk is een [kenmerk] waarmee de identiteit van een [domeinobject] mede kan worden vastgesteld"@nl;
   skos:scopeNote "Het gaat bij de identificatie of dit domeinobject er eentje is (dus niet twee), dat het zo-eentje (en niet iets anders) is en dat het ook die ene is (en niet een andere). Het is denkbaar dat meerdere identificerende kenmerken gezamenlijk nodig zijn."@nl;
-  skosthes:broaderGeneric mimbegrip:Eigenschap;
+  skosthes:broaderGeneric mimbegrip:Kenmerk;
   skos:related mimbegrip:Domeinobject;
 .
 term:identificerend-kenmerk skosxl:literalForm "identificerend kenmerk";
@@ -122,7 +122,7 @@ mimbegrip:Eigenschap a skos:Concept;
   rdfs:label "Eigenschap"@nl;
   skos:prefLabel "Eigenschap"@nl;
   skos:inScheme schema:Beschouwingsdomein;
-  skos:definition "Een eigenschap is een [kenmerk] van een [domeinobject] waar uitsluitend een WAARDE aan kan worden toegekend"@nl;
+  skos:definition "Een eigenschap is een [kenmerk] van een [domeinobject] waar uitsluitend een [waarde] aan kan worden toegekend"@nl;
   skosthes:broaderGeneric mimbegrip:Kenmerk;
   skos:related mimbegrip:Waarde;
 .
@@ -323,7 +323,7 @@ mimbegrip:Classificatieschema a skos:Concept;
   skos:prefLabel "Classificatieschema"@nl;
   skos:inScheme schema:TyperingBeschouwingsdomein;
   skos:definition "Een classificatieschema is een systematische ordening van [domeinobjecten] in [categorieën]";
-  skos:narrowerPartitive mimbegrip:Categorie;
+  skosthes:narrowerPartitive mimbegrip:Categorie;
   skos:related mimbegrip:Domeinobject
 .
 
@@ -372,7 +372,7 @@ mimbegrip:Cardinaliteit a skos:Concept;
   skos:prefLabel "Cardinaliteit"@nl;
   skos:inScheme schema:TyperingBeschouwingsdomein;
   skos:definition "Een cardinaliteit is een [conditie] waarbij van een [kenmerk] is gesteld hoeveel invullingen er voor één [domeinobject] minimaal en maximaal zijn"@nl;
-  skos:broaderGeneric mimbegrip:Conditie;
+  skosthes:broaderGeneric mimbegrip:Conditie;
   skos:related mimbegrip:Kenmerk;
   skos:related mimbegrip:Domeinobject;
 .
@@ -465,7 +465,7 @@ mimbegrip:Gegevensgroeptype a skos:Concept;
 
 mimbegrip:EenduidigGegevensobjecttype a skos:Concept;
   rdfs:label "Eenduidig gegevensobjecttype"@nl;
-  skos:prefLabel "Eenduidig gegevenstype"@nl;
+  skos:prefLabel "Eenduidig gegevensobjecttype"@nl;
   skos:inScheme schema:TyperingVerwerkingsdomein;
   skos:definition "Een eenduidig gegevensobjecttype is een [gegevensobjecttype] met precies één [hoofdonderwerp] waarvan de [sleutel] bekend is"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevensobjecttype;
@@ -479,8 +479,6 @@ mimbegrip:StriktEenduidigGegevensobjecttype a skos:Concept;
   skos:inScheme schema:TyperingVerwerkingsdomein;
   skos:definition "Een strikt eenduidig gegevensobjecttype is een [gegevensobjecttype] over alleen [kenmerken] van het [hoofdonderwerp] waarvan de [sleutel] bekend is"@nl;
   skosthes:broaderGeneric mimbegrip:EenduidigGegevensobjecttype;
-  skos:related mimbegrip:Hoofdonderwerp;
-  skos:related mimbegrip:Sleutel;
 .
 
 mimbegrip:BeschrijvendGegevensobjecttype a skos:Concept;
@@ -509,7 +507,6 @@ mimbegrip:IndirectGegevenstype a skos:Concept;
   skos:definition "Een indirect gegevenstype is een gegevenstype over één [kenmerk] van een [domeinobject], vastgelegd bij een [gegevensobjecttype] dat dit [domeinobject] niet als [hoofdonderwerp] heeft"@nl;
   skos:scopeNote "Een voorbeeld is werknemer.woonplaatsnaam. Woonplaatsnaam is geen eigenschap van een werknemer, maar een eigenschap van een woonplaats. De indirectie is (dus) werknemer > woont in woonplaats, woonplaats.naam"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevenstype;
-  skos:related mimbegrip:Kenmerk;
   skos:related mimbegrip:Hoofdonderwerp;
 .
 mimbegrip:SamengesteldEnkelvoudigGegevenstype a skos:Concept;

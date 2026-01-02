@@ -17,7 +17,7 @@
 |[Direct gegevenstype](#direct-gegevenstype)|Een direct gegevenstype is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van een [domeinobject](#domeinobject), vastgelegd bij een [gegevensobjectype]() dat dit [domeinobject](#domeinobject) als [hoofdonderwerp](#hoofdonderwerp) heeft|
 |[Domeinobject](#domeinobject)|Een domeinobject is een onderscheidbaar en identificeerbaar iets in de beschouwde werkelijkheid|
 |[Eenduidig gegevensobjecttype](#eenduidig-gegevensobjecttype)|Een eenduidig gegevensobjecttype is een [gegevensobjecttype](#gegevensobjecttype) met precies één [hoofdonderwerp](#hoofdonderwerp) waarvan de [sleutel](#sleutel) bekend is|
-|[Eigenschap](#eigenschap)|Een eigenschap is een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) waar uitsluitend een WAARDE aan kan worden toegekend|
+|[Eigenschap](#eigenschap)|Een eigenschap is een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) waar uitsluitend een [waarde](#waarde) aan kan worden toegekend|
 |[Formele conditie](#formele-conditie)|Een formele conditie is een [conditie](#conditie) die beschreven is in een machine-interpreteerbare taal|
 |[Gegeven](#gegeven)|Een gegeven is een vastgelegde uitdrukking over hetzij een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) dan wel een [relatie](#relatie) tussen [domeinobjecten](#domeinobject)|
 |[Gegevensgroep](#gegevensgroep)|Een gegevensgroep is een groepering van [gegevens](#gegeven)|

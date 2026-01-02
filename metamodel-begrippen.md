@@ -1,6 +1,12 @@
 # Begrippen
 
+## Kern
+
+![](media/begrippen-kern.svg)
+
 ## Beschouwingsdomein
+
+![](media/begrippen-domein.svg)
 
 ### Beschouwingsdomein
 
@@ -40,7 +46,7 @@ Gerelateerd: [Beschouwingsdomein](#beschouwingsdomein)
 
 ### Eigenschap
 
-> Een eigenschap is een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) waar uitsluitend een WAARDE aan kan worden toegekend
+> Een eigenschap is een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) waar uitsluitend een [waarde](#waarde) aan kan worden toegekend
 
 Specialisatie van: [Kenmerk](#kenmerk)
 
@@ -60,7 +66,7 @@ Gerelateerd: [Domeinobject](#domeinobject)
 
 Toelichting: Het gaat bij de identificatie of dit domeinobject er eentje is (dus niet twee), dat het zo-eentje (en niet iets anders) is en dat het ook die ene is (en niet een andere). Het is denkbaar dat meerdere identificerende kenmerken gezamenlijk nodig zijn.
 
-Specialisatie van: [Eigenschap](#eigenschap)
+Specialisatie van: [Kenmerk](#kenmerk)
 
 Gerelateerd: [Domeinobject](#domeinobject)
 
@@ -104,7 +110,55 @@ Specialisatie van: [Identificerend kenmerk](#identificerend-kenmerk)
 
 *Waarde wordt in het metamodel niet echt gedefinieerd, slechts letterlijke waarde en complexe waarde kennen een definitie. Bovenstaande definitie lijkt het beste te passen.*
 
+## Verwerkingsdomein
+
+![](media/begrippen-gegevens.svg)
+
+### Gegeven
+
+> Een gegeven is een vastgelegde uitdrukking over hetzij een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) dan wel een [relatie](#relatie) tussen [domeinobjecten](#domeinobject)
+
+Gerelateerd: [Relatie](#relatie), [Kenmerk](#kenmerk), [Domeinobject](#domeinobject)
+
+### Gegevensgroep
+
+> Een gegevensgroep is een groepering van [gegevens](#gegeven)
+
+Toelichting: Een gegevensgroep is simpelweg een groepje van gegevens.
+
+Omvat: [Gegeven](#gegeven)
+
+### Gegevensobject
+
+> Een gegevensobject is een onderscheidbaar geheel van [gegevens](#gegeven) over één of meerdere [domeinobjecten](#domeinobject)
+
+Omvat: [Gegeven](#gegeven)
+
+Gerelateerd: [Domeinobject](#domeinobject)
+
+### Hoofdonderwerp
+
+> Een hoofdonderwerp is een [domeinobject](#domeinobject) waarover een [gegevensobject](#gegevensobject) in hoofdzaak gaat
+
+Specialisatie van: [Domeinobject](#domeinobject)
+
+### Sleutelwaarde
+
+> Een sleutelwaarde is de invulling van één of meerdere [kenmerken]() die gezamenlijk één enkel [domeinobject](#domeinobject) uniek aanduiden
+
+Gerelateerd: [Domeinobject](#domeinobject), [Kenmerk](#kenmerk)
+
+### Verwerkingsdomein
+
+Alternatieve aanduiding: *Gegevensdomein*, *Gegevensverwerkingsdomein*
+
+> Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt
+
+Toelichting: Het verwerkingsdomein is het domein van de gegevens. Aangezien gegevens gaan over de dingen in het beschouwingsdomein (en niet over zichzelf), is het verwerkingsdomein altijd te onderscheiden van het beschouwingsdomein: het zijn twee verschillende domeinen. Wel hangen ze sterk samen: het verwerkingsdomein bevat de gegevens die gaan over het beschouwingsdomein. Het verwerkingsdomein en het beschouwingsdomein zijn dan ook vaak gelijkvormig. Zo kun je het hebben over een «persoon», maar ook over «persoonsgegevens». Een persoon heeft eigenschappen, bijvoorbeeld een leeftijd, en gegevens over die leeftijd zijn vervolgens weer onderdeel van de persoonsgegevens.
+
 ## Typering beschouwingsdomein
+
+![](media/begrippen-domeintypering.svg)
 
 ### Attribuuttype
 
@@ -121,6 +175,8 @@ Gerelateerd: [Categorisch kenmerk](#categorisch-kenmerk)
 ### Cardinaliteit
 
 > Een cardinaliteit is een [conditie](#conditie) waarbij van een [kenmerk](#kenmerk) is gesteld hoeveel invullingen er voor één [domeinobject](#domeinobject) minimaal en maximaal zijn
+
+Specialisatie van: [Conditie](#conditie)
 
 Gerelateerd: [Domeinobject](#domeinobject), [Kenmerk](#kenmerk)
 
@@ -211,6 +267,8 @@ Gerelateerd: [Relatietype](#relatietype)
 Gerelateerd: [Waarde](#waarde)
 
 ## Typering verwerkingsdomein
+
+![](media/begrippen-gegevenstypering.svg)
 
 ### Beschrijvend gegevensobjecttype
 
@@ -303,48 +361,3 @@ Gerelateerd: [Gegevensobject](#gegevensobject), [Hoofdonderwerp](#hoofdonderwerp
 Specialisatie van: [Eenduidig gegevensobjecttype](#eenduidig-gegevensobjecttype)
 
 Gerelateerd: [Sleutel](#sleutel), [Hoofdonderwerp](#hoofdonderwerp)
-
-## Verwerkingsdomein
-
-### Gegeven
-
-> Een gegeven is een vastgelegde uitdrukking over hetzij een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) dan wel een [relatie](#relatie) tussen [domeinobjecten](#domeinobject)
-
-Gerelateerd: [Relatie](#relatie), [Kenmerk](#kenmerk), [Domeinobject](#domeinobject)
-
-### Gegevensgroep
-
-> Een gegevensgroep is een groepering van [gegevens](#gegeven)
-
-Toelichting: Een gegevensgroep is simpelweg een groepje van gegevens.
-
-Omvat: [Gegeven](#gegeven)
-
-### Gegevensobject
-
-> Een gegevensobject is een onderscheidbaar geheel van [gegevens](#gegeven) over één of meerdere [domeinobjecten](#domeinobject)
-
-Omvat: [Gegeven](#gegeven)
-
-Gerelateerd: [Domeinobject](#domeinobject)
-
-### Hoofdonderwerp
-
-> Een hoofdonderwerp is een [domeinobject](#domeinobject) waarover een [gegevensobject](#gegevensobject) in hoofdzaak gaat
-
-Specialisatie van: [Domeinobject](#domeinobject)
-
-### Sleutelwaarde
-
-> Een sleutelwaarde is de invulling van één of meerdere [kenmerken]() die gezamenlijk één enkel [domeinobject](#domeinobject) uniek aanduiden
-
-Gerelateerd: [Domeinobject](#domeinobject), [Kenmerk](#kenmerk)
-
-### Verwerkingsdomein
-
-Alternatieve aanduiding: *Gegevensdomein*, *Gegevensverwerkingsdomein*
-
-> Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt
-
-Toelichting: Het verwerkingsdomein is het domein van de gegevens. Aangezien gegevens gaan over de dingen in het beschouwingsdomein (en niet over zichzelf), is het verwerkingsdomein altijd te onderscheiden van het beschouwingsdomein: het zijn twee verschillende domeinen. Wel hangen ze sterk samen: het verwerkingsdomein bevat de gegevens die gaan over het beschouwingsdomein. Het verwerkingsdomein en het beschouwingsdomein zijn dan ook vaak gelijkvormig. Zo kun je het hebben over een «persoon», maar ook over «persoonsgegevens». Een persoon heeft eigenschappen, bijvoorbeeld een leeftijd, en gegevens over die leeftijd zijn vervolgens weer onderdeel van de persoonsgegevens.
-

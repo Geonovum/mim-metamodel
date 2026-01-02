@@ -185,8 +185,8 @@
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Domeinobject"/>
             </ownedAttribute>
             <generalization xmi:type="uml:Generalization"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IdentificerendKenmerkskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Eigenschap"
-                            general="http://begrippen.mim-standaard.nl/mimbegrip/Eigenschap"/>
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/IdentificerendKenmerkskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Kenmerk"
+                            general="http://begrippen.mim-standaard.nl/mimbegrip/Kenmerk"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Gegeven"
@@ -917,7 +917,7 @@
                           name="Eigenschap"
                           visibility="public">
             <ownedComment xmi:id="-def1"
-                          body="Een eigenschap is een [kenmerk] van een [domeinobject] waar uitsluitend een WAARDE aan kan worden toegekend"/>
+                          body="Een eigenschap is een [kenmerk] van een [domeinobject] waar uitsluitend een [waarde] aan kan worden toegekend"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Eigenschapskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Waarde:trgt"
                             visibility="public"
@@ -1175,19 +1175,9 @@
                             aggregation="none">
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Kenmerk"/>
             </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Conditie"/>
-            </ownedAttribute>
+            <generalization xmi:type="uml:Generalization"
+                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskosthes:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie"
+                            general="http://begrippen.mim-standaard.nl/mimbegrip/Conditie"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"
                           xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Gegeven"
@@ -2379,26 +2369,6 @@
                       xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Kenmerk:src"
                       visibility="public"
                       association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/Kenmerk"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteit"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie"
-                          name="skos:broaderGeneric"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Cardinaliteitskos:broaderGenerichttp://begrippen.mim-standaard.nl/mimbegrip/Conditie"
                       isStatic="false"
                       isReadOnly="false"
                       isDerived="false"
