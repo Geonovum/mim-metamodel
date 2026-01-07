@@ -108,31 +108,33 @@ De definities van «domeinobject» en «kenmerk» zijn vrij ruim. Er kan van all
 
 1. Een domeinobject is onderscheidbaar en identificeerbaar. Dit houdt in dat je over iets in het beschouwingsdomein kunt zeggen dat het er eentje is (en niet twee), dat het er zo-eentje is (en niet iets anders) en dat het die ene is (en niet een andere).
 2. Een domeinobject is iets in de beschouwde werkelijkheid. Dit houdt in dat wat je onderscheid, bepaald wordt door het domein **en** hoe je dit domein wilt beschouwen. In verschillende domeinen of vanuit verschillende invalshoeken kun je dus ook andere dingen (willen) onderscheiden. We stellen hier ook dat DE werkelijkheid niet bestaat, maar dat je er altijd met een bepaalde blik naar kijkt: jouw invalshoek op de beschouwde werkelijkheid.
-3. Een kenmerk is typisch voor bepaalde objecten in het domein. Dus bepaalde domeinobjecten *hebben* zo'n kenmerk. Zo'n kenmerk is overigens niet voorbehouden aan één type domeinobjecten. Zo kan het kenmerk «haarkleur» een kenmerk zijn van zowel (het haar van een voorkomen van) een mens, een konijn of zelfs een knuffelbeertje. We stellen hiermee alleen dat die objecten iets gemeen hebben: een haarkleur.
-4. Wat een kenmerk is, is ook domeinspecifiek. In het vorige voorbeeld zou je ook kunnen stellen dat mensen, konijnen en knuffelbeertjes geen «haarkleur» hebben, maar dat «haarkleur» een kenmerk is van «haar», en dat een kenmerk van mensen, konijnen en knuffelbeertjes is dat ze «haar» kunnen hebben. Dat laatste is net wat preciezer, maar mogelijk niet relevant in jouw domein. Andersom kan het ook zijn dat we het juist (alleen) relevant vinden wie de kenmerk «rood haar» heeft. Als we dat domein beschouwen, dan kennen we alleen de kenmerk «rood haar», en kunnen we wel objecten onderscheiden in objecten die rood haar hebben, en de objecten die dat niet hebben. In dit domein kunnen we dan niet de objecten onderscheiden met een specifieke andere haarkleur.
+3. Een kenmerk is typisch voor bepaalde objecten in het domein. Dus bepaalde domeinobjecten *hebben* zo'n kenmerk. Zo'n kenmerk is overigens niet voorbehouden aan één type domeinobject. Zo kan het kenmerk «haarkleur» een kenmerk zijn van zowel (het haar van een voorkomen van) een mens, een konijn of zelfs een knuffelbeertje. We stellen hiermee alleen dat die objecten iets gemeen hebben: een haarkleur.
+4. Wat een kenmerk is, is ook domeinspecifiek. In het vorige voorbeeld zou je ook kunnen stellen dat mensen, konijnen en knuffelbeertjes geen «haarkleur» hebben, maar dat «haarkleur» een kenmerk is van «haar», en dat een kenmerk van mensen, konijnen en knuffelbeertjes is dat ze «haar» kunnen hebben. Dat laatste is net wat preciezer, maar mogelijk niet relevant in jouw domein. Andersom kan het ook zijn dat we het juist (alleen) relevant vinden wie de kenmerk «rood haar» heeft. Als we dat domein beschouwen, dan kennen we bijvoorbeeld alleen het kenmerk «rood haar», en kunnen we wel domeinobjecten onderscheiden in objecten die rood haar hebben, en de domeinobjecten die dat niet hebben. In dit domein kunnen we dan niet de domeinobjecten onderscheiden met een specifieke andere haarkleur.
+
+Per type domeinobject kunnen er wel specifieke condities gelden voor een kenmerk. Zo zou het kunnen zijn dat de mogelijke haarkleuren per type domeinobject kan verschillen. Dit onderscheid komt niet tot uitdrukking in (de definitie van) een kenmerk, maar juist in de specificatie van de attributie van zo'n kenmerk aan een objecttype, zie hieronder bij de typering van domeinobjecten.
 
 > [!NOTE]
-> Over een kenmerk van een domeinobject kun je uitspraken doen (ook wel *proposities* genoemd), zoals de uitpraak "De «haarkleur» van [Jan] is rood". In dit voorbeeld is [Jan] het domeinobject en «haarkleur» het kenmerk waarover we een uitspraak doen. Maar ook de volgende uitspraak is mogelijk: "[Jan] heeft «rood haar»". In dat laatste geval gaat het om het kenmerk «rood haar». Dit zijn twee verschillende manieren om tegen het domein te beschouwen. Bij het eerste voorbeeld was het blijkbaar van belang om verschillende haarkleuren van elkaar te kunnen onderscheiden. Bij het tweede voorbeeld was alleen van belang OF er sprake was van rood haar.
+> Over een kenmerk van een domeinobject kun je uitspraken doen (ook wel *proposities* genoemd), zoals de uitpraak "De «haarkleur» van [Jan] is rood". In dit voorbeeld is [Jan] het domeinobject en «haarkleur» het kenmerk waarover we een uitspraak doen. Maar ook de volgende uitspraak is mogelijk: "[Jan] heeft «rood haar»". In dat laatste geval gaat het om het kenmerk «rood haar». Dit zijn twee verschillende manieren om het domein te beschouwen. Bij het eerste voorbeeld was het blijkbaar van belang om verschillende haarkleuren van elkaar te kunnen onderscheiden. Bij het tweede voorbeeld was alleen van belang OF er sprake was van rood haar.
 
 #### Identificerend kenmerk en identificatoren
 
-Als we het over objecten in de fysieke werkelijkheid hebben, dan kunnen we die objecten aanwijzen. Zoals in de zin: "Hij daar, is de eigenaar". Stel dat die zin wordt uitgesproken in de winkel van Bakkerij Broodjes en er staan 5 mensen in die winkel, dan zul je de juiste persoon moeten aanwijzen! Je kunt ook gebruik maken van kenmerken die de juiste persoon identificeren, zoals in de zin: "Die lange man met rood haar daar, is Jan, de eigenaar". We willen het ook vaak kunnen hebben over objecten die we niet kunnen aanwijzen, maar we wel willen kunnen identificeren. Bijvoorbeeld het huwelijk tussen [Jan] en [Marie]. Ook dan hebben we kenmerken van dat huwelijk nodig om het juiste huwelijk te kunnen identificeren.
+Als we het over objecten in de fysieke werkelijkheid hebben, dan kunnen we die objecten aanwijzen. Zoals in de zin: "Hij daar, is de eigenaar". Stel dat die zin wordt uitgesproken in de winkel van Bakkerij Broodjes en er staan 5 mensen in die winkel, dan zul je de juiste persoon moeten aanwijzen! Je kunt ook gebruik maken van kenmerken die de juiste persoon identificeren, zoals in de zin: "Die lange man met rood haar daar, is Jan, de eigenaar". We willen het ook vaak kunnen hebben over domeinobjecten die we niet kunnen aanwijzen, maar wel kunnen identificeren. Bijvoorbeeld het huwelijk tussen [Jan] en [Marie]. Ook dan hebben we kenmerken van dat huwelijk nodig om het juiste huwelijk te kunnen identificeren.
 
-> Een IDENTIFICEREND KENMERK is een KENMERK waarmee de identiteit van een DOMEINOBJECT mede kan worden vastgesteld
+> Een IDENTIFICEREND KENMERK is een KENMERK waarmee de identiteit van een DOMEINOBJECT, zo nodig in combinatie met andere IDENTIFICERENDE KENMERKen, kan worden vastgesteld
 
-Eén enkele identificerend kenmerk is vaak niet voldoende. Zo is in ons voorbeeld het niet voldoende om Jan daadwerkelijk uniek te kunnen identificeren: er zijn meer lange roodharige mannen op de wereld die Jan heten.
+Eén enkel identificerend kenmerk is vaak niet voldoende. Zo is in ons voorbeeld het niet voldoende om Jan daadwerkelijk uniek te kunnen identificeren: er zijn meer lange roodharige mannen op de wereld die Jan heten.
 
 > Een IDENTIFICATOR is een geheel van één of meerdere IDENTIFICERENDE KENMERKen waarmee de identiteit van een DOMEINOBJECT uniek kan worden vastgesteld
 
 Een identificator zou bijvoorbeeld kunnen bestaan uit de geboortedatum, geboorteplaats, voornaam en achternaam van een persoon. Daarnaast is denkbaar dat een afzonderlijk kenmerk wordt toegekend aan een object, juist om deze uniek te identificeren. Zo'n kenmerk is vaak niet rechtstreeks met het object verbonden, maar wordt erbij gehouden. De enige manier om zo'n toekend kenmerk daadwerkelijk aan het domeinobject te verbinden is door het er letterlijk op te plakken. Bijvoorbeeld een serienummer dat gegraveerd wordt in het chassis van een voertuig of een straatnaambordje dat langs een weg wordt geplaatst.
 
-Veel identificerende kenmerken zijn, goed beschouwd, vaak geen intrinsiek kenmerk van het object dat zij identificeren. Zo is een kenmerk van een motorvoertuig bijvoorbeeld dat het een motor heeft, wielen heeft, een kleur, een maximum snelheid, etc. Maar het kenteken van een motorvoertuig is geen echte kenmerk van dat motorvoertuig. Dit noemen we toegekende (identificerende) kenmerken. Het zijn kenmerken die we *beschouwen als kenmerk van* het object, terwijl ze feitelijk zijn toegekend. Het kenteken van een motorvoertuig is zo'n kenmerk.
+Veel identificerende kenmerken zijn, goed beschouwd, vaak geen intrinsiek kenmerk van het object dat zij identificeren. Zo is een kenmerk van een motorvoertuig bijvoorbeeld dat het een motor, wielen, een kleur, een maximum snelheid, etc. heeft. Maar het kenteken van een motorvoertuig is geen echte kenmerk van dat motorvoertuig. Dit noemen we toegekende (identificerende) kenmerken. Het zijn kenmerken die we *beschouwen als kenmerk van* het object, terwijl ze feitelijk zijn toegekend. Het kenteken van een motorvoertuig is zo'n kenmerk.
 
 > Een TOEGEKEND IDENTIFICEREND KENMERK is een IDENTIFICEREND KENMERK die met dat doel is toegekend aan een DOMEINOBJECT
 
-Om expliciet aan te geven dat een kenmerk niet is toegekend, maar dat we vinden dat deze daadwerkelijk **eigen** is aan een object, kunnen we de term "intrinsiek kenmerk" gebruiken.
+Om expliciet aan te geven dat een kenmerk daadwerkelijk **eigen** is aan een doimeinobject, en dus niet is toegekend, kunnen we de term "intrinsiek kenmerk" gebruiken.
 
-Merk op dat wat we intrinsiek vinden en wat we toegekend vinden vooral een domeinaangelegenheid is: het is maar net hoe je er naar kijkt. Dat is dan ook precies wat we in een conceptueel model aan het doen zijn. Zo kun je stellen dat de naam van een persoon een intrinsiek kenmerk is, maar feitelijk is ook die maar toegekend ("en we noemen haar..."). En ook van het geslacht van een persoon kun je stellen dat dit een intrinsiek kenmerk is, terwijl er ook beschouwingsdomeinen zijn waar dit eerder als een toegekend kenmerk wordt gezien. Van belang is dus meer *of* er in de beschouwde werkelijkheid sprake is van een kenmerk van een domeinobject, en niet zozeer of dit een intrinsieke dan wel toegekend is.
+Merk op dat wat we intrinsiek vinden en wat we toegekend vinden vooral een domeinaangelegenheid is: het is maar net hoe je er naar kijkt. Dat is dan ook precies wat we in een conceptueel model aan het doen zijn. Zo kun je stellen dat de naam van een persoon een intrinsiek kenmerk is, maar feitelijk is ook die maar toegekend ("en we noemen haar..."). En ook van het geslacht van een persoon kun je stellen dat dit een intrinsiek kenmerk is, terwijl er ook beschouwingsdomeinen zijn waar dit eerder als een toegekend kenmerk wordt gezien. Van belang is dus meer *of* er in de beschouwde werkelijkheid sprake is van een kenmerk van een domeinobject, en niet zozeer of dit intrinsiek dan wel toegekend is.
 
 #### Kenmerken en invullingen
 
@@ -155,6 +157,9 @@ Met deze twee onderscheidene elementen (concreet/conceptueel, inherent/relatione
 - Relationele concrete kenmerken noemen we *rollen* en hebben als invulling een domeinobject;
 - Conceptuele kenmerken (zowel inherent als relationeel) noemen we *categorische kenmerken* en hebben als invulling een categorie.
 
+> [!NOTE]
+> Merk op dat we met deze definitie van kenmerk nog niets zeggen over het aantal keer dat een kenmerk kan worden ingevuld voor een domeinobject. Zo kan [Jan] wel drie voornamen hebben, dus er zijn dan drie invullingen van het kenmerk «naam». Dergelijke beperkingen op het aantal keren dat een kenmerk ingevuld mag worden is onderdeel van de condities die beschreven zijn in het model, in dit geval de cardinaliteit. Zie hiervoor de sectie over condities hieronder.
+
 In de volgende secties werken we deze verschillende soorten kenmerken verder uit.
 
 #### Eigenschappen en waarden
@@ -163,14 +168,11 @@ In de volgende secties werken we deze verschillende soorten kenmerken verder uit
 
 > Een LETTERLIJKE WAARDE is een WAARDE waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer
 
-Een eigenschap is een kenmerk waar "slechts" een (letterlijke) waarde aan kan worden toegekend. Zoals «lengte» in het voorgaande voorbeeld. Een letterlijke waarde is geen domeinobject of verwijzing daarnaar, maar juist een letterlijke invulling van het kenmerk. De betekenis van de letterlijke waarde is niets anders dan de letterlijke waarde zelf. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een eigenschap van [Jan]. De *invulling* van dit kenmerk is een waarde, bijvoorbeeld het getal 25. En ook het kenmerk «(heeft) naam» van [Jan] is een eigenschap, met de waarde "Jan" (een woord bestaande uit drie letters).
+Een eigenschap is een kenmerk waar "slechts" een (letterlijke) waarde aan kan worden toegekend. Zoals «lengte» in het voorgaande voorbeeld. Een letterlijke waarde is geen domeinobject of verwijzing daarnaar, maar juist een letterlijke invulling van het kenmerk. De betekenis van de letterlijke waarde is niets anders dan de letterlijke waarde zelf. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een kenmerk van [Jan]. De *invulling* van dit kenmerk is een waarde, bijvoorbeeld het getal 25. Daarmee is dit kenmerk een eigenschap van Jan. En ook het kenmerk «(heeft) naam» van [Jan] is een eigenschap, met de waarde "Jan" (een woord bestaande uit drie letters).
 
 In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een waarde die refereert aan een categorie (de valutacategorie «euro»). Een dergelijke waarde noemen we een complexe waarde.
 
 > Een COMPLEXE WAARDE is een WAARDE die bestaat uit een aaneenschakeling van afzonderlijke LETTERLIJKE WAARDEn en/of CATGORIEën
-
-> [!NOTE]
-> Merk op dat we met deze definitie van kenmerk nog niets zeggen over het aantal keer dat een kenmerk kan worden ingevuld voor een domeinobject. Zo kan [Jan] wel drie voornamen hebben, dus er zijn dan drie invullingen van het kenmerk «naam». Dergelijke beperkingen op het aantal keren dat een kenmerk ingevuld mag worden is onderdeel van de condities die beschreven zijn in het model, in dit geval de cardinaliteit. Zie hiervoor de sectie over condities hieronder.
 
 #### Classificaties en categoriën
 
@@ -182,7 +184,7 @@ Voorbeelden van categorieën zijn: kleur, geslacht, type voertuig (auto, fiets, 
 
 De invulling van een categorisch kenmerk is geen letterlijke waarde, maar een verwijzing naar iets anders: een categorie. En deze categorie kan zelf ook weer eigenschappen hebben of relaties hebben. Zo kan bijvoorbeeld van de valutacategorie «euro» vastgelegd worden in welke landen een «euro» voorkomt. En net als bij een (letterlijk) kenmerk behoort een categorisch kenmerk bij één domeinobject en is deze niet afhankelijk van een relatie met een ander domeinobject.
 
-Een categorie is een aanduiding voor een groep van objecten die iets gemeen hebben. Een categorisch kenmerk verbindt een domeinobject met die categorie. Zou kun je bijvoorbeeld objecten groeperen die levende wezens zijn en waarvan de moeders de jongen melk geeft, dwz: de groep van zoogdieren. De categorie «zoogdier» kan dan de invulling zijn van het kenmerk «biologische soort» van een levend wezen.
+Een categorie is een aanduiding voor een groep van objecten die iets gemeen hebben. Een categorisch kenmerk verbindt een domeinobject met die categorie. Zo kun je bijvoorbeeld objecten groeperen die levende wezens zijn en waarvan de moeders de jongen melk geeft, dwz: de groep van zoogdieren. De categorie «zoogdier» kan dan de invulling zijn van het kenmerk «biologische soort» van een levend wezen.
 
 Categorieën zijn vaak begrippen die al zijn onderkend in het begrippenmodel. Ook lijken categorieën veel op de typering van domeinobjecten die verderop in dit document aan bod komt. Dat is geen toeval: ook bij het typeren van domeinobjecten kijk je naar overeenkomstige kenmerken. Het verschil tussen categorieën en objecttypen wordt vooral bepaald door de manier waarop je een domein wenst te beschouwen. Zie hiervoor de sectie "categoriseren of typeren".
 
@@ -215,9 +217,9 @@ We bedoelen hier dus echt [Bakkerij Broodjes] *zelf*. Dit is wezenlijk anders da
 
 #### Relatie en rolinvullingen met kenmerken
 
-In onze kijk op het beschouwingsdomein hebben we het over domeinobjecten gehad die kenmerken kunnen hebben en waarbij sprake kan zijn van relaties tussen domeinobjecten. Ook hebben we laten zien dat relaties kenmerken kunnen hebben, zonder dat we de relatie zelf als een (afzonderlijk) domeinobject zien. We vonden de relatie niet "bijzonder" genoeg om deze daadwerkelijk te onderscheiden als afzonderlijk domeinobject. Uiteindelijk is dit een keuze hoe je het domein wilt beschouwen.
+In onze kijk op het beschouwingsdomein hebben we het over domeinobjecten gehad die kenmerken kunnen hebben en waarbij sprake kan zijn van relaties tussen domeinobjecten. Ook hebben we laten zien dat relaties kenmerken kunnen hebben, zonder dat we de relatie zelf als een (afzonderlijk) domeinobject zien. We vonden de relatie niet "bijzonder" genoeg om deze daadwerkelijk te onderscheiden als afzonderlijk domeinobject. Uiteindelijk is dit echter een keuze hoe je het domein wilt beschouwen.
 
-Als een relatie zodanig cruciaal is in een domein, dan kunnen we die relatie zelf zien als een domeinobject. Zo kunnen we het bijvoorbeeld over de huwelijksrelatie tussen Jan en Marie hebben. Dit domeinobject kan zelf kenmerken hebben, zoals de huwelijksdatum, de gehuwden en getuigen. En we zullen zo'n domeinobject moeten kunnen identificeren. In dit geval zou de combinatie van de identificerende kenmerken van de huwelijkspartners en de huwelijksdatum daarvoor bruikbaar zijn. Het is echter ook denkbaar dat in het betreffende domein een afzonderlijk huwelijkskenmerk bestaat, bijvoorbeeld het nummer op de huwelijksakte.
+Als een relatie zodanig cruciaal is in een domein, dan kunnen we die relatie zelf zien als een domeinobject. Zo kunnen we het bijvoorbeeld over het huwelijk tussen Jan en Marie hebben. Dit domeinobject kan zelf kenmerken hebben, zoals de huwelijksdatum, de gehuwden en getuigen. En we zullen zo'n domeinobject moeten kunnen identificeren. In dit geval zou de combinatie van de identificerende kenmerken van de huwelijkspartners en de huwelijksdatum daarvoor bruikbaar zijn. Het is echter ook denkbaar dat in het betreffende domein een afzonderlijk huwelijkskenmerk bestaat, bijvoorbeeld het nummer op de huwelijksakte. In dit voorbeeld beschouwen we dit huwelijks-fenomeen (dus) niet als een relatie tussen Jan en Marie, maar als "een huwelijk": een afzonderlijk domeinobject.
 
 Relaties hebben vaak te maken met gebeurtenissen van waaruit de relatie ontstaan. In bovenstaand voorbeeld stond de gebeurtenis centraal. Maar ook het resultaat van de gebeurtenis kan gezien worden als domeinobject. In zo'n geval zou huwelijk mogelijk een kenmerk «huwelijkse voorwaarden» hebben.
 
@@ -232,6 +234,9 @@ En ook de rol(invulling) zelf kunnen we zien als een domeinobject. Zo is een ken
 > - Een kenmerk van die betaling is de «betaler»;
 > - De invulling van dit kenmerk voor deze betaling is [Bakkerij Broodjes]
 > - [Bakkerij Broodjes] is in deze betaling de betaler.
+
+> [!NOTE]
+> MIM is een metamodel. Het is geen aanpak om te komen tot het juiste model. MIM geeft dan ook geen specifieke richtlijnen of je een relatie c.q. rolinvulling als domeinobject zou moeten zien. Van belang is dat MIM geen onderscheid maakt tussen domeinobjecten die daadwerkelijk waarneembaar zijn en domeinobjecten die mogelijk ook als een relatie of rolinvulling kunnen worden gezien. Dit volgt uit de definitie van een domeinobject (zie ook de uitleg bij de definitie van het begrip «domeinobject» hierboven: "domeinobjecten kunnen zowel fysiek waarneembaar als virtueel zijn"). Ook maakt dit het makkelijker om MIM als uitwisselingsstandaard te gebruiken: een meer uitgebreide vorm van MIM zou het lastig maken om MIM uit te drukken in modelleertalen die dergelijke uitbreidingen niet kennen.
 
 #### Veranderlijkheid van kenmerken
 
@@ -268,7 +273,7 @@ Hoewel gegevens gaan over de domeinobjecten, hun kenmerken en relaties, is het n
 
 In ons voorbeeld kunnen we bijvoorbeeld het volgende gegeven uitdrukken, door gebruik te maken van de toegekende identificerend kenmerk «BSN»: "De persoon met BSN 12345678 heeft geboortedatum 10 februari 1970". Dit gegeven is een bewering over de eigenschap «geboortedatum» van het domeinobject dat geïdentificeerd kan worden met het toegekend identificerend kenmerk «BSN» met de waarde "12345678", dwz: onze [Jan].
 
-NB: Van belang in bovenstaande definitie is dat een gegeven afhankelijk is van de domeinobjecten en kenmerken die je wilt onderkennen! Zonder inzicht in de domeinobjecten en hun kenmerken, kun je er ook geen gegevens over vastleggen.
+NB: Van belang in bovenstaande definitie is dat een gegeven afhankelijk is van de domeinobjecten en kenmerken die je wilt onderkennen! Als je bijvoorbeeld een gegeven over de geboortedatum van Jan wilt vastleggen, dan veronderstelt dit dat je domeinobjecten zoals Jan wilt onderkennen, en daarvan het kenmerk geboortedatum. Hoewel je technisch gezien de uitspraak "De geboortedatum van Jan is 10 februari 1970" kunt vastleggen als gegeven, is een correcte interpretatie van deze uitspraak moeilijk zonder inzicht in het domein, en daarmee welke domeinobjecten en kenmerken je wilt onderkennen.
 
 > Een GEGEVENSGROEP is een groepering van GEGEVENs
 
@@ -291,7 +296,7 @@ Merk op: hoewel de identiteit van een gegevensobject gerelateerd is aan de ident
 
 #### Gebruik van identificerende kenmerken voor verwijzingen
 
-Een gegeven gaat over een kenmerk van een domeinobject of relatie tussen domeinobjecten. Van belang is dan ook om naar zo'n domeinobject te kunnen verwijzen. Hiervoor kunnen we de identificator, de identificerende kenmerken van een domeinobject gebruikt. De invulling van de identificerende kenmerken die we gebruiken om te verwijzen naar een specifiek domeinobject noemen we een *sleutelwaarde*
+Een gegeven gaat over een kenmerk van een domeinobject of relatie tussen domeinobjecten. Van belang is dan ook om naar zo'n domeinobject te kunnen verwijzen. Hiervoor kunnen we de identificator (en daarmee de identificerende kenmerken van een domeinobject) gebruikt. De invulling van de identificerende kenmerken die we gebruiken om te verwijzen naar een specifiek domeinobject noemen we een *sleutelwaarde*
 
 > Een SLEUTELWAARDE is de invulling van één of meerdere KENMERKen die gezamenlijk één enkel DOMEINOBJECT uniek aanduiden
 
@@ -334,7 +339,7 @@ Deze zes uitspraken zijn zes gegevens die gegroepeerd kunnen worden tot één ge
 
 ### Typering van domeinobjecten
 
-Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typering. Typering is de manier in MIM om aan te geven wat we wensen te identificeren en te onderscheiden, dwz: welke domeinobjecten dit zijn. Dit gebeurt door te beschrijven wat de overeenkomstige kenmerken zijn die domeinobjecten van een bepaald type gemeen hebben en hoe je deze domeinobjecten kunt identificeren met behulp van deze kenmerken.
+Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typering. Typering van domeinobjecten is zo de manier in MIM om aan te geven wat we wensen te identificeren en te onderscheiden, dwz: welke domeinobjecten dit zijn. Dit gebeurt door te beschrijven wat de overeenkomstige kenmerken zijn die domeinobjecten van een bepaald type gemeen hebben en hoe je deze domeinobjecten kunt identificeren met behulp van deze kenmerken.
 
 > [!CAUTION]
 > In de tekst hieronder hebben de terminologie voor typering zo consistent mogelijk doorgevoerd. Dit betekent daarmee ook dat we een aantal termen uit de huidige versie van MIM hebben aangepast, zonder direct een andere betekenis te beogen. Het gaat om de volgende termen:
@@ -347,7 +352,7 @@ Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typeri
 
 > Een OBJECTTYPE is een typering van gelijksoortige DOMEINOBJECTen
 
-> Een POPULATIE is de verzameling van alle mogelijke DOMEINOBJECTen die te onderscheiden zijn als OBJECTTYPE
+> Een POPULATIE is de verzameling van alle mogelijke DOMEINOBJECTen die in de beschouwde werkelijkheid te onderscheiden zijn als OBJECTTYPE
 
 Eerder hebben we een domeinobject beschreven als iets dat we willen onderscheiden in het domein. *De* manier om aan te geven dat we dat willen, is juist door het onderkennen van objecttypen. Immers: domeinobjecten bestaan in de werkelijkheid: die zullen we slechts beschrijven, nooit daadwerkelijk *zelf* opnemen in een model (!). Met het beschrijven van objecttypen geven we aan welke domeinobjecten we willen onderscheiden en identificeren. Dit is afhankelijk van de manier waarop we de werkelijkheid willen beschouwen: er is (dus) niet één unieke manier. Het is een keuze van de modelleur, gedreven door de kennis die er over dat domein nodig is.
 
@@ -360,7 +365,7 @@ Stel dat we het bijvoorbeeld in een domein willen hebben over auto's en fietsen.
 
 #### Categoriseren of typeren: objecttype vs categorie
 
-De oplettende lezer zal zich afvragen wat het verschil is tussen een categorie en een objecttype. En dat is terecht. Want vaak is iets zowel een categorie als een objecttype. Je kunt het bijvoorbeeld hebben over de categorie «Homo Sapiens» als een categorie bij de indeling van levende wezens. Maar gelijktijdig kun je het hebben over het objecttype «Persoon» als typering van alle domeinobjecten die behoren tot die categorie. Het gaat om het doel waarvoor we typeren. Een categorie wordt gebruikt als onderdeel van een gegeven, terwijl een objecttype juist bedoeld is om een beschrijving te geven in welke domeinobjecten we zijn geïnteresseerd, die we willen onderscheiden en informatie over wensen.
+De oplettende lezer zal zich afvragen wat het verschil is tussen een categorie en een objecttype. En dat is terecht. Want vaak kan iets zowel als een categorie en als een objecttype worden beschouwd. Je kunt het bijvoorbeeld hebben over de categorie «Homo Sapiens» als een categorie bij de indeling van levende wezens. Maar gelijktijdig kun je het hebben over het objecttype «Persoon» als typering van alle domeinobjecten die behoren tot die categorie. Het gaat om het doel waarvoor we typeren. Een categorie wordt gebruikt als onderdeel van een gegeven, terwijl een objecttype juist bedoeld is om een beschrijving te geven in welke domeinobjecten we zijn geïnteresseerd, die we willen onderscheiden en informatie over wensen.
 
 - Met het introduceren van een objecttype beschrijf je dat je domeinobjecten wilt identificeren die van dit specifieke objecttype zijn en van deze domeinobjecten wil je afzonderlijke kenmerken en relaties onderkennen.
 - Met het introduceren van een categorie beschrijf je dat je domeinobjecten wilt groeperen tot één categorie. Je wilt daarbij kunnen aangeven dat bepaalde domeinobjecten tot een specifieke categorie behoren, zonder daarbij daadwerkelijk domeinobjecten te willen zien als voorkomen van zo'n categorie.
@@ -379,12 +384,12 @@ Algemeen gesproken kun je stellen dat voor elk objecttype een overeenkomstige ca
 > [!NOTE]
 > Dit onderscheid tussen typen en voorkomens verschilt per technische realisatie. Zo is in een relationele database een strikt onderscheid aanwezig tussen typen en voorkomens (respectievelijk tabellen en rijen) en ook in UML wordt dit onderscheid expliciet gemaakt (M0 versus M1). In RDF is dit onderscheid echter niet aanwezig en kunnen typen en voorkomens door elkaar gebruikt worden. Wel kan dit leiden tot beperkingen in de mogelijkheden voor inferencing (op basis van regels afleiden van nieuwe gegevens).
 
-#### Feiten, gegevens, informatie en kennis
+#### Feiten, gegevens, informatiebehoefte en kennis
 In MIM beschouwen we gegevens als concrete zaken: ze bestaan als vastgelegde uitdrukkingen over de feiten in de beschouwde werkelijkheid. Een feit is daarbij hetgeen waar is in die beschouwde werkelijkheid. Daarmee hoeft een gegeven nog niet geldig te zijn: een gegeven kan ook een verkeerde uitdrukking zijn van die feiten: de feiten kun je niet vastleggen, alleen uitspraken *over* de feiten, over de kenmerken van de domeinobjecten in de beschouwde werkelijkheid.
 
-Een logisch gegevensmodel is dan ook een model van de (behoefte tot) uitwisseling, vastlegging en verwerking van deze gegevens. Een conceptueel informatiemodel is juist een model van de beschouwde werkelijkheid in termen van de typen domeinobjecten die we wensen te onderscheiden en de kenmerken waarover onze informatiebehoefte gaat. Een conceptueel informatiemodel beschouwt de werkelijkheid, voor zover we een informatiebehoefte over die werkelijkheid hebben. En die informatiebehoefte leidt (uiteindelijk) tot de verwerking van gegevens: een informatie*behoefte* wordt vervuld door een gegevens*verwerking*.
+Een logisch gegevensmodel is een model van de (behoefte tot) uitwisseling, vastlegging en/of verwerking van deze gegevens. Een conceptueel informatiemodel is juist een model van de beschouwde werkelijkheid in termen van de typen domeinobjecten die we wensen te onderscheiden en de kenmerken waarover onze informatiebehoefte gaat. Een conceptueel informatiemodel beschouwt de werkelijkheid, voor zover we een informatiebehoefte over die werkelijkheid hebben. En die informatiebehoefte leidt (uiteindelijk) tot de verwerking van gegevens: een informatie*behoefte* wordt vervuld door een gegevens*verwerking*.
 
-Kennis gaat niet over de feiten zoals die zich in beschouwde werkelijkheid voordoen. Kennis betreft juist de interpretatie, de betekenis die aan dergelijke feiten moet worden gegeven. Zo zou je het over het volgende feit kunnen hebben: "[Jan] kwam op de savanne een dier tegen. Het betrof een «leeuw»". Kennis over een dier van de biologische soort «leeuw» leert ons dat [Jan] in gevaar is, hij doet er verstandig aan om naar een veilige plek te gaan.
+Kennis gaat niet over de feiten zoals die zich in de beschouwde werkelijkheid voordoen. Kennis betreft juist de interpretatie, de betekenis die aan dergelijke feiten moet worden gegeven. Zo zou je het over het volgende feit kunnen hebben: "[Jan] kwam op de savanne een dier tegen. Het betrof een «leeuw»". Kennis over een dier van de biologische soort «leeuw» leert ons dat [Jan] in gevaar is, hij doet er verstandig aan om naar een veilige plek te gaan.
 
 Dergelijke kennis kun je ook uitdrukken in gegevens. In zo'n geval leg je kenmerken vast van de categorie «leeuw». Gegevens over categorieën zijn uitdrukkingen van kennis. Zo kunnen we onderscheid maken in gegevens over de beschouwde werkelijkheid en gegevens over kennis van de beschouwde werkelijkheid.
 
@@ -402,7 +407,7 @@ Een categorisch kenmerk heeft als invulling een categorie. Een attribuuttype van
 
 > Een ATTRIBUUTTYPE VAN CLASSIFICERENDE AARD is een ATTRIBUUTTYPE als typering van een CATEGORISCH KENMERK
 
-> [!CATION]
+> [!CAUTION]
 > In de huidige versie van MIM geef je bij een attribuuttype op of deze classificerend is (ja/nee). Er is geen afzonderlijke term voor geïntroduceerd. Vandaar de term "attribuuttype van classificerende aard" in dit metamodel. Mogelijk is een andere term beter.
 
 > Een CLASSIFICATIESCHEMA is een systematische ordening van DOMEINOBJECTen in CATEGORIEën
@@ -419,7 +424,7 @@ Een complex waardetype kan omschreven worden als de aaneenschakeling van de afzo
 
 > Een RELATIETYPE is een typering van gelijksoortige RELATIEs
 
-Een relatie is gelijksoortig als sprake is van dezelfde rolinvullingen en gelijksoortige proposities uitgedrukt kunnen worden met betrekking tot deze relaties. Daarom is onderdeel van de typering van de relatie ook de beschrijving van de rolinvullingen en de verwoording(en) waarmee de proposities kunnen worden uitgedrukt.
+Een relatie is gelijksoortig als er sprake is van dezelfde rolinvullingen en als gelijksoortige proposities uitgedrukt kunnen worden met betrekking tot deze relaties. Daarom is onderdeel van de typering van de relatie ook de beschrijving van de rolinvullingen en de verwoording(en) waarmee de proposities kunnen worden uitgedrukt.
 
 > Een ROLINVULLING is een beschrijving van de invulling van een ROL in een RELATIETYPE door voorkomens van een OBJECTTYPE
 
@@ -439,7 +444,7 @@ In een voorbeeld:
 - De relatie kan (ook) verwoord worden als: «werkgever» "heeft" «werknemer».
 
 > [!NOTE]
-> Een relatie kent altijd minimaal twee rolinvullingen. Het is daarbij niet verplicht dat een rolinvulling ook daadwerkelijk benoemd is, een naam heeft. Zo zou je een model kunnen maken waren je beschrijft dat een persoon woont in een plaats, zonder te beschrijven hoe je de rolinvulling van de persoon noemt, dus:
+> Een relatie kent altijd minimaal twee rolinvullingen. Het is daarbij niet verplicht dat een rolinvulling ook daadwerkelijk benoemd is, een naam heeft. Zo zou je een model kunnen maken waarin je beschrijft dat een persoon woont in een plaats, zonder te beschrijven hoe je de rolinvulling van de persoon noemt, dus:
 > - De relatie tussen [Jan] en [Amersfoort] is te typeren als een relatietype
 > - Het domeinobject [Amersfoort] is een voorkomen van het objecttype «Plaats»
 > - Het relatietype kan verwoord worden als: «Persoon» is woonachtig in «Plaats»
@@ -475,8 +480,8 @@ De begrippen die we hiermee gedefinieerd hebben, zijn behoorlijk abstract. Aange
 In het voorbeeld willen we de typering vastleggen uit het concrete voorbeeld hierboven over Jan.
 
 - We beschrijven het objecttype met de naam "Persoon". Het domeinobject met de voornaam "Jan" typeren we als het objecttype «Persoon».
-- Dit objecttype kent dus in ieder geval ook het attribuuttype «voornaam», dat het overeenkomstige kenmerk «voornaam» betreft.
-- Hier koppelen we het attribuuttype met de naam "BSN" aan. Dit attribuuttype betreft het toegekend identificerend kenmerk «BSN».
+- Dit objecttype kent dus in ieder geval ook het attribuuttype met de naam "voornaam", dat het overeenkomstige kenmerk «voornaam» betreft.
+- Aan het objecttype koppelen we ook het attribuuttype met de naam "BSN" aan. Dit attribuuttype betreft het toegekend identificerend kenmerk «BSN».
 - Ook koppelen we hier het attribuuttype met de naam "geboortedatum". Dit attribuuttype betreft het kenmerk «geboortedatum».
 - Tenslotte koppelen we hier het attribuuttype met de naam "geslacht" aan. Dit attribuuttype betreft het categorisch kenmerk «geslacht».
 - Als relatietype onderkennen we het relatietype met de naam "arbeidsrelatie". Dit relatietype relateert het objecttype «Persoon» aan het objecttype «Bedrijf».
@@ -502,7 +507,7 @@ Na de typering van de onderwerpen uit het beschouwingsdomeinen, is de typering v
 
 > Een GEGEVENSTYPE is een typering van gelijksoortige GEGEVENs
 
-Er kan sprake zijn van gelijksoortige gegevens, als deze gegevens over hetzelfde kenmerk van gelijksoortige domeinobjecten gaat. Dus bijvoorbeeld gegevenstypen die gaan over het kenmerk geboortedatum van een objecttype persoon. Er is sprake van een ander gegevenstype, als het kenmerk verschilt, of als het over een ander objecttype gaat.
+Er is sprake van gelijksoortige gegevens, als deze gegevens over hetzelfde kenmerk van gelijksoortige domeinobjecten gaat. Dus bijvoorbeeld gegevenstypen die gaan over het kenmerk geboortedatum van een objecttype persoon. Er is sprake van een ander gegevenstype, als het kenmerk verschilt, of als het over een ander objecttype gaat.
 
 Naast gegevens, kunnen we ook de gegevensobjecten typeren:
 
@@ -527,15 +532,20 @@ Er kunnen meerdere (kandidaat) sleutels zijn voor een gegevensobjecttype. Een sl
 #### Varianten van gegevenstypen
 Vier varianten van gegevenstypen kunnen we onderscheiden:
 
-1. Gegevenstypen waarbij sprake is van *letterlijke waarden*. Een gegevenstype over de eigenschap «leeftijd» of «BSN-nummer» zijn voorbeelden van dergelijke gegevenstypen. Deze gegevenstypen zijn gerelateerd aan attribuuttypen.
+1. Gegevenstypen waarbij sprake is van *letterlijke waarden*. Een gegevenstype over de eigenschap «leeftijd» of «voornaam» zijn voorbeelden van dergelijke gegevenstypen. Deze gegevenstypen zijn gerelateerd aan attribuuttypen.
 2. Gegevenstypen waarbij sprake is van *categorieën*. Bij dit gegevenstype is geen sprake van een letterlijke waarde en refereert de waarde aan een betekenis die meer is dan de letterlijke waarde zelf. Een gegevenstype over het categorisch kenmerk «geslacht» is een voorbeeld van een dergelijk gegevenstype. Deze gegevenstypen zijn gerelateerd aan attribuuttypen van classificerende aard.
 3. Gegevenstypen waarbij sprake is van *complexe waarden*. Bij dit gegevenstype is sprake van een waarde die is opgebouwd uit enkele afzonderlijke onderdelen die gezamenlijk de complexe waarde vormen. Een gegevenstype over de eigenschap «lengte» is een voorbeeld van een dergelijke gegevenstype (in dit geval bestaat de complexe waarde uit een getal en een eenheid). Deze gegevenstypen zijn gerelateerd aan attribuuttypen met complexe waardetypen.
 4. Gegevenstypen waarbij sprake is van een *sleutelwaarde die refereert aan een ander domeinobject*. Bij dit gegevenstype is sprake van een sleutelwaarde die een referentie betreft naar dit andere domeinobject. Deze gegevenstypen zijn gerelateerd aan verwoordingen van relaties en rolinvullingen.
 
 Merk op: er bestaat op het niveau van gegevens (dus) slechts gegevensobjecttypen en gegevenstypen. Er bestaat niet zoiets als een gegevensrelatietype. En hoewel je in een plaatje een lijntje kunt tekenen die "lijkt" op een relatietype, betreft dit lijntje niets meer of minder dan een gegevenstype van variant (4). Een dergelijk lijntje **MOET** dan ook altijd gericht zijn: vertrekken vanuit het gegevensobjecttype waar het betreffende gegevenstype toe behoort.
 
+Merk op: ook een eigenschap «BSN-nummer» betreft een gegevenstype waarbij sprake is van een letterlijke waarde. Hoewel een BSN-nummer ook gebruikt zou kunnen worden als een sleutelwaarde die refereert aan een ander domeinobject (bijvoorbeeld in een gegeven over een kenmerk «(heeft) ouder»), wordt in dit geval de eigenschap niet gebruikt als referentie, maar als (toegekende) eigenschap aan het onderwerp van het betreffende gegeven. Zo is in het gegeven "[Jan] heeft BSN-nummer 12345678" de waarde van de eigenschap een letterlijke waarde (namelijk: "12345678") en wordt hiermee niet een verwijzing naar Jan zelf bedoeld.
+
 #### Gegevens over relaties
 In een logisch gegevensmodel bestaan slechts gegevensobjecttypen. Terwijl in een conceptueel informatiemodel zowel objecttypen als relatietypen bestaan. Je kunt je dan ook de vraag stellen hoe we omgaan met gegevens over relaties: hoe leg je die vast?
+
+> [!NOTE]
+> Als je een grafische weergave maakt van een logisch gegevensmodel, dan zullen daar vanzelfsprekend ook pijlen staan *tussen* gegevensobjecttypen. Deze pijlen representeren echter niet een relatietype zoals in een conceptueel informatiemodel, maar representeren een gegevenstype-4: een gegevenstype waarbij sprake is van een sleutelwaarde die refereert aan een ander domeinobject. De pijl geeft daarmee de richting aan: de pijl begint bij het onderwerp van dit gegevenstype, en eindigt bij de referent.
 
 Daarvoor heb je als gegevensmodelleur vier keuzes. Welke keuze je kiest, hangt sterk af van de manier waarop je de gegevens wilt verwerken. Stel we beschouwen het relatietype «arbeidsrelatie» uit de voorgaande secties. We hebben dan de volgende mogelijkheden in het gegevensmodel:
 
