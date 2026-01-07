@@ -240,7 +240,7 @@ Gerelateerd: [Domeinobject](#domeinobject)
 
 ### Populatie
 
-> Een populatie is de verzameling van alle mogelijke [domeinobjecten](#domeinobject) die te onderscheiden zijn als [objecttype](#objecttype)
+> Een populatie is de verzameling van alle mogelijke [domeinobjecten](#domeinobject) die in de beschouwde werkelijkheid te onderscheiden zijn als [objecttype](#objecttype)
 
 Gerelateerd: [Objecttype](#objecttype), [Domeinobject](#domeinobject)
 

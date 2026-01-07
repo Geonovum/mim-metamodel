@@ -286,7 +286,7 @@ mimbegrip:Populatie a skos:Concept;
   rdfs:label "Populatie"@nl;
   skos:prefLabel "Populatie"@nl;
   skos:inScheme schema:TyperingBeschouwingsdomein;
-  skos:definition "Een populatie is de verzameling van alle mogelijke [domeinobjecten] die te onderscheiden zijn als [objecttype]"@nl;
+  skos:definition "Een POPULATIE is de verzameling van alle mogelijke [domeinobjecten] die in de beschouwde werkelijkheid te onderscheiden zijn als [objecttype]"@nl;
   skos:related mimbegrip:Domeinobject;
   skos:related mimbegrip:Objecttype;
 .
