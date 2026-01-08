@@ -114,7 +114,7 @@ De definities van «domeinobject» en «kenmerk» zijn vrij ruim. Er kan van all
 Per type domeinobject kunnen er wel specifieke condities gelden voor een kenmerk. Zo zou het kunnen zijn dat de mogelijke haarkleuren per type domeinobject kan verschillen. Dit onderscheid komt niet tot uitdrukking in (de definitie van) een kenmerk, maar juist in de specificatie van de attributie van zo'n kenmerk aan een objecttype, zie hieronder bij de typering van domeinobjecten.
 
 > [!NOTE]
-> Over een kenmerk van een domeinobject kun je uitspraken doen (ook wel *proposities* genoemd), zoals de uitspraak "De «haarkleur» van [Jan] is rood". In dit voorbeeld is [Jan] het domeinobject en «haarkleur» het kenmerk waarover we een uitspraak doen. Maar ook de volgende uitspraak is mogelijk: "[Jan] heeft «rood haar»". In dat laatste geval gaat het om het kenmerk «rood haar». Dit zijn twee verschillende manieren om tegen het domein te beschouwen. Bij het eerste voorbeeld was het blijkbaar van belang om verschillende haarkleuren van elkaar te kunnen onderscheiden. Bij het tweede voorbeeld was alleen van belang OF er sprake was van rood haar.
+> Over een kenmerk van een domeinobject kun je uitspraken doen (ook wel *proposities* genoemd), zoals de uitspraak "De «haarkleur» van [Jan] is rood". In dit voorbeeld is [Jan] het domeinobject en «haarkleur» het kenmerk waarover we een uitspraak doen. Maar ook de volgende uitspraak is mogelijk: "[Jan] heeft «rood haar»". In dat laatste geval gaat het om het kenmerk «rood haar». Dit zijn twee verschillende manieren om het domein te beschouwen. Bij het eerste voorbeeld was het blijkbaar van belang om verschillende haarkleuren van elkaar te kunnen onderscheiden. Bij het tweede voorbeeld was alleen van belang OF er sprake was van rood haar.
 
 #### Identificerend kenmerk en identificatoren
 
@@ -296,7 +296,7 @@ Merk op: hoewel de identiteit van een gegevensobject gerelateerd is aan de ident
 
 #### Gebruik van identificerende kenmerken voor verwijzingen
 
-Een gegeven gaat over een kenmerk van een domeinobject of relatie tussen domeinobjecten. Van belang is dan ook om naar zo'n domeinobject te kunnen verwijzen. Hiervoor kunnen we de identificator (en daarmee de identificerende kenmerken van een domeinobject) gebruikt. De invulling van de identificerende kenmerken die we gebruiken om te verwijzen naar een specifiek domeinobject noemen we een *sleutelwaarde*
+Een gegeven gaat over een kenmerk van een domeinobject of relatie tussen domeinobjecten. Van belang is dan ook om naar zo'n domeinobject te kunnen verwijzen. Hiervoor kunnen we de identificator (en daarmee de identificerende kenmerken van een domeinobject) gebruiken. De invulling van de identificerende kenmerken die we gebruiken om te verwijzen naar een specifiek domeinobject noemen we een *sleutelwaarde*
 
 > Een SLEUTELWAARDE is de invulling van één of meerdere KENMERKen die gezamenlijk één enkel DOMEINOBJECT uniek aanduiden
 
@@ -481,7 +481,7 @@ In het voorbeeld willen we de typering vastleggen uit het concrete voorbeeld hie
 
 - We beschrijven het objecttype met de naam "Persoon". Het domeinobject met de voornaam "Jan" typeren we als het objecttype «Persoon».
 - Dit objecttype kent dus in ieder geval ook het attribuuttype met de naam "voornaam", dat het overeenkomstige kenmerk «voornaam» betreft.
-- Aan het objecttype koppelen we ook het attribuuttype met de naam "BSN" aan. Dit attribuuttype betreft het toegekend identificerend kenmerk «BSN».
+- Aan het objecttype koppelen we ook het attribuuttype met de naam "BSN". Dit attribuuttype betreft het toegekend identificerend kenmerk «BSN».
 - Ook koppelen we hier het attribuuttype met de naam "geboortedatum". Dit attribuuttype betreft het kenmerk «geboortedatum».
 - Tenslotte koppelen we hier het attribuuttype met de naam "geslacht" aan. Dit attribuuttype betreft het categorisch kenmerk «geslacht».
 - Als relatietype onderkennen we het relatietype met de naam "arbeidsrelatie". Dit relatietype relateert het objecttype «Persoon» aan het objecttype «Bedrijf».
