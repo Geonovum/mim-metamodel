@@ -397,7 +397,7 @@ mimbegrip:Datatype a skos:Concept;
   skos:related mimbegrip:Waarde;
 .
 mimbegrip:InformeleConditie a skos:Concept;
-  rdfs:label "Informatie conditie"@nl;
+  rdfs:label "Informele conditie"@nl;
   skos:prefLabel "Informele conditie"@nl;
   skos:inScheme schema:TyperingBeschouwingsdomein;
   skos:definition "Een informele conditie is een [conditie] die beschreven is in natuurlijk taal"@nl;
