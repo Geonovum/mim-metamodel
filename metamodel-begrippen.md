@@ -98,7 +98,7 @@ Gerelateerd: [Relatie](#relatie), [Domeinobject](#domeinobject)
 
 ### Toegekend identificerend kenmerk
 
-> Een toegekend identificerend kenmerk is een [identificerend kenmerk](#identificerend-kenmerk) die met dat doel is toegekend aan een [domeinobject](#domeinobject)
+> Een toegekend identificerend kenmerk is een [identificerend kenmerk](#identificerend-kenmerk) dat met dat doel is toegekend aan een [domeinobject](#domeinobject)
 
 Toelichting: Een toegekend identificerend kenmerk is feitelijk geen eigenschap van een domeinobject, maar wordt juist toegekend aan een domeinobject. Zo is een BSN nummer geen feitelijke eigenschap van een persoon, maar wordt deze wel toegewezen aan elke ingeschrevene in de Basisregistratie Personen. Ook bijvoorbeeld het VIN (Vehicle Identification Number) is geen feitelijke eigenschap van een voertuig, maar wordt aan een voertuig toegewezen.
 

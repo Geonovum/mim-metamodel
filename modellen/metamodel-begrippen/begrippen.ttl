@@ -113,7 +113,7 @@ mimbegrip:ToegekendIdentificerendKenmerk a skos:Concept;
   rdfs:label "Toegekend identificerend kenmerk"@nl;
   skos:prefLabel "Toegekend identificerend kenmerk"@nl;
   skos:inScheme schema:Beschouwingsdomein;
-  skos:definition "Een toegekend identificerend kenmerk is een [identificerend kenmerk] die met dat doel is toegekend aan een [domeinobject]"@nl;
+  skos:definition "Een toegekend identificerend kenmerk is een [identificerend kenmerk] dat met dat doel is toegekend aan een [domeinobject]"@nl;
   skos:scopeNote "Een toegekend identificerend kenmerk is feitelijk geen eigenschap van een domeinobject, maar wordt juist toegekend aan een domeinobject. Zo is een BSN nummer geen feitelijke eigenschap van een persoon, maar wordt deze wel toegewezen aan elke ingeschrevene in de Basisregistratie Personen. Ook bijvoorbeeld het VIN (Vehicle Identification Number) is geen feitelijke eigenschap van een voertuig, maar wordt aan een voertuig toegewezen."@nl;
   skosthes:broaderGeneric mimbegrip:IdentificerendKenmerk;
 .
