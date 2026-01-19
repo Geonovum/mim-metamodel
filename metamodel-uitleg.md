@@ -59,7 +59,7 @@ Voor dit document gebruiken we een voorbeeld, een casus op basis waarvan we de o
 > - [Jan] heeft inmiddels een lengte van 2 meter en 5 centimeter bereikt.
 > - En hoewel [Jan] oorspronkelijk gezegend was met een flinke bos haar, is [Jan] inmiddels vrijwel volledig kaal.
 > - [Jan] werkt sinds 1990 als «bakker» bij [Bakkerij Broodjes].
-> - [Jan] woont inmiddels in [Meppel]. [Jan] is in [Meppel] ingeschreven met BSN nummer "12345678".
+> - [Jan] woont inmiddels in [Meppel]. [Jan] is in [Meppel] ingeschreven met BSN "12345678".
 > - [Jan] is getrouwd met [Marie] op 6 september 2003.
 
 **TODO: Voorbeeld nog verder uitwerken. Liefst ook met een stukje wet- en regelgeving, bijvoorbeeld arbeidsrecht**
@@ -494,7 +494,7 @@ In het voorbeeld willen we de typering vastleggen uit het concrete voorbeeld hie
 
 #### Waardetypen vs categorieën en objecttypen
 
-Als we een domein beschouwen, dan zullen daar bepaalde domeinobjecten in voorkomen waar we het "echt" over hebben. Een klantenadministratie zal het "echt" over klanten hebben, en de kenmerken die we van deze klanten belangrijk vinden, zoals bijvoorbeeld hun naam, adres en ook het land waar deze klant uit afkomstig is. België is daarmee (dus) ook een domeinobject in dit voorbeeld, net als de klant Jerome, afkomstig uit dit land. Het zal vermoedelijk echter niet nodig zijn om een afzonderlijke landenadministratie bij te houden. Dit is simpelweg een "lijstje" dat we eenmalig kunnen inladen.
+Als we een domein beschouwen, dan zullen daar bepaalde domeinobjecten in voorkomen waar we het "echt" over hebben. Een klantenadministratie zal het "echt" over klanten hebben, en de kenmerken die we van een klant belangrijk vinden, zoals bijvoorbeeld de naam, eerder gekochte artikelen en ook het land waar deze klant uit afkomstig is. België is daarmee (dus) ook een domeinobject in dit voorbeeld, net als de klant Jerome, afkomstig uit dit land en de artikelen die hij heeft eerder heeft gekocht. Het zal vermoedelijk echter niet nodig zijn om een afzonderlijke landenadministratie bij te houden. Dit is simpelweg een "lijstje" dat we eenmalig kunnen inladen.
 
 Dergelijke lijstjes lijken bij de gegevensverwerking dan ook sterk op waardetypen waarbij een selectie uit een beperkt aantal categorieën c.q. waarden gekozen kan worden. Toch is er een belangrijk verschil bij het typeren:
 
@@ -524,7 +524,7 @@ Ook gegevenstypen zelf kun je groeperen. Bijvoorbeeld als je het wilt hebben ove
 
 > Een GEGEVENSTYPEGROEP is een groepering van GEGEVENSTYPEN
 
-#### Identificeren van gegevensobjecten: sleutels
+#### Identificeren van het hoofdonderwerp: sleutels
 
 Om het hoofdonderwerp van een gegevensobject te identificeren gebruiken we een sleutelwaarde. Zo is de waarde "12345678" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Een belangrijk aspect bij het typeren van gegevensobjecten is dan ook welke gegevenstypen bruikbaar zijn voor dergelijke sleutelwaarden. Zo wordt in dit voorbeeld het gegevenstype «Persoon.BSN» gebruikt. Dit gegevenstype is hier de *sleutel* voor het gegevensobjecttype Persoon.
 
@@ -542,7 +542,7 @@ Vier varianten van gegevenstypen kunnen we onderscheiden:
 
 Merk op: er bestaat op het niveau van gegevens (dus) slechts gegevensobjecttypen en gegevenstypen. Er bestaat niet zoiets als een gegevensrelatietype. En hoewel je in een plaatje een lijntje kunt tekenen die "lijkt" op een relatietype, betreft dit lijntje niets meer of minder dan een gegevenstype van variant (4). Een dergelijk lijntje **MOET** dan ook altijd gericht zijn: vertrekken vanuit het gegevensobjecttype waar het betreffende gegevenstype toe behoort.
 
-Merk op: ook een eigenschap «BSN-nummer» betreft een gegevenstype waarbij sprake is van een letterlijke waarde. Hoewel een BSN-nummer ook gebruikt zou kunnen worden als een sleutelwaarde die refereert aan een ander domeinobject (bijvoorbeeld in een gegeven over een kenmerk «(heeft) ouder»), wordt in dit geval de eigenschap niet gebruikt als referentie, maar als (toegekende) eigenschap aan het onderwerp van het betreffende gegeven. Zo is in het gegeven "[Jan] heeft BSN-nummer 12345678" de waarde van de eigenschap een letterlijke waarde (namelijk: "12345678") en wordt hiermee niet een verwijzing naar Jan zelf bedoeld.
+Merk op: ook een eigenschap «BSN» betreft een gegevenstype waarbij sprake is van een letterlijke waarde. Hoewel een BSN ook gebruikt zou kunnen worden als een sleutelwaarde die refereert aan een ander domeinobject (bijvoorbeeld in een gegeven over een kenmerk «(heeft) ouder»), wordt in dit geval de eigenschap niet gebruikt als referentie, maar als (toegekende) eigenschap aan het onderwerp van het betreffende gegeven. Zo is in het gegeven "[Jan] heeft BSN 12345678" de waarde van de eigenschap een letterlijke waarde (namelijk: "12345678") en wordt hiermee niet een verwijzing naar Jan zelf bedoeld.
 
 #### Gegevens over relaties
 In een logisch gegevensmodel bestaan slechts gegevensobjecttypen. Terwijl in een conceptueel informatiemodel zowel objecttypen als relatietypen bestaan. Je kunt je dan ook de vraag stellen hoe we omgaan met gegevens over relaties: hoe leg je die vast?
