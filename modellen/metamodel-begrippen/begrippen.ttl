@@ -243,8 +243,7 @@ mimbegrip:Gegevensobject a skos:Concept;
   rdfs:label "Gegevensobject"@nl;
   skos:prefLabel "Gegevensobject"@nl;
   skos:inScheme schema:Verwerkingsdomein;
-  skos:definition "Een gegevensobject is een onderscheidbaar geheel van [gegevens] over één of meerdere [domeinobjecten]"@nl;
-  skos:related mimbegrip:Domeinobject;
+  skos:definition "Een gegevensobject is een onderscheidbaar geheel van [gegevens] die als kleinste eenheid wordt verwerkt"@nl;
   skosthes:narrowerPartitive mimbegrip:Gegeven;
 .
 term:gegevensobject skosxl:literalForm "gegevensobject";

@@ -22,7 +22,7 @@
 |[Gegeven](#gegeven)|Een gegeven is een vastgelegde uitdrukking over hetzij een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) dan wel een [relatie](#relatie) tussen [domeinobjecten](#domeinobject)|
 |[Gegevensgroep](#gegevensgroep)|Een gegevensgroep is een groepering van [gegevens](#gegeven)|
 |[Gegevensgroeptype](#gegevensgroeptype)|Een gegevensgroeptype is een typering van gelijksoortige [gegevensgroepen](#gegevensgroep)|
-|[Gegevensobject](#gegevensobject)|Een gegevensobject is een onderscheidbaar geheel van [gegevens](#gegeven) over één of meerdere [domeinobjecten](#domeinobject)|
+|[Gegevensobject](#gegevensobject)|Een gegevensobject is een onderscheidbaar geheel van [gegevens](#gegeven) die als kleinste eenheid wordt verwerkt|
 |[Gegevensobjecttype](#gegevensobjecttype)|Een gegevensobjecttype is een typering van gelijksoortige [gegevensobjecten](#gegevensobject)|
 |[Gegevenstype](#gegevenstype)|Een gegevenstype is een typering van gelijksoortige [gegevens](#gegeven)|
 |[Gegevenstypegroep](#gegevenstypegroep)|Een gegevenstypegroep is een groepering van [gegevenstypen](#gegevenstype)|

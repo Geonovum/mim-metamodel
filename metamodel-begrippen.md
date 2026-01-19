@@ -130,11 +130,9 @@ Omvat: [Gegeven](#gegeven)
 
 ### Gegevensobject
 
-> Een gegevensobject is een onderscheidbaar geheel van [gegevens](#gegeven) over één of meerdere [domeinobjecten](#domeinobject)
+> Een gegevensobject is een onderscheidbaar geheel van [gegevens](#gegeven) die als kleinste eenheid wordt verwerkt
 
 Omvat: [Gegeven](#gegeven)
-
-Gerelateerd: [Domeinobject](#domeinobject)
 
 ### Hoofdonderwerp
 
