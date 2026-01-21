@@ -44,7 +44,7 @@ We modelleren zowel het beschouwingsdomein als het verwerkingsdomein. Met modell
 
 Van modelsoort (1) naar modelsoort (5) wordt steeds meer duidelijk hoe we kennis over de beschouwde werkelijkheid kunnen verkrijgen en deze in gegevens kunnen uitdrukken. Toch is ook het fysiek datamodel slechts een model van de data: het beschrijft niet de data zelf, maar het beschrijft het "model", de "mal" waarbinnen deze data moet passen. Daarnaast geldt dat er niet alleen een afhankelijkheid is van (1) naar (5), ook andersom is sprake van een afhankelijkheid: zo kun je het nooit over de onderwerpen in de beschouwde werkelijkheid hebben, als je daarover geen gegevens uitwisselt.
 
-In dit document zullen we ons met name richten op het conceptueel informatie model en het logisch gegevensmodel. De samenhang met de overige soorten modellen valt voorlopig buiten de scope van dit document.
+In dit document zullen we ons met name richten op het conceptueel informatiemodel en het logisch gegevensmodel. De samenhang met de overige soorten modellen valt voorlopig buiten de scope van dit document.
 
 ### Notatiegebruik
 
@@ -71,7 +71,7 @@ De termen "beschouwde werkelijkheid", "beschouwingsdomein" of kortweg "domein" k
 
 Belangrijke kenmerken van het beschouwingsdomein zijn:
 
-- Het beperkt zich niet tot datgeen we waar kunnen nemen, maar kan alles omvatten dat "we" als onderdeel van een werkelijkheid willen beschouwen;
+- Het beperkt zich niet tot hetgeen we waar kunnen nemen, maar kan alles omvatten dat "we" als onderdeel van een werkelijkheid willen beschouwen;
 - Het veronderstelt niet dat "de" werkelijkheid bestaat, maar dat je er vanuit een bepaalde invalshoek, een bepaalde context naar kijkt;
 - Het beperkt zich tot het deel dat we relevant vinden om te beschouwen, dus zeker niet alles.
 
@@ -88,7 +88,7 @@ We gebruiken hier bewust het woord "domeinobject" om expliciet te maken dat we h
 
 > Een KENMERK is een verschijnsel dat toegekend kan worden aan bepaalde DOMEINOBJECTen
 
-Als je het over een bepaald domeinobject hebt (bijvoorbeeld [Jan]), dan heb je het over bepaalde kenmerken van Jan. Zoals het feit dat Jan een bepaalde lengte heeft, of getrouwd is, of ergens werkt. Dit zijn kenmerken van Jan, verschijnselen die we aan hem kunnen toekennen.
+Als je een bepaald domeinobject beschrijft (bijvoorbeeld [Jan]), dan zul je het hebben over bepaalde kenmerken van Jan. Zoals het feit dat Jan een bepaalde lengte heeft, of getrouwd is, of ergens werkt. Dit zijn kenmerken van Jan, verschijnselen die we aan hem kunnen toekennen.
 
 De definities van «domeinobject» en «kenmerk» zijn vrij ruim. Er kan van alles onder vallen. Dat is bewust: we willen immers zo'n beetje alles kunnen beschouwen wat we relevant vinden *om* te beschouwen. Toch is er uit de definities wel het één en ander te halen:
 
