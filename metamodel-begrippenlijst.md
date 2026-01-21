@@ -45,7 +45,7 @@
 |[Sleutel](#sleutel)|Een sleutel is een groep van één of meer [gegevenstypen](#gegevenstype) waarmee een unieke aanduiding voor het [hoofdonderwerp](#hoofdonderwerp) van een [gegevensobject](#gegevensobject) kan worden gevormd|
 |[Sleutelwaarde](#sleutelwaarde)|Een sleutelwaarde is de invulling van één of meerdere [kenmerken]() die gezamenlijk één enkel [domeinobject](#domeinobject) uniek aanduiden|
 |[Strik eenduidig gegevensobjecttype](#strik-eenduidig-gegevensobjecttype)|Een strikt eenduidig gegevensobjecttype is een [gegevensobjecttype](#gegevensobjecttype) over alleen [kenmerken]() van het [hoofdonderwerp](#hoofdonderwerp) waarvan de [sleutel](#sleutel) bekend is|
-|[Toegekend identificerend kenmerk](#toegekend-identificerend-kenmerk)|Een toegekend identificerend kenmerk is een [identificerend kenmerk](#identificerend-kenmerk) dat met dat doel is toegekend aan een [domeinobject](#domeinobject)|
+|[Toegekend identificerend kenmerk](#toegekend-identificerend-kenmerk)|Een toegekend identificerend kenmerk is een [identificerend kenmerk](#identificerend-kenmerk) dat is toegekend aan een [domeinobject](#domeinobject) om dit domeinobject uniek te kunnen identificeren|
 |[Verwerkingsdomein](#verwerkingsdomein)|Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt|
 |[Verwoording](#verwoording)|Een verwoording is een beschrijving van de manier waarop een voorkomen van een [relatietype](#relatietype) kan worden uitgedrukt in een propositie|
 |[Waarde](#waarde)|Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen|
