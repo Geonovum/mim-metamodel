@@ -2,14 +2,39 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skosthes: <http://purl.org/iso25964/skos-thes#>.
 
-@prefix mimbegrip: <http://begrippen.mim-standaard.nl/mimbegrip>.
-@prefix schema: <http://begrippen.mim-standaard.nl/schema>.
+@prefix mimbegrip: <http://begrippen.mim-standaard.nl/mimbegrip/>.
+@prefix schema: <http://begrippen.mim-standaard.nl/schema/>.
+
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#>.
+@prefix term: <http://begrippen.mim-standaard.nl/term/>
+
+#
+# Extra labels van properties voor genereren plaatje
+#
+skosthes:broaderGeneric rdfs:label "is specialisatie van".
+skosthes:narrowerGeneric rdfs:label "is generalisatie van".
+skosthes:broaderPartitive rdfs:label "is onderdeel van".
+skosthes:narrowerPartitive rdfs:label "omvat".
+skosthes:broaderInstantial rdfs:label "is exemplaar van".
+skos:related rdfs:label "is gerelateerd aan".
 
 #
 # Begrippenkader
 #
-schema:Metamodel a skos:ConceptScheme;
-  rdfs:label "Begrippen MIM metamodel";
+#schema:Metamodel a skos:ConceptScheme;
+#  rdfs:label "Begrippen MIM metamodel";
+#.
+schema:Beschouwingsdomein a skos:ConceptScheme;
+  rdfs:label "Beschouwingsdomein";
+.
+schema:Verwerkingsdomein a skos:ConceptScheme;
+  rdfs:label "Verwerkingsdomein";
+.
+schema:TyperingBeschouwingsdomein a skos:ConceptScheme;
+  rdfs:label "Typering beschouwingsdomein";
+.
+schema:TyperingVerwerkingsdomein a skos:ConceptScheme;
+  rdfs:label "Typering verwerkingsdomein";
 .
 
 #
@@ -18,7 +43,7 @@ schema:Metamodel a skos:ConceptScheme;
 mimbegrip:Beschouwingsdomein a skos:Concept;
   rdfs:label "Beschouwingsdomein"@nl;
   skos:prefLabel "Beschouwingsdomein"@nl;
-  skos:inScheme schema:Metamodel;
+  skos:inScheme schema:Beschouwingsdomein;
   skos:definition "Een beschouwingsdomein is een afgebakend deel van de werkelijkheid dat we relevant vinden om te beschouwen vanuit een bepaalde context"@nl;
   skos:altLabel "Beschouwde domein"@nl;
   skos:altLabel "Domein"@nl;
@@ -27,8 +52,8 @@ mimbegrip:Beschouwingsdomein a skos:Concept;
 mimbegrip:Verwerkingsdomein a skos:Concept;
   rdfs:label "Verwerkingsdomein"@nl;
   skos:prefLabel "Verwerkingsdomein"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een VERWERKINGSDOMEIN is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt"@nl;
+  skos:inScheme schema:Verwerkingsdomein;
+  skos:definition "Een verwerkingsdomein is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt"@nl;
   skos:scopeNote "Het verwerkingsdomein is het domein van de gegevens. Aangezien gegevens gaan over de dingen in het beschouwingsdomein (en niet over zichzelf), is het verwerkingsdomein altijd te onderscheiden van het beschouwingsdomein: het zijn twee verschillende domeinen. Wel hangen ze sterk samen: het verwerkingsdomein bevat de gegevens die gaan over het beschouwingsdomein. Het verwerkingsdomein en het beschouwingsdomein zijn dan ook vaak gelijkvormig. Zo kun je het hebben over een «persoon», maar ook over «persoonsgegevens». Een persoon heeft eigenschappen, bijvoorbeeld een leeftijd, en gegevens over die leeftijd zijn vervolgens weer onderdeel van de persoonsgegevens."@nl;
   skos:altLabel "Gegevensverwerkingsdomein"@nl;
   skos:altLabel "Gegevensdomein"@nl;
@@ -40,77 +65,134 @@ mimbegrip:Verwerkingsdomein a skos:Concept;
 mimbegrip:Domeinobject a skos:Concept;
   rdfs:label "Domeinobject"@nl;
   skos:prefLabel "Domeinobject"@nl;
-  skos:inScheme schema:Metamodel;
+  skos:inScheme schema:Beschouwingsdomein;
   skos:definition "Een domeinobject is een onderscheidbaar en identificeerbaar iets in de beschouwde werkelijkheid"@nl;
   skos:related mimbegrip:Beschouwingsdomein;
+.
+term:domeinobject skosxl:literalForm "domeinobject";
+  skosxl:hiddenLabel term:domeinobjecten
+.
+term:domeinobjecten skosxl:literalForm "domeinobjecten".
+
+mimbegrip:Kenmerk a skos:Concept;
+  rdfs:label "Kenmerk"@nl;
+  skos:prefLabel "Kenmerk"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een kenmerk is een verschijnsel dat toegekend kan worden aan bepaalde [domeinobjecten]."@nl;
+  skos:related mimbegrip:Domeinobject;
+.
+term:kenmerk skosxl:literalForm "kenmerk";
+  skosxl:hiddenLabel term:kenmerken
+.
+term:kenmerken skosxl:literalForm "kenmerk".
+
+mimbegrip:IdentificerendKenmerk a skos:Concept;
+  rdfs:label "Identificerend kenmerk"@nl;
+  skos:prefLabel "Identificerend kenmerk"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een identificerend kenmerk is een [kenmerk] waarmee de identiteit van een [domeinobject] mede kan worden vastgesteld"@nl;
+  skos:scopeNote "Het gaat bij de identificatie of dit domeinobject er eentje is (dus niet twee), dat het zo-eentje (en niet iets anders) is en dat het ook die ene is (en niet een andere). Het is denkbaar dat meerdere identificerende kenmerken gezamenlijk nodig zijn."@nl;
+  skosthes:broaderGeneric mimbegrip:Kenmerk;
+  skos:related mimbegrip:Domeinobject;
+.
+term:identificerend-kenmerk skosxl:literalForm "identificerend kenmerk";
+  skosxl:hiddenLabel term:identificerende-kenmerken
+.
+term:identificerende-kenmerken skosxl:literalForm "identificerende kenmerken".
+
+mimbegrip:Identificator a skos:Concept;
+  rdfs:label "Identificator"@nl;
+  skos:prefLabel "Identificator"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een identificator is een geheel van één of meerdere [identificerende kenmerken] waarmee de identiteit van een [domeinobject] uniek kan worden vastgesteld"@nl;
+  skosthes:narrowerPartitive mimbegrip:IdentificerendKenmerk;
+  skos:related mimbegrip:Domeinobject;
+.
+
+mimbegrip:ToegekendIdentificerendKenmerk a skos:Concept;
+  rdfs:label "Toegekend identificerend kenmerk"@nl;
+  skos:prefLabel "Toegekend identificerend kenmerk"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een toegekend identificerend kenmerk is een [identificerend kenmerk] dat is toegekend aan een [domeinobject] om dit domeinobject uniek te kunnen identificeren"@nl;
+  skos:scopeNote "Een toegekend identificerend kenmerk is feitelijk geen eigenschap van een domeinobject, maar wordt juist toegekend aan een domeinobject. Zo is een BSN nummer geen feitelijke eigenschap van een persoon, maar wordt deze wel toegewezen aan elke ingeschrevene in de Basisregistratie Personen. Ook bijvoorbeeld het VIN (Vehicle Identification Number) is geen feitelijke eigenschap van een voertuig, maar wordt aan een voertuig toegewezen."@nl;
+  skosthes:broaderGeneric mimbegrip:IdentificerendKenmerk;
 .
 
 mimbegrip:Eigenschap a skos:Concept;
   rdfs:label "Eigenschap"@nl;
   skos:prefLabel "Eigenschap"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een EIGENSCHAP is een verschijnsel dat toegekend kan worden aan bepaalde domeinobjecten."@nl;
-  skos:related mimbegrip:Domeinobject;
-.
-
-mimbegrip:IdentificerendeEigenschap a skos:Concept;
-  rdfs:label "Identificerende eigenschap"@nl;
-  skos:prefLabel "Identificerende eigenschap"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een identificerende eigenschap is een eigenschap waarmee de identiteit van een domeinobject kan worden vastgesteld"@nl;
-  skos:scopeNote "Het gaat bij de identificatie of dit domeinobject er eentje is (dus niet twee), dat het zo-eentje (en niet iets anders) is en dat het ook die ene is (en niet een andere). Het is denkbaar dat meerdere identificerende eigenschappen gezamenlijk nodig zijn."@nl;
-  skosthes:broaderGeneric mimbegrip:Eigenschap;
-  skos:related mimbegrip:Domeinobject;
-.
-
-mimbegrip:ToegekendeIdentificerendeEigenschap a skos:Concept;
-  rdfs:label "Toegekende identificerende eigenschap"@nl;
-  skos:prefLabel "Toegekende identificerende eigenschap"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een toegekende identificerende eigenschap is een identificerende eigenschap die met dat doel is toegekend aan een domeinobject"@nl;
-  skos:scopeNote "Een toegekende identificerende eigenschap is feitelijk geen eigenschap van een domeinobject, maar wordt juist toegekend aan een domeinobject. Zo is een BSN nummer geen feitelijke eigenschap van een persoon, maar wordt deze wel toegewezen aan elke ingeschrevene in de Basisregistratie Personen. Ook bijvoorbeeld het VIN (Vehicle Identification Number) is geen feitelijke eigenschap van een voertuig, maar wordt aan een voertuig toegewezen."@nl;
-  skosthes:broaderGeneric mimbegrip:IdentificerendeEigenschap;
-.
-
-mimbegrip:Kenmerk a skos:Concept;
-  rdfs:label "Kenmerk"@nl;
-  skos:prefLabel "Kenmerk"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een kenmerk is een eigenschap van een domeinobject waar uitsluitend een waarde aan kan worden toegekend"@nl;
-  skosthes:broaderGeneric mimbegrip:Eigenschap;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een eigenschap is een [kenmerk] van een [domeinobject] waar uitsluitend een [waarde] aan kan worden toegekend"@nl;
+  skosthes:broaderGeneric mimbegrip:Kenmerk;
   skos:related mimbegrip:Waarde;
 .
 
 mimbegrip:Waarde a skos:Concept;
   rdfs:label "Waarde"@nl;
   skos:prefLabel "Waarde"@nl;
-  skos:inScheme schema:Metamodel;
+  skos:inScheme schema:Beschouwingsdomein;
   skos:definition "Een waarde is een tekenreeks of een aaneenschakeling van meerdere tekenreeksen"@nl;
   skos:editorialNote "Waarde wordt in het metamodel niet echt gedefinieerd, slechts letterlijke waarde en complexe waarde kennen een definitie. Bovenstaande definitie lijkt het beste te passen."@nl;
 .
+term:waarde skosxl:literalForm "waarde";
+  skosxl:hiddenLabel term:waarden
+.
+term:waarden skosxl:literalForm "waarden".
+
 mimbegrip:LetterlijkeWaarde a skos:Concept;
   rdfs:label "Letterlijke waarde"@nl;
   skos:prefLabel "Letterlijke waarde"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een letterlijke waarde is een waarde waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een letterlijke waarde is een [waarde] waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer"@nl;
   skosthes:broaderGeneric mimbegrip:Waarde;
 .
+term:letterlijke-waarde skosxl:literalForm "letterlijke waarde";
+  skosxl:hiddenLabel term:letterlijke-waarden
+.
+term:letterlijke-waarden skosxl:literalForm "letterlijke waarden".
+
 mimbegrip:ComplexeWaarde a skos:Concept;
   rdfs:label "Complexe waarde"@nl;
   skos:prefLabel "Complexe waarde"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een complexe waarde is een waarde die bestaat uit een aaneenschakeling van afzonderlijke letterlijke waarden en/of categorieën."@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een complexe waarde is een [waarde] die bestaat uit een aaneenschakeling van afzonderlijke [letterlijke waarden] en/of [categorieën]"@nl;
   skosthes:broaderGeneric mimbegrip:Waarde;
   skos:related mimbegrip:Categorie;
   skos:related mimbegrip:LetterlijkeWaarde;
 .
+term:complexe-waarde skosxl:literalForm "complexe waarde";
+  skosxl:hiddenLabel term:complexe-waarden
+.
+term:complexe-waarden skosxl:literalForm "complexe waarden".
+
+mimbegrip:CategorischKenmerk a skos:Concept;
+  rdfs:label "Categorisch kenmerk"@nl;
+  skos:prefLabel "Categorisch kenmerk"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een categorisch kenmerk is een [kenmerk] van een [domeinobject] waar een [categorie] aan kan worden toegekend"@nl;
+  skosthes:broaderGeneric mimbegrip:Kenmerk;
+  skos:related mimbegrip:Categorie;
+.
+
+mimbegrip:Categorie a skos:Concept;
+  rdfs:label "Categorie"@nl;
+  skos:prefLabel "Categorie"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een categorie is een aanduiding van een groep [domeinobjecten] die een kwaliteit gemeen hebben"@nl;
+  skos:scopeNote "Voorbeelden van categorieën zijn: kleur, geslacht, type voertuig (auto, fiets, bus) of merk. Je kunt nog onderscheid maken tussen nominale categorische kenmerken (de categorieën hebben geen volgorde) en ordinale categorische kenmerken (er is een volgorde, bijvoorbeeld urgentie: laag, midden, hoog)."@nl;
+  skos:related mimbegrip:Domeinobject;
+.
+term:categorie skosxl:literalForm "categorie";
+  skosxl:hiddenLabel term:categorieen
+.
+term:categorieen skosxl:literalForm "categorieën".
 
 mimbegrip:Rol a skos:Concept;
   rdfs:label "Rol"@nl;
   skos:prefLabel "Rol"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een rol is een eigenschap van een domeinobject in een relatie met zichzelf of een ander domeinobject"@nl;
-  skosthes:broaderGeneric mimbegrip:Eigenschap;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een rol is een [kenmerk] dat wordt vervuld door een [domeinobject] in een [relatie]"@nl;
+  skosthes:broaderGeneric mimbegrip:Kenmerk;
   skos:related mimbegrip:Domeinobject;
   skos:related mimbegrip:Relatie;
 .
@@ -118,37 +200,14 @@ mimbegrip:Rol a skos:Concept;
 mimbegrip:Relatie a skos:Concept;
   rdfs:label "Relatie"@nl;
   skos:prefLabel "Relatie"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een relatie is een verbintenis tussen domeinobjecten"@nl;
+  skos:inScheme schema:Beschouwingsdomein;
+  skos:definition "Een relatie is een verbintenis tussen [domeinobjecten]"@nl;
   skos:related mimbegrip:Domeinobject;
 .
-
-mimbegrip:CategorischKenmerk a skos:Concept;
-  rdfs:label "Categorisch kenmerk"@nl;
-  skos:prefLabel "Categorisch kenmerk"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een categorisch kenmerk is een eigenschap van een domeinobject waar een categorie aan kan worden toegekend"@nl;
-  skosthes:broaderGeneric mimbegrip:Eigenschap;
-  skos:related mimbegrip:Categorie;
+term:relatie skosxl:literalForm "relatie";
+  skosxl:hiddenLabel term:relaties
 .
-
-mimbegrip:Categorie a skos:Concept;
-  rdfs:label "Categorie"@nl;
-  skos:prefLabel "Categorie"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een categorie is een aanduiding van een groep domeinobjecten die een kwaliteit gemeen hebben"@nl;
-  skos:scopeNote "Voorbeelden van categorieën zijn: kleur, geslacht, type voertuig (auto, fiets, bus) of merk. Je kunt nog onderscheid maken tussen nominale categorische kenmerken (de categorieën hebben geen volgorde) en ordinale categorische kenmerken (er is een volgorde, bijvoorbeeld urgentie: laag, midden, hoog)."@nl;
-  skos:related mimbegrip:Domeinobject;
-.
-
-mimbegrip:Relatiedomeinobject a skos:Concept;
-  rdfs:label "Relatiedomeinobject"@nl;
-  skos:prefLabel "Relatiedomeinobject"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een relatiedomeinobject is een relatie die beschouwd wordt als domeinobject"@nl;
-  skos:broaderGeneric mimbegrip:Relatie;
-  skos:broaderGeneric mimbegrip:Domeinobject;
-.
+term:relaties skosxl:literalForm "relaties".
 
 #
 # De dingen die zijn in het verwerkingsdomein
@@ -156,36 +215,47 @@ mimbegrip:Relatiedomeinobject a skos:Concept;
 mimbegrip:Gegeven a skos:Concept;
   rdfs:label "Gegeven"@nl;
   skos:prefLabel "Gegeven"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een gegeven is een vastgelegde uitdrukking over hetzij een eigenschap van een domeinobject dan wel een relatie tussen domeinobjecten"@nl;
+  skos:inScheme schema:Verwerkingsdomein;
+  skos:definition "Een gegeven is een vastgelegde uitdrukking over hetzij een [kenmerk] van een [domeinobject] dan wel een [relatie] tussen [domeinobjecten]"@nl;
   skos:related mimbegrip:Domeinobject;
-  skos:related mimbegrip:Eigenschap;
+  skos:related mimbegrip:Kenmerk;
   skos:related mimbegrip:Relatie;
 .
+term:gegeven skosxl:literalForm "gegeven";
+  skosxl:hiddenLabel term:gegevens
+.
+term:gegevens skosxl:literalForm "gegevens".
 
 mimbegrip:Gegevensgroep a skos:Concept;
   rdfs:label "Gegevensgroep"@nl;
   skos:prefLabel "Gegevensgroep"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een gegevensgroep is een groepering van gegevens"@nl;
+  skos:inScheme schema:Verwerkingsdomein;
+  skos:definition "Een gegevensgroep is een groepering van [gegevens]"@nl;
   skos:scopeNote "Een gegevensgroep is simpelweg een groepje van gegevens."@nl;
   skosthes:narrowerPartitive mimbegrip:Gegeven;
 .
+term:gegevensgroep skosxl:literalForm "gegevensgroep";
+  skosxl:hiddenLabel term:gegevensgroepen
+.
+term:gegevensgroepen skosxl:literalForm "gegevensgroepen".
 
 mimbegrip:Gegevensobject a skos:Concept;
   rdfs:label "Gegevensobject"@nl;
   skos:prefLabel "Gegevensobject"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een gegevensobject is een onderscheidbaar geheel van gegevens over één of meerdere domeinobjecten"@nl;
-  skos:related mimbegrip:Domeinobject;
+  skos:inScheme schema:Verwerkingsdomein;
+  skos:definition "Een gegevensobject is een onderscheidbaar geheel van [gegevens] die als kleinste eenheid wordt verwerkt"@nl;
   skosthes:narrowerPartitive mimbegrip:Gegeven;
 .
+term:gegevensobject skosxl:literalForm "gegevensobject";
+  skosxl:hiddenLabel term:gegevensobjecten
+.
+term:gegevensobjecten skosxl:literalForm "gegevensobjecten".
 
 mimbegrip:Hoofdonderwerp a skos:Concept;
   rdfs:label "Hoofdonderwerp"@nl;
   skos:prefLabel "Hoofdonderwerp"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een hoofdonderwerp is een domeinobject waarover een gegevensobject in hoofdzaak gaat"@nl;
+  skos:inScheme schema:Verwerkingsdomein;
+  skos:definition "Een hoofdonderwerp is een [domeinobject] waarover een [gegevensobject] in hoofdzaak gaat"@nl;
   skosthes:broaderGeneric mimbegrip:Domeinobject;
   skosthes:related mimbegrip:Gegevensobject;
 .
@@ -193,9 +263,9 @@ mimbegrip:Hoofdonderwerp a skos:Concept;
 mimbegrip:Sleutelwaarde a skos:Concept;
   rdfs:label "Sleutelwaarde"@nl;
   skos:prefLabel "Sleutelwaarde"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een sleutelwaarde is de invulling van één of meerdere eigenschappen die gezamenlijk één enkel domeinobject uniek aanduiden."@nl;
-  skos:related mimbegrip:Eigenschap;
+  skos:inScheme schema:Verwerkingsdomein;
+  skos:definition "Een sleutelwaarde is de invulling van één of meerdere [kenmerken] die gezamenlijk één enkel [domeinobject] uniek aanduiden"@nl;
+  skos:related mimbegrip:Kenmerk;
   skos:related mimbegrip:Domeinobject;
 .
 
@@ -206,16 +276,16 @@ mimbegrip:Sleutelwaarde a skos:Concept;
 mimbegrip:Objecttype a skos:Concept;
   rdfs:label "Objecttype"@nl;
   skos:prefLabel "Objecttype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een objecttype is een typering van gelijksoortige domeinobjecten"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een objecttype is een typering van gelijksoortige [domeinobjecten]"@nl;
   skos:related mimbegrip:Domeinobject;
 .
 
 mimbegrip:Populatie a skos:Concept;
   rdfs:label "Populatie"@nl;
   skos:prefLabel "Populatie"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een populatie is de verzameling van alle mogelijke domeinobjecten die te onderscheiden zijn als objecttype"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een POPULATIE is de verzameling van alle mogelijke [domeinobjecten] die in de beschouwde werkelijkheid te onderscheiden zijn als [objecttype]"@nl;
   skos:related mimbegrip:Domeinobject;
   skos:related mimbegrip:Objecttype;
 .
@@ -223,116 +293,121 @@ mimbegrip:Populatie a skos:Concept;
 mimbegrip:Attribuuttype a skos:Concept;
   rdfs:label "Attribuuttype"@nl;
   skos:prefLabel "Attribuuttype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een attribuuttype is een typering van een kenmerk van een domeinobject, behorende tot een objecttype"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een attribuuttype is een typering van een [kenmerk], behorende tot een [objecttype] of [relatietype]"@nl;
   skos:related mimbegrip:Kenmerk;
   skos:related mimbegrip:Objecttype;
+  skos:related mimbegrip:Relatietype;
 .
 
 mimbegrip:Waardetype a skos:Concept;
   rdfs:label "Waardetype"@nl;
   skos:prefLabel "Waardetype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een waardetype is een typering van gelijksoortige waarden"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een waardetype is een typering van gelijksoortige [waarden]"@nl;
   skos:related mimbegrip:Waarde;
 .
 
 mimbegrip:AttribuuttypeVanClassificerendeAard a skos:Concept;
   rdfs:label "Attribuuttype van classificerende aard"@nl;
   skos:prefLabel "Attribuuttype van classificerende aard"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een attribuuttype van classificerende aard is een attribuuttype als typering van een categorisch kenmerk"@nl;
-  skos:broaderGeneric mimbegrip:Attribuuttype;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een attribuuttype van classificerende aard is een [attribuuttype] als typering van een [categorisch kenmerk]"@nl;
+  skosthes:broaderGeneric mimbegrip:Attribuuttype;
   skos:related mimbegrip:CategorischKenmerk;
 .
 
 mimbegrip:Classificatieschema a skos:Concept;
   rdfs:label "Classificatieschema"@nl;
   skos:prefLabel "Classificatieschema"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een classificatieschema is een systematische ordening van domeinobjecten in categorieën";
-  skos:narrowerPartitive mimbegrip:Categorie;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een classificatieschema is een systematische ordening van [domeinobjecten] in [categorieën]";
+  skosthes:narrowerPartitive mimbegrip:Categorie;
   skos:related mimbegrip:Domeinobject
 .
 
 mimbegrip:ComplexWaardetype a skos:Concept;
   rdfs:label "Complex waardetype"@nl;
   skos:prefLabel "Complex waardetype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een complex waardetype is een typering van gelijksoortige complexe waarden"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een complex waardetype is een typering van gelijksoortige [complexe waarden]"@nl;
   skos:related mimbegrip:ComplexeWaarde;
 .
 
 mimbegrip:Relatietype a skos:Concept;
   rdfs:label "Relatietype"@nl;
   skos:prefLabel "Relatietype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een relatietype is een typering van gelijksoortige relaties"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een relatietype is een typering van gelijksoortige [relaties]"@nl;
 .
 
-mimbegrip:Roltype a skos:Concept;
-  rdfs:label "Roltype"@nl;
-  skos:prefLabel "Roltype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een roltype is een typering van een rol van een domeinobject in een relatie, getypeerd door een relatietype en behorende tot een objecttype"@nl;
+mimbegrip:Rolinvulling a skos:Concept;
+  rdfs:label "Rolinvulling"@nl;
+  skos:prefLabel "Rolinvulling"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een rolinvulling is een beschrijving van de invulling van een [rol] in een [relatietype] door voorkomens van een [objecttype]"@nl;
   skos:related mimbegrip:Rol;
   skos:related mimbegrip:Relatietype;
   skos:related mimbegrip:Objecttype;
 .
 
-mimbegrip:Relatieobjecttype a skos:Concept;
-  rdfs:label "Relatieobjecttype"@nl;
-  skos:prefLabel "Relatieobjecttype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een relatieobjecttype is een typering van gelijksoortige relatiedomeinobjecten"@nl;
-  skos:related mimbegrip:Relatiedomeinobject;
+mimbegrip:Verwoording a skos:Concept;
+  rdfs:label "Verwoording"@nl;
+  skos:prefLabel "Verwoording"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een verwoording is een beschrijving van de manier waarop een voorkomen van een [relatietype] kan worden uitgedrukt in een propositie"@nl;
+  skos:related mimbegrip:Relatietype;
 .
 
 mimbegrip:Conditie a skos:Concept;
   rdfs:label "Conditie"@nl;
   skos:prefLabel "Conditie"@nl;
-  skos:inScheme schema:Metamodel;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
   skos:definition "Een conditie is een noodzakelijke voorwaarde die moet gelden voor een typering"@nl;
 .
 
 mimbegrip:Cardinaliteit a skos:Concept;
   rdfs:label "Cardinaliteit"@nl;
   skos:prefLabel "Cardinaliteit"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een cardinaliteit is een conditie waarbij van een eigenschap is gesteld hoeveel invullingen er voor één domeinobject minimaal en maximaal zijn"@nl;
-  skos:broaderGeneric mimbegrip:Conditie;
-  skos:related mimbegrip:Eigenschap;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een cardinaliteit is een [conditie] waarbij van een [kenmerk] is gesteld hoeveel invullingen er voor één [domeinobject] minimaal en maximaal zijn"@nl;
+  skosthes:broaderGeneric mimbegrip:Conditie;
+  skos:related mimbegrip:Kenmerk;
   skos:related mimbegrip:Domeinobject;
 .
 mimbegrip:Lengte a skos:Concept;
   rdfs:label "Lengte"@nl;
   skos:prefLabel "Lengte"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een lengte is een conditie waarbij van een kenmerk of waarde is gesteld hoe lang de waarde of invulling van dat kenmerk mag zijn"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een lengte is een [conditie] waarbij van een [kenmerk] of [waarde] is gesteld hoe lang de [waarde] of invulling van dat [kenmerk] mag zijn"@nl;
   skos:scopeNote "Een lengte kan zowel op een specifiek kenmerk van toepassing zijn (bijvoorbeeld de lengte die een voornaam-kenmerk mag hebben), maar ook voor gelijksoortige waarden (bijvoorbeeld de lengte die een postcode-waarde mag hebben)"@nl;
   skosthes:broaderGeneric mimbegrip:Conditie;
+  skos:related mimbegrip:Kenmerk;
+  skos:related mimbegrip:Waarde;
 .
 mimbegrip:Datatype a skos:Concept;
   rdfs:label "Datatype"@nl;
   skos:prefLabel "Datatype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een datatype is een conditie waarbij van een kenmerk of waarde is gesteld wat voor datatype de waarde of invulling van dat kenmerk mag zijn"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een datatype is een [conditie] waarbij van een [kenmerk] of [waarde] is gesteld wat voor datatype de [waarde] of invulling van dat [kenmerk] mag zijn"@nl;
   skos:scopeNote "Een datatype kan zowel op een specifiek kenmerk van toepassing zijn (bijvoorbeel dat geboortedatum een datum is), maar ook voor gelijksoortige waarden (bijvoorbeeld dat een bedrag een getal is)"@nl;
   skosthes:broaderGeneric mimbegrip:Conditie;
+  skos:related mimbegrip:Kenmerk;
+  skos:related mimbegrip:Waarde;
 .
 mimbegrip:InformeleConditie a skos:Concept;
-  rdfs:label "Informatie conditie"@nl;
+  rdfs:label "Informele conditie"@nl;
   skos:prefLabel "Informele conditie"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een informele conditie is een conditie die beschreven is in natuurlijk taal"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een informele conditie is een [conditie] die beschreven is in natuurlijk taal"@nl;
   skos:scopeNote "Een natuurlijke taal is een taal die mensen gebruiken in onderlinge communicatie. Zo'n taal is per definitie leesbaar voor mensen. Hoewel de taal leesbaar kan zijn voor machines, zullen machines de taal niet (volledig) kunnen interpreteren."@nl;
   skosthes:broaderGeneric mimbegrip:Conditie;
 .
 mimbegrip:FormeleConditie a skos:Concept;
   rdfs:label "Formele conditie"@nl;
   skos:prefLabel "Formele conditie"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een formele conditie is een conditie die beschreven is in een machine-interpreteerbare taal"@nl;
+  skos:inScheme schema:TyperingBeschouwingsdomein;
+  skos:definition "Een formele conditie is een [conditie] die beschreven is in een machine-interpreteerbare taal"@nl;
   skos:scopeNote "Machine-interpreteerbaar betekent dat een machine (geautomatiseerd) kan vaststellen of aan de conditie is voldaan of juist niet"@nl;
   skosthes:broaderGeneric mimbegrip:Conditie;
 .
@@ -344,75 +419,82 @@ mimbegrip:FormeleConditie a skos:Concept;
 mimbegrip:Gegevenstype a skos:Concept;
   rdfs:label "Gegevenstype"@nl;
   skos:prefLabel "Gegevenstype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een gegevenstype is een typering van gelijksoortige gegevens"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een gegevenstype is een typering van gelijksoortige [gegevens]"@nl;
   skos:related mimbegrip:Gegeven;
 .
+term:gegevenstype skosxl:literalForm "gegevenstype";
+  skosxl:hiddenLabel term:gegevenstypen
+.
+term:gegevenstypen skosxl:literalForm "gegevenstypen".
 
 mimbegrip:Gegevensobjecttype a skos:Concept;
   rdfs:label "Gegevensobjecttype"@nl;
   skos:prefLabel "Gegevensobjecttype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een gegevensobjecttype is een typering van gelijksoortige gegevensobjecten"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een gegevensobjecttype is een typering van gelijksoortige [gegevensobjecten]"@nl;
   skos:related mimbegrip:Gegevensobject
 .
 
 mimbegrip:Gegevenstypegroep a skos:Concept;
   rdfs:label "Gegevenstypegroep"@nl;
   skos:prefLabel "Gegevenstypegroep"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een gegevenstypegroep is een groepering van gegevenstypen"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een gegevenstypegroep is een groepering van [gegevenstypen]"@nl;
   skosthes:narrowerPartitive mimbegrip:Gegevenstype;
-.
-
-mimbegrip:Gegevensgroeptype a skos:Concept;
-  rdfs:label "Gegevensgroeptype"@nl;
-  skos:prefLabel "Gegevensgroeptype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een gegevensgroeptype is een typering van gelijksoortige gegevensgroepen"@nl;
-  skos:related mimbegrip:Gegevensgroep;
 .
 
 mimbegrip:Sleutel a skos:Concept;
   rdfs:label "Sleutel"@nl;
   skos:prefLabel "Sleutel"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een sleutel is een groep van één of meer gegevenstypen waarmee een unieke aanduiding voor het hoofdonderwerp van een gegevensobject kan worden gevormd"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een sleutel is een groep van één of meer [gegevenstypen] waarmee een unieke aanduiding voor het [hoofdonderwerp] van een [gegevensobject] kan worden gevormd"@nl;
   skosthes:narrowerPartitive mimbegrip:Gegevenstype;
   skos:related mimbegrip:Hoofdonderwerp;
   skos:related mimbegrip:Gegevensobject;
 .
 
+mimbegrip:Gegevensgroeptype a skos:Concept;
+  rdfs:label "Gegevensgroeptype"@nl;
+  skos:prefLabel "Gegevensgroeptype"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een gegevensgroeptype is een typering van gelijksoortige [gegevensgroepen]"@nl;
+  skos:related mimbegrip:Gegevensgroep;
+.
+
 mimbegrip:EenduidigGegevensobjecttype a skos:Concept;
   rdfs:label "Eenduidig gegevensobjecttype"@nl;
-  skos:prefLabel "Eenduidig gegevenstype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een eenduidig gegevensobjecttype is een gegevensobjecttype met precies één hoofdonderwerp waarvan de sleutel bekend is"@nl;
+  skos:prefLabel "Eenduidig gegevensobjecttype"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een eenduidig gegevensobjecttype is een [gegevensobjecttype] met precies één [hoofdonderwerp] waarvan de [sleutel] bekend is"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevensobjecttype;
+  skos:related mimbegrip:Hoofdonderwerp;
   skos:related mimbegrip:Sleutel;
 .
 
 mimbegrip:StriktEenduidigGegevensobjecttype a skos:Concept;
   rdfs:label "Strik eenduidig gegevensobjecttype"@nl;
   skos:prefLabel "Strikt eenduidig gegevensobjecttype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een strikt eenduidig gegevensobjecttype is een gegevensobjecttype over alleen eigenschappen van het hoofdonderwerp waarvan de sleutel bekend is"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een strikt eenduidig gegevensobjecttype is een [gegevensobjecttype] over alleen [kenmerken] van het [hoofdonderwerp] waarvan de [sleutel] bekend is"@nl;
   skosthes:broaderGeneric mimbegrip:EenduidigGegevensobjecttype;
 .
 
 mimbegrip:BeschrijvendGegevensobjecttype a skos:Concept;
   rdfs:label "Beschrijvend gegevensobjecttype"@nl;
   skos:prefLabel "Beschrijvend gegevensobjecttype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een beschrijvend gegevensobjecttype is een gegevensobjecttype met precies één hoofdonderwerp, zonder dat de sleutel van het hoofdonderwerp bekend is"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een beschrijvend gegevensobjecttype is een [gegevensobjecttype] met precies één [hoofdonderwerp], zonder dat de [sleutel] van dat [hoofdonderwerp] bekend is"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevensobjecttype;
+  skos:related mimbegrip:Hoofdonderwerp;
+  skos:related mimbegrip:Sleutel;
 .
 
 mimbegrip:DirectGegevenstype a skos:Concept;
   rdfs:label "Direct gegevenstype"@nl;
   skos:prefLabel "Direct gegevenstype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een direct gegevenstype is een gegevenstype over één eigenschap van een domeinobject, vastgelegd bij een gegevensobjectype dat dit domeinobject als hoofdonderwerp heeft"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een direct gegevenstype is een [gegevenstype] over één [kenmerk] van een [domeinobject], vastgelegd bij een [gegevensobjectype] dat dit [domeinobject] als [hoofdonderwerp] heeft"@nl;
   skos:scopeNote "Een voorbeeld is werknemer.geboortedatum. Geboortedatum is een eigenschap van een werknemer (feitelijk een eigenschap van een mens, maar aangezien elke werknemer een mens is, is dit ook een eigenschap van een werknemer)"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevenstype;
   skos:related mimbegrip:Hoofdonderwerp;
@@ -420,24 +502,25 @@ mimbegrip:DirectGegevenstype a skos:Concept;
 mimbegrip:IndirectGegevenstype a skos:Concept;
   rdfs:label "Indirect gegevenstype"@nl;
   skos:prefLabel "Indirect gegevenstype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een indirect gegevenstype is een gegevenstype over één eigenschap van een domeinobject, vastgelegd bij een gegevensobjecttype dat dit domeinobject niet als hoofdonderwerp heeft"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een indirect gegevenstype is een gegevenstype over één [kenmerk] van een [domeinobject], vastgelegd bij een [gegevensobjecttype] dat dit [domeinobject] niet als [hoofdonderwerp] heeft"@nl;
   skos:scopeNote "Een voorbeeld is werknemer.woonplaatsnaam. Woonplaatsnaam is geen eigenschap van een werknemer, maar een eigenschap van een woonplaats. De indirectie is (dus) werknemer > woont in woonplaats, woonplaats.naam"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevenstype;
+  skos:related mimbegrip:Hoofdonderwerp;
 .
 mimbegrip:SamengesteldEnkelvoudigGegevenstype a skos:Concept;
   rdfs:label "Samengesteld enkelvoudig gegevenstype"@nl;
   skos:prefLabel "Samengesteld enkelvoudig gegevenstype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een samengesteld enkelvoudig gegevenstype is een gegevenstype over één eigenschap van meerdere domeinobjecten"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een samengesteld enkelvoudig gegevenstype is een [gegevenstype] over één [kenmerk] van meerdere [domeinobjecten]"@nl;
   skos:scopeNote "Een voorbeeld is aantal werknemers of totaalbedrag orderregels"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevenstype;
 .
 mimbegrip:SamengesteldMeervoudigGegevenstype a skos:Concept;
   rdfs:label "Samengesteld meervoudig gegevenstype"@nl;
   skos:prefLabel "Samengesteld meervoudig gegevenstype"@nl;
-  skos:inScheme schema:Metamodel;
-  skos:definition "Een samengesteld meervoudig gegevenstype is een gegevenstype over meerdere eigenschappen van één of meerdere domeinobjecten"@nl;
+  skos:inScheme schema:TyperingVerwerkingsdomein;
+  skos:definition "Een samengesteld meervoudig gegevenstype is een [gegevenstype] over meerdere [kenmerken] van één of meerdere [domeinobjecten]"@nl;
   skos:scopeNote "Een voorbeeld is percentage ziekteverzuim (van één persoon), of juist percentage ziekteverzuim van een groep personen"@nl;
   skosthes:broaderGeneric mimbegrip:Gegevenstype;
 .
