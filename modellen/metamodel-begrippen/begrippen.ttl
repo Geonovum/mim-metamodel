@@ -313,7 +313,7 @@ mimbegrip:AttribuuttypeVanClassificerendeAard a skos:Concept;
   skos:prefLabel "Attribuuttype van classificerende aard"@nl;
   skos:inScheme schema:TyperingBeschouwingsdomein;
   skos:definition "Een attribuuttype van classificerende aard is een [attribuuttype] als typering van een [categorisch kenmerk]"@nl;
-  skos:broaderGeneric mimbegrip:Attribuuttype;
+  skosthes:broaderGeneric mimbegrip:Attribuuttype;
   skos:related mimbegrip:CategorischKenmerk;
 .
 

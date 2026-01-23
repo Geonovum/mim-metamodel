@@ -30,12 +30,12 @@
 |[Identificator](#identificator)|Een identificator is een geheel van één of meerdere [identificerende kenmerken](#identificerend-kenmerk) waarmee de identiteit van een [domeinobject](#domeinobject) uniek kan worden vastgesteld|
 |[Identificerend kenmerk](#identificerend-kenmerk)|Een identificerend kenmerk is een [kenmerk](#kenmerk) waarmee de identiteit van een [domeinobject](#domeinobject) mede kan worden vastgesteld|
 |[Indirect gegevenstype](#indirect-gegevenstype)|Een indirect gegevenstype is een gegevenstype over één [kenmerk](#kenmerk) van een [domeinobject](#domeinobject), vastgelegd bij een [gegevensobjecttype](#gegevensobjecttype) dat dit [domeinobject](#domeinobject) niet als [hoofdonderwerp](#hoofdonderwerp) heeft|
-|[Informatie conditie](#informatie-conditie)|Een informele conditie is een [conditie](#conditie) die beschreven is in natuurlijk taal|
+|[Informele conditie](#informele-conditie)|Een informele conditie is een [conditie](#conditie) die beschreven is in natuurlijk taal|
 |[Kenmerk](#kenmerk)|Een kenmerk is een verschijnsel dat toegekend kan worden aan bepaalde [domeinobjecten](#domeinobject).|
 |[Lengte](#lengte)|Een lengte is een [conditie](#conditie) waarbij van een [kenmerk](#kenmerk) of [waarde](#waarde) is gesteld hoe lang de [waarde](#waarde) of invulling van dat [kenmerk](#kenmerk) mag zijn|
 |[Letterlijke waarde](#letterlijke-waarde)|Een letterlijke waarde is een [waarde](#waarde) waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer|
 |[Objecttype](#objecttype)|Een objecttype is een typering van gelijksoortige [domeinobjecten](#domeinobject)|
-|[Populatie](#populatie)|Een populatie is de verzameling van alle mogelijke [domeinobjecten](#domeinobject) die te onderscheiden zijn als [objecttype](#objecttype)|
+|[Populatie](#populatie)|Een POPULATIE is de verzameling van alle mogelijke [domeinobjecten](#domeinobject) die in de beschouwde werkelijkheid te onderscheiden zijn als [objecttype](#objecttype)|
 |[Relatie](#relatie)|Een relatie is een verbintenis tussen [domeinobjecten](#domeinobject)|
 |[Relatietype](#relatietype)|Een relatietype is een typering van gelijksoortige [relaties](#relatie)|
 |[Rol](#rol)|Een rol is een [kenmerk](#kenmerk) dat wordt vervuld door een [domeinobject](#domeinobject) in een [relatie](#relatie)|
