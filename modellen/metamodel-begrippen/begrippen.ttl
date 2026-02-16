@@ -6,7 +6,7 @@
 @prefix schema: <http://begrippen.mim-standaard.nl/schema/>.
 
 @prefix skosxl: <http://www.w3.org/2008/05/skos-xl#>.
-@prefix term: <http://begrippen.mim-standaard.nl/term/>
+@prefix term: <http://begrippen.mim-standaard.nl/term/>.
 
 #
 # Extra labels van properties voor genereren plaatje
