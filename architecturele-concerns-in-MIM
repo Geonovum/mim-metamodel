@@ -1,4 +1,4 @@
-# Archtecturele concerns 
+# Archtecturele concerns
 
 ## tekstdoel
 In de ICT is "Separation of Concers (SoC)" een belangrijk, zo niet het belangrijkste principe dat toegepast wordt om tot beheersbare, loosely coupled en vervangbare onderdelen van de totale ICT te komen. Het onderwerp is nu gegevensmodellering, en daar willen we expliciet SoC toepassen tussen (4) technologie, (3) applicatie, (2) conceptueel en (1) semantiek. 
