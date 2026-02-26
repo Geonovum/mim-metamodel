@@ -1,25 +1,24 @@
 # Archtecturele concerns 
 
-# tekstdoel
-
+## tekstdoel
 In de ICT is "Separation of Concers (SoC)" een belangrijk, zo niet het belangrijkste principe dat toegepast wordt om tot beheersbare, loosely coupled en vervangbare onderdelen van de totale ICT te komen. Het onderwerp is nu gegevensmodellering, en daar willen we expliciet SoC toepassen tussen (4) technologie, (3) applicatie, (2) conceptueel en (1) semantiek. 
 
- - Laag (of wellicht beter: perspectief of viewopint) 1: Deze wordt ingevuld met beschrijving van het business vocabulaire, dus de begrippen die worden gebruikt met een expliciete begripsbeschrijving in de vorm van een goed gedocumenteerde taxonomie, en heeft de mens als doelgroep. 
- - Laag (2) beschrijft dezelfde semantiek, echter met als doelgroep de computer, de machine, die daarvoor een ontologie (in de betekenis zoals door Guarino beschreven) nodig heeft: een computationeel model van de werkelijkheid die een abstractie van een afgebakend deel van de werkelijkheid op basis van filosofische principes beschrijft, geformuleerd in OWL-DL. 
-    - (1) en (2) zijn daarmee twee verschillende representaties van de werkelijkheid, en zijn specifiek voor het geabstraheerde domein maar agnostisch, neutraal, van toepassing op alle applicaties in het applicatielandschap. 
- - Laag (3) beschrijft de logische structuur die een gegevensmodel moet hebben om de gegevensverwerkende functionaliteit optimaal te ondersteunen in het realiseren van met name de non-functionele eisen en de kwaliteit van de gegevensverwerking. Deze laag is specifiek voor een applicatie, maar technologie-neutraal. 
- - Tenslotte is laag 4 een specifieke invulling van de wijze waarop de gegevens (en applicatie) technologisch worden gerealiseerd; hierbij worden keuzes gemaakt voor datastrukturen, serialisaties, syntax, gegevensopslag en ETL processen. 
+- Laag (of wellicht beter: perspectief of viewopint) 1: Deze wordt ingevuld met beschrijving van het business vocabulaire, dus de begrippen die worden gebruikt met een expliciete begripsbeschrijving in de vorm van een goed gedocumenteerde taxonomie, en heeft de mens als doelgroep. 
+- Laag (2) beschrijft dezelfde semantiek, echter met als doelgroep de computer, de machine, die daarvoor een ontologie (in de betekenis zoals door Guarino beschreven) nodig heeft: een computationeel model van de werkelijkheid die een abstractie van een afgebakend deel van de werkelijkheid op basis van filosofische principes beschrijft, geformuleerd in OWL-DL. 
+  - (1) en (2) zijn daarmee twee verschillende representaties van de werkelijkheid, en zijn specifiek voor het geabstraheerde domein maar agnostisch, neutraal, van toepassing op alle applicaties in het applicatielandschap. 
+- Laag (3) beschrijft de logische structuur die een gegevensmodel moet hebben om de gegevensverwerkende functionaliteit optimaal te ondersteunen in het realiseren van met name de non-functionele eisen en de kwaliteit van de gegevensverwerking. Deze laag is specifiek voor een applicatie, maar technologie-neutraal. 
+- Tenslotte is laag 4 een specifieke invulling van de wijze waarop de gegevens (en applicatie) technologisch worden gerealiseerd; hierbij worden keuzes gemaakt voor datastrukturen, serialisaties, syntax, gegevensopslag en ETL processen. 
 
 De tekst moet de SoC voor gegevensmodellering beschrijven. Het doel is om deze tekst toe te passen in de ontwikkeling van de MIM standaard, versie 2.0. Deze overkoepelende beschrijvende tekst moet zowel een leidraad zijn voor de ontwikkeling van de standaard als de beschrijving van de standaard. De tekst moet:
 
-* structuur geven aan het MIM model, 
-* scope aanbrengen voor de vier verschillende onderdelen, 
-* laten zien hoe de lagen met elkaar verbonden moeten worden, en 
-* aangeven hoe de vier concerns apart van elkaar worden ingevuld, maar wel in samenhang tot elkaar bestaan. 
+- structuur geven aan het MIM model, 
+- scope aanbrengen voor de vier verschillende onderdelen, 
+- laten zien hoe de lagen met elkaar verbonden moeten worden, en 
+- aangeven hoe de vier concerns apart van elkaar worden ingevuld, maar wel in samenhang tot elkaar bestaan. 
 
 De belangrijkste rol echter die het speelt is de erkenning dat canonieke gegevensmodellen en domeinstandaarden zoals die heden ten dagen als interoperabiliteitsoplossing worden aangeboden, wel hun functie hebben binnen kleinere en eenvoudigere samenwerkingsverbanden, maar falen als er meerdere stakeholders betrokken zijn of grotere verschillen bestaan tussen de gegevensverwerkende applicaties die gegevens willen uitwisselen: de essentie van het probleem is dat het semantisch concern (lagen 1 en 2) en het applicatie concern (laag 3) daarin worden vermengd. De belangrijkste conclusie daaruit is dat een canoniek ontologisch model de mogelijkheid biedt om in plaats van gegevens, uitspraken over de werkelijkheid uit te wisselen; uitspraken als instanties van het ontologisch model. Die zijn applicatieneutraal en domeinafhankelijk: twee karakteristieken die interoperabiliteit tussen applicaties ontkoppelt van de applicaties zelf en de toepasbaarheid van de uitwisseling slechts afhankelijk laat zijn van het domein waarover de applicaties uitspraken doen. 
 
----
+----
 
 ## Separation of Concerns in Gegevensmodellering binnen MIM 2.0
 
