@@ -32,11 +32,11 @@ In de regel zal het gaan om een markdown of html bestand maar in principe kan he
 
 > Van een Respec document kan een snapshot vervaardigd worden door het te openen en rechtsboven op de _'Respec'_ button te klikken en vervolgens te kiezen voor _'Bewaar Snapshot...'_.
 >
-> ![Respec Snapshot creatie](https://github.com/user-attachments/assets/ed8f928e-b5cf-43a4-b039-3b5828c182a5)
+> ![Respec Snapshot creatie](Respec-snapshot-creatie.jpg)
 
 Dit document wordt geplaatst in een binnen de folder 'snapshot' aanwezige subfolder dat overeenkomt met het document. In de hieronder staande  (niet echt bestaande) structuur
 
-![Snapshot folderstructuur](https://github.com/user-attachments/assets/ed8f928e-b5cf-43a4-b039-3b5828c182a5)
+![Snapshot folderstructuur](Snapshot-folderstructuur.jpg)
 
 zie je bijv. dat er voor zowel het metamodel zelf als voor het metamodel-begrippen en metamodel-uitleg snapshots zijn geplaatst. Voor het metamodel-uitleg zelfs al twee snapshots. Daarop heeft dus blijkbaar als eens een review plaats gevonden.
 
