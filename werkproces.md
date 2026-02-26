@@ -34,7 +34,7 @@ In de regel zal het gaan om een markdown of html bestand maar in principe kan he
 >
 > ![Respec Snapshot creatie](Respec-snapshot-creatie.jpg)
 
-Dit document wordt geplaatst in een binnen de folder 'snapshot' aanwezige subfolder dat overeenkomt met het document. In de hieronder staande  (niet echt bestaande) structuur
+Dit document wordt geplaatst in een binnen de folder 'snapshot' aanwezige subfolder die overeenkomt met het document. In de hieronder staande (niet echt bestaande) structuur
 
 ![Snapshot folderstructuur](Snapshot-folderstructuur.jpg)
 
