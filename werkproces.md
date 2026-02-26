@@ -27,7 +27,7 @@ Op gezette tijden zal er echter behoefte zijn aan een uitgebreide review op een 
 
 Van elk document dat we willen onderwerpen aan een uitgebreide review dient eerst een snapshot vervaardigd te worden. 
 
-Onder een snapshot verstaan we een in de tijd bevroren status van een document met een naam waarin het tijdstip waarop het bevroren is opgenomen. De conventie daarvoor is [originele naam]-[yyyymmdd].[extensie]. 
+Onder een snapshot verstaan we een in de tijd bevroren status van een document met een naam waarin het tijdstip waarop het bevroren is opgenomen. De conventie daarvoor is _[originele naam]-[yyyymmdd].[extensie]_. 
 In de regel zal het gaan om een markdown of html bestand maar in principe kan het ook enig ander formaat betreffen zolang dat maar te bekijken is in een webbrowser, bijv. een html of een text bestand, en het via een url te benaderen is.
 
 > Van een Respec document kan een snapshot vervaardigd worden door het te openen en rechtsboven op de _'Respec'_ button te klikken en vervolgens te kiezen voor _'Bewaar Snapshot...'_.
