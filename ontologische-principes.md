@@ -65,6 +65,7 @@ Waar precies die grens gelegd moet worden is niet meteen duidelijk. Daarom confr
 
 Onderstaande lijst is vastgesteld op basis van de theoretische fundamenten [2-7], de documentatie van de FOys [8-14] en de overzichtsstudies/syntheses [15-18].
 
+***Tabel 2*** - *De belangrijkste FOys versus de toegepaste ontologische principes.*
 | **Ontologisch principe**                                                 | **BFO** | **SUMO** | **(g)UFO** | **CIDOC-CRM** | **DOLCE** | **GFO** | **aantal ondersteunende FOys** |**Toelichting**                                                                                                                | 
 | ------------------------------------------------------------------------ | :-----: | :------: | :--------: | :-----------: | :-------: | :-----: | :-----: | ------------------------------------------------------------------------------------------------------------------------------ |
 | **Sortaliteit** (onderscheid tussen soorten entiteiten)                  |    ✓✓   |     ~    |     ✓✓     |       ~       |     ✓✓    |    ✓✓   | 4 | Expliciet gemodelleerd in BFO, (g)UFO, DOLCE, GFO; slechts impliciet aanwezig in SUMO en CIDOC-CRM.                                         |
@@ -94,7 +95,8 @@ We zoeken naar een ontologische verbinding voor het CIM metamodel waarbij tegeli
 
 ## Toepassing van ontologische principes op het CIM metamodel
 
-|             | Ontologische principes ||||||||||
+***Tabel 3*** - *De invulling van ontologische principes door het CIM metamodel.*
+
 | CIM element | **Sortaliteit** | **Rigiditeit** | **Causaliteit** | **Temporele extensie** | **Universalia vs particularia** | **Afhankelijkheid** | **Multipliciteit** | **Identiteitsvoorwaarde** | **(On)Gebondenheid** | **Mereologie** |
 | ------------------------------ | :-----: | :------: | :------: | :------: | :------: | :------: | :------: |  :-----: | :------: | :------: |
 | **Objecttype**                 |  **✓**  | **--<**  |          |  **✓**   |          |          |          |          |          |          |
