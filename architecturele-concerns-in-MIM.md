@@ -1,4 +1,4 @@
-# Archtecturele concerns
+# Architecturele concerns
 
 ## tekstdoel
 In de ICT is "Separation of Concers (SoC)" een belangrijk, zo niet het belangrijkste principe dat toegepast wordt om tot beheersbare, loosely coupled en vervangbare onderdelen van de totale ICT te komen. Het onderwerp is nu gegevensmodellering, en daar willen we expliciet SoC toepassen tussen (4) technologie, (3) applicatie, (2) conceptueel en (1) semantiek. 
@@ -24,7 +24,7 @@ De belangrijkste rol echter die het speelt is de erkenning dat canonieke gegeven
 
 ### Inleiding
 
-In de ontwikkeling van de MIM standaard 2.0 wordt het principe van **Separation of Concerns (SoC)** als fundamenteel uitgangspunt gehanteerd om gegevensmodellering beheersbaar, flexibel en interoperabel te maken. SoC helpt bij het scheiden van verschillende aspecten van gegevensmodellering, zodat elk concern onafhankelijk kan worden ontworpen, beheerd en geoptimaliseerd, terwijl ze samen een coherent geheel vormen.
+In de ontwikkeling van de MIM standaard wordt het principe van **Separation of Concerns (SoC)** als fundamenteel uitgangspunt gehanteerd om gegevensmodellering beheersbaar, flexibel, interoperabel en herbruikbaar te maken. SoC helpt bij het scheiden van verschillende aspecten van gegevensmodellering, zodat elk concern onafhankelijk kan worden ontworpen, beheerd en geoptimaliseerd, terwijl ze samen een coherent geheel vormen.
 
 Deze standaard onderscheidt vier majeure concerns, elk met een eigen scope, doelgroep en doelstelling:
 
@@ -47,14 +47,14 @@ Deze laag is essentieel voor gemeenschappelijk begrip en communicatie tussen sta
 
 ### 2. Computationeel Model: Machinegerichte Ontologie
 
-De tweede laag vertaalt de semantiek naar een **computationeel model**, een formele ontologie die door machines kan worden geïnterpreteerd en gebruikt. Dit model beschrijft dezelfde abstractie van de werkelijkheid als op laag 1, en is gebaseerd op filosofische principes zoals identiteit, afhankelijkheid, parthood en essentie.
+De tweede laag representeert de semantiek in een **ontologisch model**, een formeel (computationeel) model van een afgebakend deel van de werkelijkheid dat door machines kan worden geïnterpreteerd en gebruikt. Dit model beschrijft dezelfde abstractie van de werkelijkheid als op laag 1, en is gebaseerd op filosofische principes zoals identiteit, afhankelijkheid, parthood en essentie.
 
 Kenmerken van deze laag zijn onder meer:
 
 - Een formele, logische structuur met klassen, eigenschappen en relaties.  
 - Ondersteuning van constraints en regels die de werkelijkheid nauwkeurig modelleren.  
 - Een open world assumptie, waarbij onbekende informatie niet automatisch als onwaar wordt beschouwd.  
-- Onafhankelijkheid van specifieke applicaties of technologieën.
+- Domein beschrijvend, maar onafhankelijkheid van specifieke applicaties of technologieën.
 
 Deze ontologie vormt een door stakeholders gedeelde, domeinspecifieke maar applicatieneutrale basis voor interoperabiliteit, alsmede een formele basis voor de mogelijkheden en beperkingen van hergebruik van gegevens.
 
@@ -66,9 +66,9 @@ De derde laag beschrijft de **logische structuur** van gegevensmodellen die spec
 
 Belangrijke kenmerken:
 
-- Technologie-neutraal, gericht op de optimale ondersteuning van applicatiefuncties.  
+- Technologie-neutraal, gericht op een gegevensstructuur die een optimale ondersteuning van biedt aan de gegevensverwerkende functies van de applicatie.  
 - Gebaseerd op een closed world assumptie, waarbij de afwezigheid van data als onwaar wordt geïnterpreteerd.  
-- Specifiek voor een applicatie of groep van applicaties binnen het landschap.
+- Specifiek voor één applicatie binnen het domein.
 
 Deze laag vormt de brug tussen het abstracte computationele model en de concrete technische implementatie.
 
@@ -92,9 +92,9 @@ Door deze scheiding wordt voorkomen dat semantiek en applicatiebehoeften vermeng
 
 ### Interoperabiliteit door Canonieke Ontologie
 
-Een van de belangrijkste inzichten die deze standaard onderschrijft, is dat traditionele canonieke gegevensmodellen en domeinstandaarden falen zodra meer dan drie stakeholders betrokken zijn bij gegevensuitwisseling. Dit komt doordat het semantische concern (wat iets betekent) en het applicatie concern (hoe iets wordt verwerkt) vaak worden vermengd.
+Een van de belangrijkste inzichten die deze standaard onderschrijft, is dat traditionele canonieke gegevensmodellen en domeinstandaarden falen zodra meer dan een handvol stakeholders betrokken zijn bij gegevensuitwisseling, of als de gegevensmodellen gecompliceerder worden. Dit komt doordat het semantische concern (wat iets betekent) en het applicatie concern (hoe iets wordt verwerkt) vaak worden vermengd.
 
-Door een **canoniek ontologisch model** te gebruiken, wordt het mogelijk om niet langer ruwe data uit te wisselen, maar **uitspraken over de werkelijkheid** — instanties van het ontologisch model. Deze uitspraken zijn:
+Het **canoniek ontologisch model** maakt het mogelijk om niet langer ruwe data uit te wisselen, maar **uitspraken over de werkelijkheid** — instanties van het ontologisch model. Deze uitspraken zijn:
 
 - **Applicatieneutraal**: Ze zijn onafhankelijk van specifieke applicaties of technische implementaties.  
 - **Domeinafhankelijk**: Ze zijn specifiek voor het domein waarin ze worden toegepast.  
@@ -107,7 +107,7 @@ Dit maakt interoperabiliteit robuuster en schaalbaarder, omdat uitwisseling geba
 
 De MIM standaard 2.0 heeft een tweeledig belang:
 
-- **Ondersteuning van interoperabiliteit** tussen diverse applicaties en systemen door het gebruik van een canoniek ontologisch model dat uitspraken over de werkelijkheid uitwisselt in plaats van alleen data. Dit maakt gegevensuitwisseling robuuster, applicatieneutraal en schaalbaar, ook bij meerdere betrokken stakeholders.
+- **Ondersteuning van interoperabiliteit** tussen diverse applicaties en systemen door het gebruik van een canoniek ontologisch model dat uitspraken over de werkelijkheid uitwisselt in plaats van alleen gegevens in applicatie-afhankelijke structuren. Dit maakt gegevensuitwisseling robuuster, applicatieneutraal en schaalbaar, ook bij meerdere betrokken stakeholders.
 
 - **Mogelijk maken van herbruikbaarheid van gegevens** door transparantie te bieden over de betekenis van gegevens in het semantische en computationele model. Door expliciete en gedeelde begripsbeschrijvingen wordt het vertrouwen en de consistentie in gegevensgebruik vergroot, wat hergebruik binnen en tussen organisaties stimuleert.
 
@@ -117,7 +117,7 @@ Deze tweeledige focus versterkt elkaar: transparantie over betekenis maakt inter
 
 ### Conclusie
 
-De Separation of Concerns in MIM 2.0 creëert een heldere en beheersbare structuur voor gegevensmodellering door semantiek, computationeel model, applicatiestructuur en technologie te scheiden. Elk concern heeft een eigen rol en doelgroep, maar samen vormen ze een samenhangend raamwerk dat interoperabiliteit en flexibiliteit bevordert.
+De Separation of Concerns in MIM creëert een heldere en beheersbare structuur voor gegevensmodellering door semantiek, computationeel model, applicatiestructuur en technologie te scheiden. Elk concern heeft een eigen rol en doelgroep, maar samen vormen ze een samenhangend raamwerk dat interoperabiliteit, herbruikbaarheid en flexibiliteit bevordert.
 
 Door deze aanpak wordt de complexiteit van gegevensuitwisseling beheersbaar en wordt de basis gelegd voor duurzame samenwerking tussen diverse stakeholders en systemen.
 
