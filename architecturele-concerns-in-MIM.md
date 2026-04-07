@@ -16,7 +16,7 @@ De tekst moet de SoC voor gegevensmodellering beschrijven. Het doel is om deze t
 - laten zien hoe de onderdelen met elkaar verbonden moeten worden, en 
 - aangeven hoe de vier concerns apart van elkaar worden ingevuld, maar wel in samenhang tot elkaar bestaan. 
 
-De belangrijkste rol echter die het speelt is de erkenning dat canonieke gegevensmodellen en domeinstandaarden zoals die heden ten dagen als interoperabiliteitsoplossing worden aangeboden, wel hun functie hebben binnen kleinere en eenvoudigere samenwerkingsverbanden, maar falen als er meerdere stakeholders betrokken zijn of grotere verschillen bestaan tussen de gegevensverwerkende applicaties die gegevens willen uitwisselen. Uiteraard moet er een gedeelde grond bestaan tussen applicaties om als basis te dienen voor de interoperabiliteit, de uitwisseling van informatie. Uit decennia van interoperabiliteitsdenken blijkt dat die gezamenlijkheid niet gezocht moet worden op het gegevensvlak: de essentie van het probleem is dat het semantisch concern (lagen 1 en 2) en het applicatie concern (laag 3) daarin worden vermengd. De belangrijkste conclusie daaruit is dat die gedeelde juist niet in op het gegevensvlak *kan* bestaan, en dat het van nature juist bestaaat in het domein zef. Hieruit volgt rechtstreeks dat een gedeeld _ontologisch model_ de mogelijkheid biedt om in plaats van gegevens, uitspraken over de werkelijkheid uit te wisselen; uitspraken als instanties van het ontologisch model. Die zijn applicatieneutraal maar domeinspecifiek: twee karakteristieken die interoperabiliteit tussen applicaties ontkoppelt van de applicaties zelf en de toepasbaarheid van de uitwisseling slechts afhankelijk laat zijn van het domein waarover de applicaties uitspraken doen. 
+De belangrijkste rol echter die het speelt is de erkenning dat canonieke gegevensmodellen en domeinstandaarden zoals die heden ten dagen als interoperabiliteitsoplossing worden aangeboden, wel hun functie hebben binnen kleinere en eenvoudigere samenwerkingsverbanden, maar falen als er meerdere stakeholders betrokken zijn of grotere verschillen bestaan tussen de gegevensverwerkende applicaties die gegevens willen uitwisselen. Uiteraard moet er een gedeelde grond bestaan tussen applicaties om als basis te dienen voor de interoperabiliteit, de uitwisseling van informatie. Uit decennia van interoperabiliteitsdenken blijkt dat die gezamenlijkheid niet gezocht moet worden op het gegevensvlak: de essentie van het probleem is dat het semantisch concern (lagen 1 en 2) en het applicatie concern (laag 3) daarin worden vermengd. De belangrijkste conclusie daaruit is dat die gedeelde grond juist niet op het gegevensvlak *kan* bestaan, en dat het van nature juist bestaat in het domein zef. Hieruit volgt rechtstreeks dat een gedeeld _ontologisch model_ de mogelijkheid biedt om in plaats van gegevens, uitspraken over de werkelijkheid uit te wisselen; uitspraken als instanties van het ontologisch model. Die zijn applicatieneutraal maar domeinspecifiek: twee karakteristieken die interoperabiliteit tussen applicaties ontkoppelt van de applicaties zelf en de toepasbaarheid van de uitwisseling slechts afhankelijk laat zijn van het domein waarover de applicaties uitspraken doen. 
 
 ----
 
@@ -24,7 +24,7 @@ De belangrijkste rol echter die het speelt is de erkenning dat canonieke gegeven
 
 ### Inleiding
 
-In de ontwikkeling van de MIM standaard wordt het principe van **Separation of Concerns (SoC)** als fundamenteel uitgangspunt gehanteerd om gegevensmodellering beheersbaar, flexibel, interoperabel en herbruikbaar te maken. SoC helpt bij het scheiden van verschillende aspecten van gegevensmodellering, zodat elk concern onafhankelijk kan worden ontworpen, beheerd en geoptimaliseerd, terwijl ze samen een coherent geheel vormen.
+In de ontwikkeling van de MIM standaard moet het principe van **Separation of Concerns (SoC)** als fundamenteel uitgangspunt gehanteerd worden om gegevensmodellering beheersbaar, flexibel, interoperabel en herbruikbaar te maken. SoC helpt bij het scheiden van verschillende aspecten van gegevensmodellering, zodat elk concern onafhankelijk kan worden ontworpen, beheerd en geoptimaliseerd, terwijl ze samen een coherent geheel vormen.
 
 Deze standaard onderscheidt vier majeure concerns, elk met een eigen scope, doelgroep en doelstelling:
 
@@ -97,7 +97,7 @@ Een van de belangrijkste inzichten die deze standaard onderschrijft, is dat trad
 Het **canoniek ontologisch model** maakt het mogelijk om niet langer ruwe data uit te wisselen, maar **uitspraken over de werkelijkheid** — instanties van het ontologisch model. Deze uitspraken zijn:
 
 - **Applicatieneutraal**: Ze zijn onafhankelijk van specifieke applicaties of technische implementaties.  
-- **Domeinafhankelijk**: Ze zijn specifiek voor het domein waarin ze worden toegepast.  
+- **Domeinafhankelijk**: Ze zijn specifiek voor het gedeelde perspectief op de domeinwerkelijkheid waarin ze worden toegepast.  
 
 Dit maakt interoperabiliteit robuuster en schaalbaarder, omdat uitwisseling gebaseerd is op gedeelde betekenis en niet op individuele applicatie-invullingen.
 
