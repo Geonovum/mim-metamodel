@@ -2,23 +2,24 @@
 
 ## Incrementeel creatieproces
 
-Bij het vervaardigen van het MIM 2.0 begrippenmodel, de uitleg daarvan en het bijbehorende Metamodel hanteren we het hieronder geïllustreerde incrementele creatieproces. Daarbij maken we gebruik van het daarvoor ingerichte Kanban bord met de in de illustratie genoemde kolommen:
+Bij het vervaardigen van het MIM 2.0 begrippenmodel, de uitleg daarvan, het bijbehorende Metamodel en de Best practice hanteren we het hieronder geïllustreerde incrementele creatieproces. Daarbij maken we gebruik van het daarvoor ingerichte Kanban bord met de in de illustratie genoemde kolommen:
 
 1.	Backlog
-2.	In progress 'Uitleg'
-3.	In progress 'Begrippenmodel'
+2.	In progress 'Bespreekissues'
+3.	In progress 'Uitleg/Begrippenmodel'
 4.	In progress 'Metamodel'
-5.	In review (PR’s)
-6.	Done
+5.	In progress 'Best practice'
+6.	In review (PR’s)
+7.	Done
 
-![GitHub Proces](https://github.com/user-attachments/assets/ed8f928e-b5cf-43a4-b039-3b5828c182a5)
+![GitHub Proces](https://github.com/user-attachments/assets/cd2a7eda-0981-48b4-8471-67d16d90a3e7)
 
 Daar waar een blok een vervolg naar zowel een blauwe als een oranje route kent lopen deze parallel aan elkaar. Bijv. na het afronden van een issue dat in _"In progress 'Uitleg'"_ staat wordt de oranje route naar _"Is PR nodig?"_ EN de blauwe route naar _"Is het een Begrippenmodel issue?"_ doorlopen.
 Is een PR noodzakelijk dan heb je dus 2 items: 
 1. het originele issue en
 2. de PR. 
 
-Alleen PR’s komen in de 5e Kanban kolom ( _"In review (PR’s)"_ ), en er kunnen meerdere PR’s per issue zijn (elke keer als in een fase via het oranje pad de vraag _“Is PR nodig?”_ bevestigend wordt beantwoord). Per PR kan overigens maar één isue worden opgelost.
+Alleen PR’s komen in de 5e Kanban kolom ( _"In review (PR’s)"_ ), en er kunnen meerdere PR’s per issue zijn (elke keer als in een fase via het oranje pad de vraag _“Is PR nodig?”_ bevestigend wordt beantwoord). Per PR kunnen meerdere isues worden opgelost.
 
 ## Uitgebreide review
 
