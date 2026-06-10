@@ -11,7 +11,7 @@
 |[Categorisch kenmerk](#categorisch-kenmerk)|Een categorisch kenmerk is een [kenmerk](#kenmerk) van een [domeinobject](#domeinobject) waar een [categorie](#categorie) aan kan worden toegekend|
 |[Classificatieschema](#classificatieschema)|Een classificatieschema is een systematische ordening van [domeinobjecten](#domeinobject) in [categorieën](#categorie)|
 |[Complex waardetype](#complex-waardetype)|Een complex waardetype is een typering van gelijksoortige [complexe waarden](#complexe-waarde)|
-|[Complexe waarde](#complexe-waarde)|Een complexe waarde is een [waarde](#waarde) die bestaat uit een aaneenschakeling van afzonderlijke [letterlijke waarden](#letterlijke-waarde) en/of [categorieën](#categorie)|
+|[Complexe waarde](#complexe-waarde)|Een complexe waarde is een [waarde](#waarde) die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden](#letterlijke-waarde) en/of [categorieën](#categorie)|
 |[Conditie](#conditie)|Een conditie is een noodzakelijke voorwaarde die moet gelden voor een typering|
 |[Datatype](#datatype)|Een datatype is een [conditie](#conditie) waarbij van een [kenmerk](#kenmerk) of [waarde](#waarde) is gesteld wat voor datatype de [waarde](#waarde) of invulling van dat [kenmerk](#kenmerk) mag zijn|
 |[Direct gegevenstype](#direct-gegevenstype)|Een direct gegevenstype is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van een [domeinobject](#domeinobject), vastgelegd bij een [gegevensobjectype]() dat dit [domeinobject](#domeinobject) als [hoofdonderwerp](#hoofdonderwerp) heeft|

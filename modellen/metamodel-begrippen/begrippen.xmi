@@ -693,7 +693,7 @@
                           name="Complexe waarde"
                           visibility="public">
             <ownedComment xmi:id="-def1"
-                          body="Een complexe waarde is een [waarde] die bestaat uit een aaneenschakeling van afzonderlijke [letterlijke waarden] en/of [categorieën]"/>
+                          body="Een complexe waarde is een [waarde] die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden] en/of [categorieën]"/>
             <ownedAttribute xmi:type="uml:Property"
                             xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/ComplexeWaardeskos:relatedhttp://begrippen.mim-standaard.nl/mimbegrip/LetterlijkeWaarde:trgt"
                             visibility="public"
