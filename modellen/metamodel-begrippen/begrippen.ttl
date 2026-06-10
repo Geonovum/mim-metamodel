@@ -436,14 +436,6 @@ mimbegrip:Gegevensobjecttype a skos:Concept;
   skos:related mimbegrip:Gegevensobject
 .
 
-mimbegrip:Gegevenstypegroep a skos:Concept;
-  rdfs:label "Gegevenstypegroep"@nl;
-  skos:prefLabel "Gegevenstypegroep"@nl;
-  skos:inScheme schema:TyperingVerwerkingsdomein;
-  skos:definition "Een gegevenstypegroep is een groepering van [gegevenstypen]"@nl;
-  skosthes:narrowerPartitive mimbegrip:Gegevenstype;
-.
-
 mimbegrip:Sleutel a skos:Concept;
   rdfs:label "Sleutel"@nl;
   skos:prefLabel "Sleutel"@nl;

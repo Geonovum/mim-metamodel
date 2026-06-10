@@ -119,26 +119,6 @@
                             general="http://begrippen.mim-standaard.nl/mimbegrip/IdentificerendKenmerk"/>
          </packagedElement>
          <packagedElement xmi:type="uml:Class"
-                          xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroep"
-                          name="Gegevenstypegroep"
-                          visibility="public">
-            <ownedComment xmi:id="-def1"
-                          body="Een gegevenstypegroep is een groepering van [gegevenstypen]"/>
-            <ownedAttribute xmi:type="uml:Property"
-                            xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype:trgt"
-                            visibility="public"
-                            association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"
-                            isStatic="false"
-                            isReadOnly="false"
-                            isDerived="false"
-                            isOrdered="false"
-                            isUnique="true"
-                            isDerivedUnion="false"
-                            aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"/>
-            </ownedAttribute>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Class"
                           xmi:id="http://begrippen.mim-standaard.nl/mimbegrip/Waardetype"
                           name="Waardetype"
                           visibility="public">
@@ -1215,26 +1195,6 @@
                       isDerivedUnion="false"
                       aggregation="none">
                <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Datatype"/>
-            </ownedEnd>
-         </packagedElement>
-         <packagedElement xmi:type="uml:Association"
-                          xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"
-                          name="skosthes:narrowerPartitive"
-                          visibility="public">
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype:trgt"/>
-            <memberEnd xmi:idref="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype:src"/>
-            <ownedEnd xmi:type="uml:Property"
-                      xmi:id="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype:src"
-                      visibility="public"
-                      association="urn:md5:http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroepskosthes:narrowerPartitivehttp://begrippen.mim-standaard.nl/mimbegrip/Gegevenstype"
-                      isStatic="false"
-                      isReadOnly="false"
-                      isDerived="false"
-                      isOrdered="false"
-                      isUnique="true"
-                      isDerivedUnion="false"
-                      aggregation="none">
-               <type xmi:idref="http://begrippen.mim-standaard.nl/mimbegrip/Gegevenstypegroep"/>
             </ownedEnd>
          </packagedElement>
          <packagedElement xmi:type="uml:Association"

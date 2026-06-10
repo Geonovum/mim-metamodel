@@ -262,12 +262,6 @@ Gerelateerd: [Gegevensobject](#gegevensobject)
 
 Gerelateerd: [Gegeven](#gegeven)
 
-### Gegevenstypegroep
-
-> Een gegevenstypegroep is een groepering van [gegevenstypen](#gegevenstype)
-
-Omvat: [Gegevenstype](#gegevenstype)
-
 ### Indirect gegevenstype
 
 > Een indirect [gegevenstype](#gegevenstype) is een [gegevenstype](#gegevenstype) over één [kenmerk](#kenmerk) van een [domeinobject](#domeinobject), vastgelegd bij een [gegevensobjecttype](#gegevensobjecttype) dat dit [domeinobject](#domeinobject) niet als [hoofdonderwerp](#hoofdonderwerp) heeft

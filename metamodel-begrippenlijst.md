@@ -25,7 +25,6 @@
 |[Gegevensobject](#gegevensobject)|Een gegevensobject is een onderscheidbaar geheel van [gegevens](#gegeven) die als kleinste eenheid wordt verwerkt|
 |[Gegevensobjecttype](#gegevensobjecttype)|Een gegevensobjecttype is een typering van gelijksoortige [gegevensobjecten](#gegevensobject)|
 |[Gegevenstype](#gegevenstype)|Een gegevenstype is een typering van gelijksoortige [gegevens](#gegeven)|
-|[Gegevenstypegroep](#gegevenstypegroep)|Een gegevenstypegroep is een groepering van [gegevenstypen](#gegevenstype)|
 |[Hoofdonderwerp](#hoofdonderwerp)|Een hoofdonderwerp is een [domeinobject](#domeinobject) waarover een [gegevensobject](#gegevensobject) in hoofdzaak gaat|
 |[Identificator](#identificator)|Een identificator is een geheel van één of meerdere [identificerende kenmerken](#identificerend-kenmerk) waarmee de identiteit van een [domeinobject](#domeinobject) uniek kan worden vastgesteld|
 |[Identificerend kenmerk](#identificerend-kenmerk)|Een identificerend kenmerk is een [kenmerk](#kenmerk) waarmee de identiteit van een [domeinobject](#domeinobject) mede kan worden vastgesteld|
