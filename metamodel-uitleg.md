@@ -510,17 +510,13 @@ Er kan sprake zijn van gelijksoortige gegevensobjecten, als de gegevens die elk 
 
 Een gegevensobject kan gegevens omvatten die alleen gaan over één domeinobject, het hoofdonderwerp. Daarnaast onderkennen we ook de situatie dat een gegevensobject gaat over meerdere domeinobjecten, bijvoorbeeld een lijst met inwoners per provincie van Nederland. Maar ook voor dergelijke gegevensobjecten is sprake van dezelfde gelijksoortigheid bij de typering.
 
-Ook gegevenstypen zelf kun je groeperen. Bijvoorbeeld als je het wilt hebben over alle gegevenstypen die "geheim" zijn. Het is nu niet dat we deze gegevens als groep bij elkaar willen zetten, om ze vervolgens (als groep) te typeren. In dit geval willen we juist de gegevens*typen* zelf groeperen.
-
-> Een GEGEVENSTYPEGROEP is een groepering van GEGEVENSTYPEN
-
 #### Identificeren van het hoofdonderwerp: sleutels
 
 Om het hoofdonderwerp van een gegevensobject te identificeren gebruiken we een sleutelwaarde. Zo is de waarde "12345678" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Een belangrijk aspect bij het typeren van gegevensobjecten is dan ook welke gegevenstypen bruikbaar zijn voor dergelijke sleutelwaarden. Zo wordt in dit voorbeeld het gegevenstype «Persoon.BSN» gebruikt. Dit gegevenstype is hier de *sleutel* voor het gegevensobjecttype Persoon.
 
 > Een SLEUTEL is een groep van één of meer GEGEVENSTYPEn waarmee een unieke aanduiding voor het HOOFDONDERWERP van een GEGEVENSOBJECT kan worden gevormd
 
-Er kunnen meerdere (kandidaat) sleutels zijn voor een gegevensobjecttype. Een sleutel kan bestaan uit precies één gegevenstype, maar ook uit meerdere gegevenstypen. Een sleutel voor het gegevensobjecttype «persoon» is bijvoorbeeld het gegevenstype «Persoon.BSN», maar ook de gegevenstypegroep {«Persoon.voornaam», «Persoon.achternaam», «Persoon.geboortedatum», «Persoon.geboorteplaats»} zou een sleutel kunnen zijn voor dit gegevensobjecttype.
+Er kunnen meerdere (kandidaat) sleutels zijn voor een gegevensobjecttype. Een sleutel kan bestaan uit precies één gegevenstype, maar ook uit meerdere gegevenstypen. Een sleutel voor het gegevensobjecttype «persoon» is bijvoorbeeld het gegevenstype «Persoon.BSN», maar ook de groep van gegevenstypen {«Persoon.voornaam», «Persoon.achternaam», «Persoon.geboortedatum», «Persoon.geboorteplaats»} zou een sleutel kunnen zijn voor dit gegevensobjecttype.
 
 #### Varianten van gegevenstypen
 Vier varianten van gegevenstypen kunnen we onderscheiden:
