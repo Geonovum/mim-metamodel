@@ -50,6 +50,8 @@ In dit document zullen we ons met name richten op het conceptueel informatiemode
 
 We introduceren in dit document bepaalde begrippen en gebruiken daar bepaalde termen voor. Daarbij is het soms van belang om expliciet te maken dat we een begrip bedoelen en soms expliciet van belang dat we een term bedoelen. De term "drie" heeft 4 letters, terwijl het begrip «drie» de betekenis heeft van het getal 3. Waar we verwijzen naar een term gebruiken we daarvoor aanhalingstekens (""), waar we verwijzen naar een begrip gebruiken we [guillemets](https://nl.wikipedia.org/wiki/Guillemet) («»), zoals in het voorbeeld in deze paragraaf. In de lopende tekst zullen we ook definities voor dergelijke begrippen geven. Daar gebruiken we HOOFDLETTERS om aan te geven dat we een begrip bedoelen dat we ook definiëren in dit stuk. In voorbeelden verwijzen we vaak naar concrete dingen in het beschouwingsdomein. Als we het over [Jan] hebben, dan bedoelen we niet het woord "Jan" of het begrip «Jan», maar met [Jan] verwijzen we naar een concreet aanwijsbaar persoon die bekend is onder de naam "Jan". In dergelijke gevallen gebruiken we blokhaken ([]).
 
+Ook hebben we het soms over een "Persoon" en bedoelen we het begrip «Persoon», terwijl we hiermee ook het gegevensobjecttype {Persoon} zouden kunnen bedoelen (gegevens over een persoon). Hiervoor maken we gebruik van accolades. We gebruiken ook accolades voor gegevenstypes, bijvoorbeeld {Persoon.naam} (het gegevenstype naam van een persoon).
+
 ## Het MIM begrippenkader
 
 ### De opzet van dit begrippenkader
@@ -509,17 +511,17 @@ Naast gegevens, kunnen we ook de gegevensobjecten typeren:
 
 > Een GEGEVENSOBJECTTYPE is een typering van gelijksoortige GEGEVENSOBJECTen
 
-Er kan sprake zijn van gelijksoortige gegevensobjecten, als de gegevens die elk van deze gegevensobjecten bevat, van hetzelfde gegevenstype zijn. We kunnen met andere woorden gegevensobjecttypen typeren door te beschrijven welke gegevenstypen behoren tot dat gegevensobjecttype. Dit is echter niet voldoende. Gegevens gaan over domeinobjecten. Gegevensobjecten gaan daarmee ook over (diezelfde) domeinobjecten. Er is alleen sprake van gelijksoortige gegevensobjecten als de populatie waaruit deze domeinobjecten komen, dezelfde is. Een gegevensobjecttype "(Nederlandse) Inwoner" met als populatie de persoonsgegevens van alle Nederlanders, verschilt daarmee van een gegevensobjecttype "(Europese) Inwoner" met als populatie de persoonsgegevens van alle Europeanen.
+Er kan sprake zijn van gelijksoortige gegevensobjecten, als de gegevens die elk van deze gegevensobjecten bevat, van hetzelfde gegevenstype zijn. We kunnen met andere woorden gegevensobjecttypen typeren door te beschrijven welke gegevenstypen behoren tot dat gegevensobjecttype. Dit is echter niet voldoende. Gegevens gaan over domeinobjecten. Gegevensobjecten gaan daarmee ook over (diezelfde) domeinobjecten. Er is alleen sprake van gelijksoortige gegevensobjecten als de populatie waaruit deze domeinobjecten komen, dezelfde is. Een gegevensobjecttype {NederlandseInwoner} met als populatie de persoonsgegevens van alle Nederlanders, verschilt daarmee van een gegevensobjecttype {EuropeseInwoner} met als populatie de persoonsgegevens van alle Europeanen.
 
 Een gegevensobject kan gegevens omvatten die alleen gaan over één domeinobject, het hoofdonderwerp. Daarnaast onderkennen we ook de situatie dat een gegevensobject gaat over meerdere domeinobjecten, bijvoorbeeld een lijst met inwoners per provincie van Nederland. Maar ook voor dergelijke gegevensobjecten is sprake van dezelfde gelijksoortigheid bij de typering.
 
 #### Identificeren van het hoofdonderwerp: sleutels
 
-Om het hoofdonderwerp van een gegevensobject te identificeren gebruiken we een sleutelwaarde. Zo is de waarde "12345678" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Een belangrijk aspect bij het typeren van gegevensobjecten is dan ook welke gegevenstypen bruikbaar zijn voor dergelijke sleutelwaarden. Zo wordt in dit voorbeeld het gegevenstype «Persoon.BSN» gebruikt. Dit gegevenstype is hier de *sleutel* voor het gegevensobjecttype Persoon.
+Om het hoofdonderwerp van een gegevensobject te identificeren gebruiken we een sleutelwaarde. Zo is de waarde "12345678" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Een belangrijk aspect bij het typeren van gegevensobjecten is dan ook welke gegevenstypen bruikbaar zijn voor dergelijke sleutelwaarden. Zo wordt in dit voorbeeld het gegevenstype {Persoon.BSN} gebruikt. Dit gegevenstype is hier de *sleutel* voor het gegevensobjecttype Persoon.
 
 > Een SLEUTEL is een groep van één of meer GEGEVENSTYPEn waarmee een unieke aanduiding voor het HOOFDONDERWERP van een GEGEVENSOBJECT kan worden gevormd
 
-Er kunnen meerdere (kandidaat) sleutels zijn voor een gegevensobjecttype. Een sleutel kan bestaan uit precies één gegevenstype, maar ook uit meerdere gegevenstypen. Een sleutel voor het gegevensobjecttype «persoon» is bijvoorbeeld het gegevenstype «Persoon.BSN», maar ook de groep van gegevenstypen {«Persoon.voornaam», «Persoon.achternaam», «Persoon.geboortedatum», «Persoon.geboorteplaats»} zou een sleutel kunnen zijn voor dit gegevensobjecttype.
+Er kunnen meerdere (kandidaat) sleutels zijn voor een gegevensobjecttype. Een sleutel kan bestaan uit precies één gegevenstype, maar ook uit meerdere gegevenstypen. Een sleutel voor het gegevensobjecttype {Persoon} is bijvoorbeeld het gegevenstype {Persoon.BSN}, maar ook de groep van gegevenstypen {Persoon.voornaam, Persoon.achternaam, Persoon.geboortedatum, Persoon.geboorteplaats} zou een sleutel kunnen zijn voor dit gegevensobjecttype.
 
 #### Varianten van gegevenstypen
 Vier varianten van gegevenstypen kunnen we onderscheiden:
