@@ -398,6 +398,9 @@ Waarden kunnen we daarbij ook typeren. Zo zal een kenmerk «geboortedatum» niet
 
 Een categorisch kenmerk heeft als invulling een categorie. Een attribuuttype van classificerende aard betreft de typering van dergelijke categorieën. Relevant daarbij is bovendien welke categorieën precies bij zo'n attribuuttype gebruikt kunnen worden. Dit is het classificatieschema. Dit kan een lijstje zijn van categorieën die zijn toegestaan, maar kan bijvoorbeeld ook een hiërarchie van categorieën omvatten.
 
+> [!NOTE]
+> We spreken van "classificatieschema" en niet van "categorisatieschema", hoewel dat laatste wellicht meer voor de hand ligt omdat we het hebben over categorieën. Gekozen is voor de term "classificatieschema" omdat dit de algemeen gangbare term is. Daarnaast is een classificatieschema een formele ordening en dat is precies wat we bedoelen met dit schema: een formele ordening van categorieën, in een lijst of in een hiërarchie.
+
 > Een ATTRIBUUTTYPE VAN CLASSIFICERENDE AARD is een ATTRIBUUTTYPE als typering van een CATEGORISCH KENMERK
 
 > [!CAUTION]
