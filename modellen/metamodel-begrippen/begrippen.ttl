@@ -155,7 +155,7 @@ mimbegrip:ComplexeWaarde a skos:Concept;
   rdfs:label "Complexe waarde"@nl;
   skos:prefLabel "Complexe waarde"@nl;
   skos:inScheme schema:Beschouwingsdomein;
-  skos:definition "Een complexe waarde is een [waarde] die bestaat uit een aaneenschakeling van afzonderlijke [letterlijke waarden] en/of [categorieën]"@nl;
+  skos:definition "Een complexe waarde is een [waarde] die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden] en/of [categorieën]"@nl;
   skosthes:broaderGeneric mimbegrip:Waarde;
   skos:related mimbegrip:Categorie;
   skos:related mimbegrip:LetterlijkeWaarde;

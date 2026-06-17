@@ -160,7 +160,7 @@ Een eigenschap is een kenmerk waar "slechts" een (letterlijke) waarde aan kan wo
 
 In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een waarde die refereert aan een categorie (de valutacategorie «euro»). Een dergelijke waarde noemen we een complexe waarde.
 
-> Een COMPLEXE WAARDE is een WAARDE die bestaat uit een aaneenschakeling van afzonderlijke LETTERLIJKE WAARDEn en/of CATEGORIEën
+> Een COMPLEXE WAARDE is een WAARDE die bestaat uit een samenstel van afzonderlijk benoemde LETTERLIJKE WAARDEn en/of CATEGORIEën
 
 #### Classificaties en categoriën
 
@@ -416,7 +416,7 @@ In de eerdere sectie kwam het onderscheid tussen een (eenvoudige) waarde en een 
 
 > Een COMPLEX WAARDETYPE is een typering van gelijksoortige COMPLEXE WAARDEn
 
-Een complex waardetype kan omschreven worden als de aaneenschakeling van de afzonderlijke waardetypen. Zo kan het complexe waardetype «Bedrag» omschreven worden als aaneenschakeling van de waardetypen «Getal» en «Valuta».
+Een complex waardetype kan omschreven worden als een samenstel van de afzonderlijk benoemde waardetypen. Zo kan het complexe waardetype «Bedrag» omschreven worden als het samenstel van de waardetypen «Getal» en «Valuta». De waarde {getal: 25, valuta: «EURO»} zou een voorbeeld kunnen zijn van dit complexe waardetype. Merk op dat in MIM geen gebruik wordt gemaakt van volgorde. Dat sprake is van de twee waardetypen volgt uit de benoeming, niet uit de volgorde).
 
 #### Relatietypen en rollen
 

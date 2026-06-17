@@ -26,7 +26,7 @@ Gerelateerd: [Categorie](#categorie)
 
 ### Complexe waarde
 
-> Een complexe [waarde](#waarde) is een [waarde](#waarde) die bestaat uit een aaneenschakeling van afzonderlijke [letterlijke waarden](#letterlijke-waarde) en/of [categorieën](#categorie)
+> Een complexe [waarde](#waarde) is een [waarde](#waarde) die bestaat uit een samenstel van afzonderlijk benoemde [letterlijke waarden](#letterlijke-waarde) en/of [categorieën](#categorie)
 
 Specialisatie van: [Waarde](#waarde)
 
