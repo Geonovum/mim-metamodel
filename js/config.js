@@ -2,7 +2,7 @@ let respecConfig = {
   useLogo: true,
   useLabel: true,
   // title is verplicht! Neem hier de titel van het document op ----------------------
-  title: "MIM-Metamodel 2.0",
+  title: "MIM - Metamodel Informatiemodellering: Uitleg",
   //-- specStatus is verplicht! (activeer 1 van de volgende) --------------------------
   specStatus: "wv",                   // Werkversie
   //specStatus: "cv",               // Consultatieversie
@@ -28,8 +28,8 @@ let respecConfig = {
   license: "cc-by",                 // Attribution, met bronvermelding
   //-- TODO shortName is verplicht! (komt in de URL: kies logische afkorting)--------------
   shortName: "NL-ReSpec-GN-template",
-  
-  //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden. 
+
+  //edDraftURI = De URI van de draft version. Deze wordt automatisch afgeleid van de github URI; maar kan hier overschreven worden.
 	//edDraftURI: ["https://geonovum.github.io", "/", "shortName"],
 
   //-- publishDate is verplicht -------------------------------------------------------
@@ -38,7 +38,7 @@ let respecConfig = {
   //eventueel is het mogelijk een versienummer mee te geven, maar bij Geonovum werken we gewoonlijk alleen met datum als onderdeel van de permanente URI.
   //publishVersion: "0.0.2",
   //previousVersion: "0.0.1",
-  //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit! 
+  //-- Voor dit blok geldt: alleen als er eerdere versies zijn en altijd beiden aan/uit!
   //previousPublishDate: "2014-05-01",
   //previousMaturity: "CV",
   //-- TODO: de namen van de Editor(s) / Redacteur(en)---------------------------------------
@@ -76,7 +76,7 @@ let respecConfig = {
   // - Kijk eerst naar de beschikbare www.specref.org .
   // - Kijk daarna in de organisatieconfig.
   // - Voeg dan pas hieronder toe.
-  localBiblio: 
+  localBiblio:
   {
     MIM12: {
       id: "MIM12",
