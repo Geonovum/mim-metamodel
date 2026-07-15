@@ -462,11 +462,14 @@ De beschrijving van objecttypen bestaat niet alleen uit het toewijzen van kenmer
 
 > Een CONDITIE is een noodzakelijke voorwaarde die moet gelden voor een typering
 
-We onderscheiden verschillende soorten condities. De meest prominente condities zijn:
+We onderscheiden verschillende soorten condities. De meest prominente specifieke condities zijn:
 
 - **Cardinaliteit** is een conditie waarbij van een kenmerk wordt aangegeven hoeveel invullingen er voor één domeinobject minimaal en maximaal zijn.
 - **Lengte** is een conditie waarbij van een kenmerk of waardetype wordt aangegeven hoe lang de invulling (de waarde) van dat kenmerk of waarden van een waardetype mag/mogen zijn.
 - **Datatype** is een conditie waarbij van een kenmerk of waardetype wordt aangegeven wat voor datatype de invulling (de waarde) van dat kenmerk of waarden van een waardetype heeft/hebben. Een datatype is bijvoorbeeld: getal, tekst, datum, etc.
+
+Daarnaast kent MIM twee condities waarmee het mogelijk is om aanvullende voorwaarden te beschrijven die niet met een specifieke conditie zijn uit te drukken:
+
 - **Informele conditie** is een conditie die beschreven is in een natuurlijke taal, dwz: in een taal die mensen gebruiken in onderlinge communicatie.
 - **Formele conditie** is een conditie die beschreven is in een machine-interpreteerbare taal.
 
