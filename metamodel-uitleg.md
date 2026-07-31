@@ -156,13 +156,19 @@ In de volgende secties werken we deze verschillende soorten kenmerken verder uit
 
 > Een EIGENSCHAP is een KENMERK van een DOMEINOBJECT waar uitsluitend een WAARDE aan kan worden toegekend
 
-> Een LETTERLIJKE WAARDE is een WAARDE waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer
+> Een WAARDE is een LETTERLIJKE WAARDE, een CATEGORISCHE WAARDE of een COMPLExE WAARDE
 
-Een eigenschap is een kenmerk waar "slechts" een (letterlijke) waarde aan kan worden toegekend. Zoals «lengte» in het voorgaande voorbeeld. Een letterlijke waarde is geen domeinobject of verwijzing daarnaar, maar juist een letterlijke invulling van het kenmerk. De betekenis van de letterlijke waarde is niets anders dan de letterlijke waarde zelf. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een kenmerk van [Jan]. De *invulling* van dit kenmerk is een waarde, bijvoorbeeld het getal 25. Daarmee is dit kenmerk een eigenschap van Jan. En ook het kenmerk «(heeft) naam» van [Jan] is een eigenschap, met de waarde "Jan" (een woord bestaande uit drie letters).
+> Een LETTERLIJKE WAARDE is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer
 
-In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een waarde die refereert aan een categorie (de valutacategorie «euro»). Een dergelijke waarde noemen we een complexe waarde.
+Een eigenschap is een kenmerk waar "slechts" een waarde aan kan worden toegekend. Zoals «lengte» in het voorgaande voorbeeld. Zo'n letterlijke waarde is geen domeinobject of verwijzing daarnaar, maar juist een letterlijke invulling van een kenmerk. De betekenis van de letterlijke waarde is niets anders dan de letterlijke waarde zelf. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een kenmerk van [Jan]. De *invulling* van dit kenmerk is een letterlijke waarde, bijvoorbeeld het getal 25. Daarmee is dit kenmerk een eigenschap van Jan. En ook het kenmerk «(heeft) naam» van [Jan] is een eigenschap, met de letterlijke waarde "Jan" (een woord bestaande uit drie letters).
 
-> Een COMPLEXE WAARDE is een WAARDE die bestaat uit een samenstel van afzonderlijk benoemde LETTERLIJKE WAARDEn en/of CATEGORIEën
+> EEN CATEGORISCHE WAARDE is een aanduiding van een categorie
+
+Soms wordt met een waarde juist iets anders aangeduid dan de letterlijke waarde zelf. In ons voorbeeld was «man» een aanduiding van het geslacht van Jan. Hiermee bedoelen we niet de letterlijke waarde "man" (een woord bestaande uit drie letters), maar de *categorie* van mannen. We hadden daarvoor ook een andere aanduiding kunnen gebruiken, bijvoorbeeld het symbool "♂". We bedoelen hier de waarde niet letterlijk, maar conceptueel: als verwijzing naar een categorie.
+
+In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een categorische waarde die refereert aan een categorie (de valutacategorie «euro»). Het resultaat is een complexe waarde.
+
+> Een COMPLEXE WAARDE is een aanduiding die bestaat uit een samenstel van afzonderlijk benoemde WAARDEn.
 
 #### Classificaties en categoriën
 
