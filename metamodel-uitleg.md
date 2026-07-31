@@ -400,19 +400,32 @@ Waarden kunnen we daarbij ook typeren. Zo zal een kenmerk «geboortedatum» niet
 
 > Een WAARDETYPE is een typering van gelijksoortige WAARDEn
 
-Een categorisch kenmerk heeft als invulling een categorie. Een attribuuttype van classificerende aard betreft de typering van dergelijke categorieën. Relevant daarbij is bovendien welke categorieën precies bij zo'n attribuuttype gebruikt kunnen worden. Dit is het classificatieschema. Dit kan een lijstje zijn van categorieën die zijn toegestaan, maar kan bijvoorbeeld ook een hiërarchie van categorieën omvatten.
+#### Attribuuttype van classificerende aard
 
-> [!NOTE]
-> We spreken van "classificatieschema" en niet van "categorisatieschema", hoewel dat laatste wellicht meer voor de hand ligt omdat we het hebben over categorieën. Gekozen is voor de term "classificatieschema" omdat dit de algemeen gangbare term is. Daarnaast is een classificatieschema een formele ordening en dat is precies wat we bedoelen met dit schema: een formele ordening van categorieën, in een lijst of in een hiërarchie.
+Een speciaal soort attribuuttype is een attribuuttype die gebruikt wordt om een nadere subtypering aan een OBJECTTYPE toe te kennen. Zo kent de BRT onder meer de subtypen «Wegdeel», «Spoordeel», «Waterdeel» en «Gebouw». Het subtype «Wegdeel» zou nog verder onderverdeeld kunnen worden in onder meer «landingsbaan», «autosnelweg» en «regionale weg». Die onderverdeling is in de BRT niet gemaakt met subtypen, maar met een attribuuttype «type weg».
 
-> Een ATTRIBUUTTYPE VAN CLASSIFICERENDE AARD is een ATTRIBUUTTYPE als typering van een CATEGORISCH KENMERK
+> Een ATTRIBUUTTYPE VAN CLASSIFICERENDE AARD is een ATTRIBUUTTYPE waarmee een nadere subtypering aan een OBJECTTYPE wordt toegekend.
 
 > [!CAUTION]
 > In de huidige versie van MIM geef je bij een attribuuttype op of deze classificerend is (ja/nee). Er is geen afzonderlijke term voor geïntroduceerd. Vandaar de term "attribuuttype van classificerende aard" in dit metamodel. Mogelijk is een andere term beter.
 
+Bij dit attribuuttype hoort een categorisch kenmerk «type weg». De invulling van dit kenmerk is een categorie. Relevant is welke categorieën precies bij het attributtype gebruikt kunnen worden: welke "type wegen" er zijn. Dit is het classificatieschema. Dit kan een lijstje zijn van categorieën die zijn toegestaan, maar kan bijvoorbeeld ook een hiërarchie van categorieën omvatten.
+
+**LET OP!**
+
+Niet elk attribuuttype met categorische waarden is een attribuuttype van classificerende aard. Hier is alleen sprake van als er het attribuuttype een subtypering aanduidt. Bij veel categorieën gaat het niet zozeer over subtypering, maar slechts een groepering van domeinobjecten volgens een bepaald classificatieschema. Zo kent de BRT voor het objecttype «Wegdeel» onder meer de volgende attribuuttypen met categorieën, zonder dat sprake is van subtypering:
+
+- Hoofdverkeersgebruik (geen subtypering, maar een groepering naar gebruik van het wegdeel, zoals fietsers of voetgangers).
+- Verhardingstype (geen subtypering, maar een groepering naar de verharding die het wegdeel op dit moment heeft, zoals klinkers of asfalt).
+
+> [!NOTE]
+> We spreken van "classificatieschema" en niet van "categorisatieschema", hoewel dat laatste wellicht meer voor de hand ligt omdat we het hebben over categorieën. Gekozen is voor de term "classificatieschema" omdat dit de algemeen gangbare term is. Daarnaast is een classificatieschema een formele ordening en dat is precies wat we bedoelen met dit schema: een formele ordening van categorieën, in een lijst of in een hiërarchie.
+
 > Een CLASSIFICATIESCHEMA is een systematische ordening van DOMEINOBJECTen in CATEGORIEën
 
 Een eenvoudig voorbeeld van een classificatieschema is de lijst van primaire kleuren «rood», «geel», «blauw». Een voorbeeld van een hiërarchische classificatieschema is de [biologische indeling van dieren](https://nl.wikipedia.org/wiki/Taxonomie_(biologie)) of de [indeling van boeken in een bibliotheek](https://nl.wikipedia.org/wiki/SISO).
+
+#### Typeren van complexe waarden
 
 In de eerdere sectie kwam het onderscheid tussen een (eenvoudige) waarde en een complexe waarde naar voren. Ook dergelijke complexe waarden wil je typeren:
 
