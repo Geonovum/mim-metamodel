@@ -419,7 +419,7 @@ Bij dit attribuuttype hoort een categorisch kenmerk «type weg». De invulling v
 
 **LET OP!**
 
-Niet elk attribuuttype met categorische waarden is een attribuuttype van classificerende aard. Hier is alleen sprake van als er het attribuuttype een subtypering aanduidt. Bij veel categorieën gaat het niet zozeer over subtypering, maar slechts een groepering van domeinobjecten volgens een bepaald classificatieschema. Zo kent de BRT voor het objecttype «Wegdeel» onder meer de volgende attribuuttypen met categorieën, zonder dat sprake is van subtypering:
+Niet elk attribuuttype met categorische waarden is een attribuuttype van classificerende aard. Hier is alleen sprake van als het attribuuttype een subtypering aanduidt. Bij veel categorieën gaat het niet zozeer over subtypering, maar slechts een groepering van domeinobjecten volgens een bepaald classificatieschema. Zo kent de BRT voor het objecttype «Wegdeel» onder meer de volgende attribuuttypen met categorieën, zonder dat sprake is van subtypering:
 
 - Hoofdverkeersgebruik (geen subtypering, maar een groepering naar gebruik van het wegdeel, zoals fietsers of voetgangers).
 - Verhardingstype (geen subtypering, maar een groepering naar de verharding die het wegdeel op dit moment heeft, zoals klinkers of asfalt).
