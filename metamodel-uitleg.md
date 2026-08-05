@@ -156,15 +156,21 @@ In de volgende secties werken we deze verschillende soorten kenmerken verder uit
 
 > Een EIGENSCHAP is een KENMERK van een DOMEINOBJECT waar uitsluitend een WAARDE aan kan worden toegekend
 
-> Een LETTERLIJKE WAARDE is een WAARDE waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer
+> Een WAARDE is een LETTERLIJKE WAARDE, een CATEGORISCHE WAARDE of een COMPLExE WAARDE
 
-Een eigenschap is een kenmerk waar "slechts" een (letterlijke) waarde aan kan worden toegekend. Zoals «lengte» in het voorgaande voorbeeld. Een letterlijke waarde is geen domeinobject of verwijzing daarnaar, maar juist een letterlijke invulling van het kenmerk. De betekenis van de letterlijke waarde is niets anders dan de letterlijke waarde zelf. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een kenmerk van [Jan]. De *invulling* van dit kenmerk is een waarde, bijvoorbeeld het getal 25. Daarmee is dit kenmerk een eigenschap van Jan. En ook het kenmerk «(heeft) naam» van [Jan] is een eigenschap, met de waarde "Jan" (een woord bestaande uit drie letters).
+> Een LETTERLIJKE WAARDE is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer
 
-In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een waarde die refereert aan een categorie (de valutacategorie «euro»). Een dergelijke waarde noemen we een complexe waarde.
+Een eigenschap is een kenmerk waar "slechts" een waarde aan kan worden toegekend. Zoals «lengte» in het voorgaande voorbeeld. Zo'n letterlijke waarde is geen domeinobject of verwijzing daarnaar, maar juist een letterlijke invulling van een kenmerk. De betekenis van de letterlijke waarde is niets anders dan de letterlijke waarde zelf. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een kenmerk van [Jan]. De *invulling* van dit kenmerk is een letterlijke waarde, bijvoorbeeld het getal 25. Daarmee is dit kenmerk een eigenschap van Jan. En ook het kenmerk «(heeft) naam» van [Jan] is een eigenschap, met de letterlijke waarde "Jan" (een woord bestaande uit drie letters).
 
-> Een COMPLEXE WAARDE is een WAARDE die bestaat uit een samenstel van afzonderlijk benoemde LETTERLIJKE WAARDEn en/of CATEGORIEën
+> EEN CATEGORISCHE WAARDE is een aanduiding van een categorie
 
-#### Classificaties en categoriën
+Soms wordt met een waarde juist iets anders aangeduid dan de letterlijke waarde zelf. In ons voorbeeld was «man» een aanduiding van het geslacht van Jan. Hiermee bedoelen we niet de letterlijke waarde "man" (een woord bestaande uit drie letters), maar de *categorie* van mannen. We hadden daarvoor ook een andere aanduiding kunnen gebruiken, bijvoorbeeld het symbool "♂". We bedoelen hier de waarde niet letterlijk, maar conceptueel: als verwijzing naar een categorie.
+
+In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een categorische waarde die refereert aan een categorie (de valutacategorie «euro»). Het resultaat is een complexe waarde.
+
+> Een COMPLEXE WAARDE is een aanduiding die bestaat uit een samenstel van afzonderlijk benoemde WAARDEn.
+
+#### Categoriën
 
 > Een CATEGORISCH KENMERK is een KENMERK van een DOMEINOBJECT waar een CATEGORIE aan kan worden toegekend
 
@@ -306,8 +312,8 @@ Bij een rol is de invulling van de rol geen waarde, maar een (ander) domeinobjec
 Daarnaast zie je bij relaties en rollen dat je hetzelfde gegeven in drie verschillende vormen kunt uitdrukken, met elk dezelfde betekenis:
 
 <pre>
-1. "De persoon met BSN 12345678 is werknemer van het bedrijf met RSIN 287654321"
-2. "De persoon met BSN 12345678 heeft als werkgever het bedrijf met RSIN 287654321"
+1. "De persoon met BSN 123456782 is werknemer van het bedrijf met RSIN 287654321"
+2. "De persoon met BSN 123456782 heeft als werkgever het bedrijf met RSIN 287654321"
 3. "Het bedrijf met RSIN 287654321 heeft als werknemer de persoon met BSN 123456782"
 </pre>
 
@@ -326,7 +332,7 @@ Bij een indeling in categorieën is de invulling van een categorisch kenmerk gee
 Nu we de begrippen rondom gegevens helder hebben, kunnen we een aantal voorbeelden van gegevens geven. We kunnen het zo over de volgende gegevens hebben:
 
 - Er is een domeinobject met de voornaam "Jan" (de invulling voor de eigenschap «voornaam» van dit domeinobject is de waarde "Jan");
-- Dit domeinobject heeft BSN 123456782 (de invulling voor de toegekende identificerende eigenschap «BSN» van dit domeinobject is de waarde "12345678");
+- Dit domeinobject heeft BSN 123456782 (de invulling voor de toegekende identificerende eigenschap «BSN» van dit domeinobject is de waarde "123456782");
 - Dit domeinobject heeft als geboortedatum 25 mei 1970 (de invulling voor de eigenschap «geboortedatum» van dit domeinobject is de waarde "25 mei 1970");
 - Dit domeinobject is een man (de invulling voor het categoriserend kenmerk «geslacht» is de categorie «mannelijk»);
 - Dit domeinobject is de werknemer van een domeinobject met de naam "Bakkerij Broodjes" (de invulling voor de rol werkgever van [Jan] is [Bakkerij Broodjes]).
@@ -413,7 +419,7 @@ Bij dit attribuuttype hoort een categorisch kenmerk «type weg». De invulling v
 
 **LET OP!**
 
-Niet elk attribuuttype met categorische waarden is een attribuuttype van classificerende aard. Hier is alleen sprake van als er het attribuuttype een subtypering aanduidt. Bij veel categorieën gaat het niet zozeer over subtypering, maar slechts een groepering van domeinobjecten volgens een bepaald classificatieschema. Zo kent de BRT voor het objecttype «Wegdeel» onder meer de volgende attribuuttypen met categorieën, zonder dat sprake is van subtypering:
+Niet elk attribuuttype met categorische waarden is een attribuuttype van classificerende aard. Hier is alleen sprake van als het attribuuttype een subtypering aanduidt. Bij veel categorieën gaat het niet zozeer over subtypering, maar slechts een groepering van domeinobjecten volgens een bepaald classificatieschema. Zo kent de BRT voor het objecttype «Wegdeel» onder meer de volgende attribuuttypen met categorieën, zonder dat sprake is van subtypering:
 
 - Hoofdverkeersgebruik (geen subtypering, maar een groepering naar gebruik van het wegdeel, zoals fietsers of voetgangers).
 - Verhardingstype (geen subtypering, maar een groepering naar de verharding die het wegdeel op dit moment heeft, zoals klinkers of asfalt).
@@ -605,7 +611,7 @@ A. De lijst getallen uit de Fibonachi-reeks kleiner dan 30. Deze lijst bestaat u
 B. De lijst van olympische sporten die behoren tot de meerkamp van de mannen. Deze lijst bestaat onder meer uit de sporten «100 meter sprint», «verspringen» en «hoogspringen».
 C. De lijst van landen die een ISO 3166-1 landencode hebben. Deze lijst bestaat onder meer uit de landen [België], [Frankrijk], [Egypte], [Thailand] en [Argentinië].
 
-Dergelijke lijsten worden vaak gebruikt als referentielijsten. Het gaat dan om lijsten die gebruikt worden om naar te refereren, zonder dat de inhoud van die lijsten wordt bijgehouden in de betreffende administratie of onderdeel is van een gegevensuitwisseling. Bij dit verwijzen maakt het niet zo heel veel uit of er nu sprake is van een waardelijst, classificatielijst of populatie. Als verwijzing wordt een waarde gebruikt. Dat kan de letterlijke waarde zelf zijn, de aanduiding van de categorie of de identificatie van het domeinobject, in bovenstaande voorbeelden respectievelijk "1", "verspringen" en "België".
+Dergelijke lijsten worden vaak gebruikt als referentielijsten. Het gaat dan om lijsten die gebruikt worden om naar te refereren, zonder dat de inhoud van die lijsten als geheel wordt bijgehouden in de betreffende administratie of onderdeel is van een gegevensuitwisseling. Zo kan bijvoorbeeld in een bericht wel verwezen naar het land [België] met de alpha-2 code "BE", maar zal de volledige lijst niet in dit bericht zijn opgenomen, net zo min als de naam van het land ("België"@nl, "Belgique"@fr, "Belgium"@en, of...) Bij dit verwijzen maakt het niet zo heel veel uit of er nu sprake is van een waardelijst, classificatielijst of populatie. Om het gegeven correct te kunnen interpreteren, is echter juist *wel* van belang om te weten dat met "BE" geen letterlijke waarde wordt bedoeld, maar het land [België]. Als verwijzing wordt een waarde gebruikt. Dat kan de letterlijke waarde zelf zijn, de aanduiding van de categorie of de identificatie van het domeinobject, in bovenstaande voorbeelden respectievelijk "1", "verspringen" en "BE".
 
 Toch zijn er wel belangrijke verschillen, waarbij het goed is om deze drie lijsten uit elkaar te houden. Met name omdat bij de beschrijving van deze lijsten zal verschillen, afhankelijk van wat voor soort het lijst het betreft:
 
