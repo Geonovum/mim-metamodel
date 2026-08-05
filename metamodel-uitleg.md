@@ -170,7 +170,7 @@ In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan
 
 > Een COMPLEXE WAARDE is een aanduiding die bestaat uit een samenstel van afzonderlijk benoemde WAARDEn.
 
-#### Classificaties en categoriën
+#### Categoriën
 
 > Een CATEGORISCH KENMERK is een KENMERK van een DOMEINOBJECT waar een CATEGORIE aan kan worden toegekend
 
