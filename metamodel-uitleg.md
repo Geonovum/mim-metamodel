@@ -312,8 +312,8 @@ Bij een rol is de invulling van de rol geen waarde, maar een (ander) domeinobjec
 Daarnaast zie je bij relaties en rollen dat je hetzelfde gegeven in drie verschillende vormen kunt uitdrukken, met elk dezelfde betekenis:
 
 <pre>
-1. "De persoon met BSN 12345678 is werknemer van het bedrijf met RSIN 287654321"
-2. "De persoon met BSN 12345678 heeft als werkgever het bedrijf met RSIN 287654321"
+1. "De persoon met BSN 123456782 is werknemer van het bedrijf met RSIN 287654321"
+2. "De persoon met BSN 123456782 heeft als werkgever het bedrijf met RSIN 287654321"
 3. "Het bedrijf met RSIN 287654321 heeft als werknemer de persoon met BSN 123456782"
 </pre>
 
@@ -332,7 +332,7 @@ Bij een indeling in categorieën is de invulling van een categorisch kenmerk gee
 Nu we de begrippen rondom gegevens helder hebben, kunnen we een aantal voorbeelden van gegevens geven. We kunnen het zo over de volgende gegevens hebben:
 
 - Er is een domeinobject met de voornaam "Jan" (de invulling voor de eigenschap «voornaam» van dit domeinobject is de waarde "Jan");
-- Dit domeinobject heeft BSN 123456782 (de invulling voor de toegekende identificerende eigenschap «BSN» van dit domeinobject is de waarde "12345678");
+- Dit domeinobject heeft BSN 123456782 (de invulling voor de toegekende identificerende eigenschap «BSN» van dit domeinobject is de waarde "123456782");
 - Dit domeinobject heeft als geboortedatum 25 mei 1970 (de invulling voor de eigenschap «geboortedatum» van dit domeinobject is de waarde "25 mei 1970");
 - Dit domeinobject is een man (de invulling voor het categoriserend kenmerk «geslacht» is de categorie «mannelijk»);
 - Dit domeinobject is de werknemer van een domeinobject met de naam "Bakkerij Broodjes" (de invulling voor de rol werkgever van [Jan] is [Bakkerij Broodjes]).
