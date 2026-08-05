@@ -576,23 +576,29 @@ Een gegevenstype betreft over het algemeen gegevens over precies één kenmerk v
 - Bij een *indirect gegevenstype* is sprake van gegevens die gaan over een kenmerk van een ander domeinobject dan het hoofdonderwerp. Bijvoorbeeld het gegevenstype {Persoon.woonplaatsnaam}. Dit gegevenstype gaat over het kenmerk «naam» van een «Plaats». Je kunt niet direct van het hoofdonderwerp bij dit kenmerk uitkomen, dit gaat indirect via de relatie tussen het hoofdonderwerp en zijn woonplaats: {Persoon.woonplaatsnaam} = {Persoon} -> woont in -> {Plaats.naam}.
 - Bij een *samengesteld gegevenstype* is sprake van gegevens die worden gecombineerd tot één gegeven. Bijvoorbeeld een totaalbedrag op een factuur, of de volledige naam van een persoon als samenstelling van de voor- en achternaam.
 
-#### Gegevensverzamelingen: waardelijsten en referentielijsten
+#### Gegevensverzamelingen en referentielijsten
 
-Bij de typering van domeinobjecten kwam het onderscheid tussen waardelijsten, classificatieschemas en populaties aan bod. Daarbij werd duidelijk dat:
+Bij de typering van domeinobjecten (zie paragraaf 'Waardetypen vs categorieën en objecttypen') kwam het onderscheid tussen waardelijsten, classificatieschemas en populaties aan bod. Daarbij werd duidelijk dat:
 
 - Een *waardelijst* een lijst van *waarden* is;
 - Een *classificatieschema* een ordening beschrijft in *categorieën*;
 - Een *populatie* een opsomming van *domeinobjecten* betreft.
 
-Een classificatieschema onderscheid zich daarbij van een classificatielijst. Een classificatieschema kent "diepgang", het kent een boomstructuur van categorieën. Bijvoorbeeld de indeling van biologische soorten van flora en fauna. Een classificatielijst is daarbij een classificatieschema zonder diepgang: alle categorieën in één lijst. Een classificatielijst zou bijvoorbeeld de lijst kunnen zijn van alle categorieën op het niveau van biologische soort.
+Bij de typering van gegevensobjecten onderkennen we naast deze drie nog een classificatielijst. Waar een classificatieschema diepgang kent, het kent een boomstructuur van categorieën (bijvoorbeeld de indeling van biologische soorten van flora en fauna), geldt dat voor een classificatielijst niet. Een classificatielijst zou je kunnen zien als een classificatieschema zonder diepgang: alle categorieën in één lijst. Een classificatielijst zou bijvoorbeeld de lijst kunnen zijn van alle categorieën op het niveau van biologische soort.
 
-Als we ons beperking tot de classificatielijsten, dan kan het voorkomen dat zowel waardelijsten, classificatielijsten en populaties op dezelfde wijze in een gegevensmodel terecht komen. Hieronder enkele voorbeelden:
+Het onderscheid tussen waardelijsten, classificatielijsten en populaties is vooral een conceptueel onderscheid. Puur als lijstje van gegevens is het onderscheid hiertussen veel minder duidelijk. Hieronder drie voorbeelden:
 
-- De *waardelijst* van getallen uit de fibonachi reeks kleiner dan 30. Deze waardelijst bestaat uit de getallen 1, 2, 3, 5, 8, 13 en 21. Dergelijke waarden kennen geen andere eigenschappen dan de waarde zelf (het is niet zinvol om te spreken over "code" of "label" of iets dergelijks, de waarde betekent immers -per definitie- niets anders dan de waarde zelf);
-- De *classificatielijst* van olympische sporten die behoren tot de meerkamp voor de mannen. Deze bestaat onder meer uit de categorieën «100 meter sprint», «verspringen» en «hoogspringen». Over deze categorieën kun je andere eigenschappen vastleggen, het is (dus) relevant om te beschrijven wat we van deze categorieën willen weten.
-- De *populatie* van de landen die een ISO 3166-1 landencode hebben. We hebben het hier over domeinobjecten van het objecttype «Land». En daarbij een specifieke populatie (dus niet alle mogelijke voorkomens van dit objecttype), namelijk die domeinobjecten met de eigenschap ISO landencode.
+A. De lijst getallen uit de Fibonachi-reeks kleiner dan 30. Deze lijst bestaat uit de getallen 1, 2, 3, 5, 8, 13 en 21.
+B. De lijst van olympische sporten die behoren tot de meerkamp van de mannen. Deze lijst bestaat onder meer uit de sporten «100 meter sprint», «verspringen» en «hoogspringen».
+C. De lijst van landen die een ISO 3166-1 landencode hebben. Deze lijst bestaat onder meer uit de landen [België], [Frankrijk], [Egypte], [Thailand] en [Argentinië].
 
-Waardelijsten en referentielijsten zijn gegevensverzamelingen: het zijn verzamelingen van gegevens. Voor waardelijsten geldt dat deze gegevens alleen maar beweringen zijn over de waardelijst en de waarden zelf, zoals: *De waarde "1" staat op de waardelijst met de naam "fibonachireeks kleiner dan 30"*. Voor referentielijsten geldt dat die gegevensverzameling niet alleen beweringen bevat over de referentielijst en de categorieën dan wel domeinobjecten op die lijst, maar het bevat ook gegevens over deze categorieën en domeinobjecten, zoals we hieronder zullen zien.
+Dergelijke lijsten worden vaak gebruikt als referentielijsten. Het gaat dan om lijsten die gebruikt worden om naar te refereren, zonder dat de inhoud van die lijsten wordt bijgehouden in de betreffende administratie of onderdeel is van een gegevensuitwisseling. Bij dit verwijzen maakt het niet zo heel veel uit of er nu sprake is van een waardelijst, classificatielijst of populatie. Als verwijzing wordt een waarde gebruikt. Dat kan de letterlijke waarde zelf zijn, de aanduiding van de categorie of de identificatie van het domeinobject, in bovenstaande voorbeelden respectievelijk "1", "verspringen" en "België".
+
+Toch zijn er wel belangrijke verschillen, waarbij het goed is om deze drie lijsten uit elkaar te houden. Met name omdat bij de beschrijving van deze lijsten zal verschillen, afhankelijk van wat voor soort het lijst het betreft:
+
+- Lijst A betreft een *waardelijst*. De lijst bestaat uit waarden. Dergelijke waarden kennen geen andere kenmerken dan de waarde zelf (het is niet zinvol om te spreken over "code" of "label" of iets dergelijks, de waarde betekent immers -per definitie- niets anders dan de waarde zelf);
+- Lijst B betreft een *classificatielijst*. De lijst bevat categorieën. Met «verspringen» wordt de categorie bedoelt. Het is zelfs niet zomaar ver-springen, maar moet voldoen aan een veelheid aan regels voordat je kunt spreken van verspringen als olympische sport. Je zou van zo'n categorie informatie kunnen vastleggen zodat duidelijk wordt wat er precies met zo'n categorie wordt bedoeld. Bovendien kan ook een ander kenmerk gebruikt worden voor de referentie naar zo'n categorie. Bijvoorbeeld een URI of een code.;
+- Lijst C betreft een *populatie*. We hebben het hier over domeinobjecten van het objecttype «Land». En daarbij een specifieke populatie (dus niet alle mogelijke voorkomens van dit objecttype), namelijk die domeinobjecten met de eigenschap ISO landencode. De modellering van de gegevens over deze populatie zijn feitelijk niet heel anders dan die van elk ander objecttype. En ook hier geldt dat je een ander kenmerk zou kunnen gebruiken voor de referentie naar een voorkomen van dit domeinobject. Bijvoorbeeld een URI of een code (wat bij de ISO-3166-1 landencodelijst wel voor de hand ligt!)
 
 #### Gegevenstypen en gegevens m.b.t. waardelijsten
 Een gegevenstype dat gegevens typeert over kenmerken, kun je koppelen aan een waardelijst: dit zijn dan de waarden die je mag gebruiken. Zo kun je een gegevenstype specificeren van het kenmerk "storypoints" met als waardelijst die hierboven genoemde waardelijst. Deze waardelijst bestaat uit de volgende gegevens:
