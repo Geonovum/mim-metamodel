@@ -1,11 +1,17 @@
-⚠️ Deze repository is automatisch bijgewerkt naar de nieuwste workflow.
-Voor vragen, neem contact op met [Linda van den Brink](mailto:l.vandenbrink@geonovum.nl) of [Wilko Quak](mailto:w.quak@geonovum.nl).
+Deze repository bevat een werkdocument uit de serie werkdocumenten van MIM 2.0
 
-Als je een nieuwe publicatie wilt starten, lees dan eerst de instructies in de README van de NL-ReSpec-template:
-[https://github.com/Geonovum/NL-ReSpec-template](https://github.com/Geonovum/NL-ReSpec-template).
+De gehele serie omvat
 
-Het werkdocument van het mim-metamodel staat hier:  
-MIM-Metamodel: <https://geonovum.github.io/mim-metamodel>
+MIM - Metamodel Informatiemodellering: Uitleg <https://geonovum.github.io/mim-metamodel>
+
+MIM - Metamodel Informatiemodellering: Begrippenkader <https://geonovum.github.io/mim-begrippenkader/>
+
+MIM - Metamodel Informatiemodellering: Conceptueel Informatiemodel (CIM) <https://geonovum.github.io/mim-conceptueel/>
+
+MIM - Metamodel Informatiemodellering: Logisch Gegevensmodel (LGM) <https://geonovum.github.io/mim-logisch/>
+
+MIM - Metamodel Informatiemodellering: Best Practices <https://geonovum.github.io/mim-best-practices/>
+
 
 Profielen van MIM implementaties in verschillende modelleertalen:  
 MIM-UML:
