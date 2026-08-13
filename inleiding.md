@@ -6,28 +6,18 @@ De serie documenten omvat:
 
 [MIM - Metamodel Informatiemodellering: Uitleg](https://geonovum.github.io/mim-metamodel)
 
-MIM - Metamodel Informatiemodellering: Begrippenkader <https://geonovum.github.io/mim-begrippenkader/>
+[MIM - Metamodel Informatiemodellering: Begrippenkader](https://geonovum.github.io/mim-begrippenkader/)
 
-MIM - Metamodel Informatiemodellering: Conceptueel Informatiemodel (CIM) <https://geonovum.github.io/mim-conceptueel/>
+[MIM - Metamodel Informatiemodellering: Conceptueel Informatiemodel (CIM)](https://geonovum.github.io/mim-conceptueel/)
 
-MIM - Metamodel Informatiemodellering: Logisch Gegevensmodel (LGM) <https://geonovum.github.io/mim-logisch/>
+[MIM - Metamodel Informatiemodellering: Logisch Gegevensmodel (LGM)](https://geonovum.github.io/mim-logisch/)
 
-MIM - Metamodel Informatiemodellering: Best Practices <https://geonovum.github.io/mim-best-practices/>
+[MIM - Metamodel Informatiemodellering: Best Practices](https://geonovum.github.io/mim-best-practices/)
 
 
-Profielen van MIM implementaties in verschillende modelleertalen:  
-MIM-UML:
-github rep: <https://github.com/Geonovum/mim-uml>  
-document: <https://geonovum.github.io/mim-uml>  
-MIM-LD: 
-github rep: <https://github.com/Geonovum/mim-ld>  
-document: <https://geonovum.github.io/mim-ld>  
-MIM-OmtoUML:  
-github rep: <https://github.com/Geonovum/mim-ontouml>  
-document: <https://geonovum.github.io/mim-ontouml>  
-MIM-FBM:  
-github rep: <https://github.com/Geonovum/mim-fbm>  
-document: <https://geonovum.github.io/mim-fbm>  
-MIM-ArchiMate:  
-github rep: <https://github.com/Geonovum/mim-archimate>  
-document: <https://geonovum.github.io/mim-archimate>  
+De volgende documenten zijn profielen van MIM implementaties in verschillende modelleertalen:  
+[MIM-UML](https://geonovum.github.io/mim-uml)
+[MIM-LD](https://geonovum.github.io/mim-ld)  
+[MIM-OmtoUML](https://geonovum.github.io/mim-ontouml)  
+[MIM-FBM](https://geonovum.github.io/mim-fbm)  
+[MIM-ArchiMate](https://geonovum.github.io/mim-archimate)  
