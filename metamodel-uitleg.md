@@ -11,7 +11,7 @@ Voor het beschrijven van de MIM-begrippen is de NL-SBB standaard gebruikt. Een b
 - Een «begrip» is de gedachte, de notie die we bedoelen als we een «term» gebruiken in een specifieke context. Als we (dus) dezelfde term gebruiken in twee verschillende contexten met hun eigen betekenis, dan hebben we het ook over twee verschillende begrippen. Andersom kun je meerdere termen gebruiken voor hetzelfde begrip: de «voorkeursterm» of een «alternatieve term», indien hiervan sprake is.
 - Een «definitie» is een gestructureerde tekstuele beschrijving van wat we bedoelen met een «begrip». Een «term» heeft (dus) nooit een definitie, maar een begrip wel. Een definitie is ook niet zomaar een stukje uitleg over de betekenis van een begrip. Een definitie volgt bepaalde regels, kent een specifieke structuur. Zo moet de definitie onderscheidend en precies genoeg zijn om begrippen van elkaar te kunnen onderscheiden, zodat je weet wat er wel en niet onder dat begrip wordt verstaan.
 
-Het MIM metamodel heeft betrekking op zowel modellen van MIM niveau 2 als MIM niveau 3. Zie [soorten modellen](#soorten_modellen) voor nadere uitleg hierover. Uitgangspunt bij dit begrippenmodel voor MIM is dat het op deze beide niveaus betrekking heeft: al deze begrippen horen tot hetzelfde begrippenkader. Conform de NL-SBB betekent dit dat we nooit dezelfde term gebruiken voor twee verschillende begrippen: we hanteren voor elk (meta)begrip in dit begrippenkader unieke termen.
+Uitgangspunt bij dit begrippenmodel voor MIM is dat het op zowel MIM niveau 2 als MIM niveau 3 betrekking heeft: al deze begrippen horen tot hetzelfde begrippenkader. Conform de NL-SBB betekent dit dat we nooit dezelfde term gebruiken voor twee verschillende begrippen: we hanteren voor elk (meta)begrip in dit begrippenkader unieke termen.
 
 > Zo maken we (dus) ook onderscheid tussen «Objecttype» en «Gegevensobjecttype», omdat dit twee verschillende begrippen betreft. In de huidige versie van MIM kan hiervoor hetzelfde stereotype worden gebruikt: "objecttype". Uit de context is vervolgens duidelijk welk begrip wordt bedoeld: stereotype "objecttype" in een conceptueel informatiemodel (CIM) komt overeen met het begrip «Objecttype» en stereotype "objecttype" in een logisch gegevensmodel (LGM) komt overeen met het begrip «Gegevensobjecttype». Bij het lezen van dit document zal duidelijk worden dat we de term "Objecttype" **alleen** gebruiken voor het CIM, MIM niveau 2.
 
@@ -36,11 +36,11 @@ Aangezien gegevens over de dingen in het beschouwingsdomein gaan, zullen we die 
 
 We modelleren zowel het beschouwingsdomein als het verwerkingsdomein. Met modelleren beschrijven we op een gestructureerde wijze een domein. En het is daarbij verstandig om niet alles in één model te willen stoppen: hierdoor wordt het model te complex en niet meer te begrijpen. Modelleren is juist een werkwijze om te komen tot een eenduidige representatie van het beschouwingsdomein dan wel verwerkingsdomein met precies voldoende detail voor optimaal begrip. Deze eenduidige werkwijze is afgestemd op het doel dat we willen bereiken met het model, wat we ermee wensen te representeren. We onderscheiden vijf verschillende doelen, en evenzoveel soorten representaties:
 
-0. **Tekstuele bronnen**. Voor mensen leesbare en begrijpbare vastgelegde beschrijvingen in natuurlijke taal van de kennis over het beschouwingsdomein. Uit deze bronnen kan de betekenis worden gevonden, in de zin van: "de betekenis is, zoals beoogd in dit document". Zo'n bron legitimeert de beoogde betekenis, bijvoorbeeld een wet of een standaard waar we ons aan willen houden. Maar ook tekst in de vorm van verhalen kunnen helpen: ze nemen de lezer mee in de betekenis vanuit voorbeelden en concrete gebeurtenissen.
-1. **Model van begrippen**. Een model van begrippen helpt om een beter inzicht te krijgen in wat er wordt bedoeld als een bepaald woord of woordcombinatie ("term") wordt gebruikt in het beschouwingsdomein. We modelleren hier het begrip dat bestaat voor de communicatie in dat domein: welke woorden *daadwerkelijk* worden gebruikt in het beschouwingsdomein en wat ze in die context betekenen voor degenen die deze woorden gebruiken. Dergelijke woorden kunnen duiding geven aan een onderwerp van gesprek in de beschouwde werkelijkheid ("werknemer", "woning") en ook aan afspraken of verplichtingen die in het beschouwingsdomein gelden ("arbeidscontract", "eigendom" of "belastingplicht").
-2. **Conceptueel informatiemodel**, waarmee inzicht wordt gegeven welke dingen (zoals: objecten, actoren en handelingen) relevant zijn om te beschouwen en welke eigenschappen daarvan en relaties daartussen. Anders dan bij een model van begrippen, gaat het ons hier niet primair om de gebruikte taal, maar juist de dingen waarover wordt gesproken (letterlijk: "de onderwerpen van gesprek"). Het gaat ons om het *ontologisch commitment* dat we aangaan met betrekking tot het beschouwingsdomein. Welke dingen we in het domein willen onderscheiden, hoe we ze van elkaar kunnen onderscheiden en afzonderlijk kunnen identificeren. De afbakening van het model richt zich daarbij op datgeen we willen onderscheiden *omdat we er informatie over wensen*, omdat we het relevant vinden om er iets over de weten.
-3. **Logisch gegevensmodel**. Waar we in de vorige modellen kijken naar het beschouwingsdomein waarover we gegevens willen verwerken, kijken we in dit model juist naar die gegevens zelf. Het logisch gegevensmodel is een model van het verwerkingsdomein. Het logisch gegevensmodel beschrijft de gegevens die in het verwerkingsdomein worden gebruikt. Het is een formele, complete specificatie van de gegevens die voor een bepaalde toepassing noodzakelijk zijn. Het is **geen** model van het beschouwingsdomein, hoewel de modellen veel op elkaar kunnen lijken (dit wordt isomorfie genoemd, hierover later meer). Bij het logisch gegevensmodel kunnen we een nader onderscheid maken tussen modellen van administraties (hoe gegevens worden opgeslagen), modellen van interacties (hoe gegevens worden uitgewisseld) en modellen van de verwerking binnen een proces (hoe gegevens worden gebruikt).
-4. **Fysiek datamodel**. Tenslotte zullen gegevens ook daadwerkelijk gecreeërd en vastgelegd, uitgewisseld of bewerkt moeten worden. Het fysieke datamodel beschrijft hoe gegevens als data worden gecreeërd en vastgelegd, uitgewisseld of bewerkt in een specifiek technisch formaat.
+1. **Tekstuele bronnen**. Voor mensen leesbare en begrijpbare vastgelegde beschrijvingen in natuurlijke taal van de kennis over het beschouwingsdomein. Uit deze bronnen kan de betekenis worden gevonden, in de zin van: "de betekenis is, zoals beoogd in dit document". Zo'n bron legitimeert de beoogde betekenis, bijvoorbeeld een wet of een standaard waar we ons aan willen houden. Maar ook tekst in de vorm van verhalen kunnen helpen: ze nemen de lezer mee in de betekenis vanuit voorbeelden en concrete gebeurtenissen.
+2. **Model van begrippen**. Een model van begrippen helpt om een beter inzicht te krijgen in wat er wordt bedoeld als een bepaald woord of woordcombinatie ("term") wordt gebruikt in het beschouwingsdomein. We modelleren hier het begrip dat bestaat voor de communicatie in dat domein: welke woorden *daadwerkelijk* worden gebruikt in het beschouwingsdomein en wat ze in die context betekenen voor degenen die deze woorden gebruiken. Dergelijke woorden kunnen duiding geven aan een onderwerp van gesprek in de beschouwde werkelijkheid ("werknemer", "woning") en ook aan afspraken of verplichtingen die in het beschouwingsdomein gelden ("arbeidscontract", "eigendom" of "belastingplicht").
+3. **Conceptueel informatiemodel**, waarmee inzicht wordt gegeven welke dingen (zoals: objecten, actoren en handelingen) relevant zijn om te beschouwen en welke eigenschappen daarvan en relaties daartussen. Anders dan bij een model van begrippen, gaat het ons hier niet primair om de gebruikte taal, maar juist de dingen waarover wordt gesproken (letterlijk: "de onderwerpen van gesprek"). Het gaat ons om het *ontologisch commitment* dat we aangaan met betrekking tot het beschouwingsdomein. Welke dingen we in het domein willen onderscheiden, hoe we ze van elkaar kunnen onderscheiden en afzonderlijk kunnen identificeren. De afbakening van het model richt zich daarbij op datgeen we willen onderscheiden *omdat we er informatie over wensen*, omdat we het relevant vinden om er iets over de weten.
+4. **Logisch gegevensmodel**. Waar we in de vorige modellen kijken naar het beschouwingsdomein waarover we gegevens willen verwerken, kijken we in dit model juist naar die gegevens zelf. Het logisch gegevensmodel is een model van het verwerkingsdomein. Het logisch gegevensmodel beschrijft de gegevens die in het verwerkingsdomein worden gebruikt. Het is een formele, complete specificatie van de gegevens die voor een bepaalde toepassing noodzakelijk zijn. Het is **geen** model van het beschouwingsdomein, hoewel de modellen veel op elkaar kunnen lijken (dit wordt isomorfie genoemd, hierover later meer). Bij het logisch gegevensmodel kunnen we een nader onderscheid maken tussen modellen van administraties (hoe gegevens worden opgeslagen), modellen van interacties (hoe gegevens worden uitgewisseld) en modellen van de verwerking binnen een proces (hoe gegevens worden gebruikt).
+5. **Fysiek datamodel**. Tenslotte zullen gegevens ook daadwerkelijk gecreeërd en vastgelegd, uitgewisseld of bewerkt moeten worden. Het fysieke datamodel beschrijft hoe gegevens als data worden gecreeërd en vastgelegd, uitgewisseld of bewerkt in een specifiek technisch formaat.
 
 Van modelsoort (1) naar modelsoort (3) wordt steeds duidelijker hoe we tegen de beschouwde werkelijkheid aankijken en daarbij alleen aspecten meenemen die we relevant vinden. Van modelsoort (3) naar (5) wordt duidelijk hoe de gegevensverwerking vorm krijgt inclusief de rationale achter die specifieke vorm. Daarbij is ook het fysiek datamodel nog slechts een model van de data: het betreft niet de data zelf, maar het beschrijft het "model", de "mal" waarbinnen de data moet passen. Daarnaast geldt dat er niet alleen een afhankelijkheid is van (1) naar (5), ook andersom is sprake van een afhankelijkheid: zo kun je het nooit over de onderwerpen in de beschouwde werkelijkheid hebben, als je daarover geen gegevens uitwisselt.
 
@@ -82,8 +82,6 @@ Belangrijke kenmerken van het beschouwingsdomein zijn:
 > Een DOMEINOBJECT is een onderscheidbaar en identificeerbaar iets in de beschouwde werkelijkheid
 
 Wat we onderscheiden in een domein, en wat (dus) hier een domeinobject is, hangt af van wat we willen beschouwen. Deze keuzes over wat we willen onderscheiden leggen we vast in een conceptueel model. Een conceptueel model is, met andere woorden, een model van domeinobjecten. De term "domeinmodel" wordt dan ook wel gebruikt als synoniem voor een conceptueel model. Domeinobjecten kunnen zowel fysiek waarneembaar zijn, zoals een gebouw of voertuig, maar ook virtueel zoals giraal geld of het eigendom van een perceel. Ook hoeven domeinobjecten niet werkelijk te bestaan. Zo kun je het Star Wars domein beschouwen, en vanuit dat beschouwingsdomein gezien, bestaan zaken als light sabers en death stars.
-
-*Zo beschouwen zowel de BAG als de BRT bouwwerken, zoals het Station van Amersfoort. Echter, de BAG en de BRT beschouwen dit ene station op verschillende manieren. Er is hier dan ook sprake van twee domeinobjecten: het station Amersfoort, bezien vanuit het domein van de BAG en het station Amersfoort, bezien vanuit het domein van de BRT. Om dit ene station als hetzelfde domeinobject te beschouwen, is het noodzakelijk om op dezelfde manier naar dit station te kijken. De NEN3610 standaard is hier specifiek voor bedoeld. Deze standaard beschouwt een bouwwerk op een manier waarin zowel de betekenis van het BAG bouwwerk als het BRT bouwwerk vallen. Ook kan een betekenis uit een ander domein direct worden overgenomen. Zo wordt in verschillende registraties rechtstreeks gebruik gemaakt van het adres, zoals dit wordt beschouwd door de BAG. In dit geval wordt het “BAG-adres” dus op dezelfde wijze beschouwd en is ook sprake van hetzelfde domeinobject.*
 
 We gebruiken hier bewust het woord "domeinobject" om expliciet te maken dat we het over de objecten hebben die we beschouwen in een domein. Alles kan immers een object zijn, afhankelijk van wat je beschouwt. Zo hebben java-programmeurs het ook over objecten, maar dan bedoelen ze de java-objecten in hun programmeertaal (want dat is dan hetgeen ze beschouwen!). Verderop in dit document zullen we het hebben over gegevensobjecten. En dan bedoelen we dus ook weer die objecten die we beschouwen als we het over gegevens hebben, dwz: zoals ze voorkomen in het verwerkingsdomein.
 
@@ -156,21 +154,15 @@ In de volgende secties werken we deze verschillende soorten kenmerken verder uit
 
 > Een EIGENSCHAP is een KENMERK van een DOMEINOBJECT waar uitsluitend een WAARDE aan kan worden toegekend
 
-> Een WAARDE is een LETTERLIJKE WAARDE, een CATEGORISCHE WAARDE of een COMPLExE WAARDE
+> Een LETTERLIJKE WAARDE is een WAARDE waarvan de betekenis letterlijk genomen moet worden, de waarde zelf en niets meer
 
-> Een LETTERLIJKE WAARDE is een aanduiding waarvan de betekenis letterlijk genomen moet worden, de aanduiding zelf en niets meer
+Een eigenschap is een kenmerk waar "slechts" een (letterlijke) waarde aan kan worden toegekend. Zoals «lengte» in het voorgaande voorbeeld. Een letterlijke waarde is geen domeinobject of verwijzing daarnaar, maar juist een letterlijke invulling van het kenmerk. De betekenis van de letterlijke waarde is niets anders dan de letterlijke waarde zelf. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een kenmerk van [Jan]. De *invulling* van dit kenmerk is een waarde, bijvoorbeeld het getal 25. Daarmee is dit kenmerk een eigenschap van Jan. En ook het kenmerk «(heeft) naam» van [Jan] is een eigenschap, met de waarde "Jan" (een woord bestaande uit drie letters).
 
-Een eigenschap is een kenmerk waar "slechts" een waarde aan kan worden toegekend. Zoals «lengte» in het voorgaande voorbeeld. Zo'n letterlijke waarde is geen domeinobject of verwijzing daarnaar, maar juist een letterlijke invulling van een kenmerk. De betekenis van de letterlijke waarde is niets anders dan de letterlijke waarde zelf. Zoals een getal, een stukje tekst, een datum of een boolean (waar/onwaar). Zo is in ons voorbeeld «(heeft) leeftijd» een kenmerk van [Jan]. De *invulling* van dit kenmerk is een letterlijke waarde, bijvoorbeeld het getal 25. Daarmee is dit kenmerk een eigenschap van Jan. En ook het kenmerk «(heeft) naam» van [Jan] is een eigenschap, met de letterlijke waarde "Jan" (een woord bestaande uit drie letters).
+In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een waarde die refereert aan een categorie (de valutacategorie «euro»). Een dergelijke waarde noemen we een complexe waarde.
 
-> EEN CATEGORISCHE WAARDE is een aanduiding van een categorie
+> Een COMPLEXE WAARDE is een WAARDE die bestaat uit een samenstel van afzonderlijk benoemde LETTERLIJKE WAARDEn en/of CATEGORIEën
 
-Soms wordt met een waarde juist iets anders aangeduid dan de letterlijke waarde zelf. In ons voorbeeld was «man» een aanduiding van het geslacht van Jan. Hiermee bedoelen we niet de letterlijke waarde "man" (een woord bestaande uit drie letters), maar de *categorie* van mannen. We hadden daarvoor ook een andere aanduiding kunnen gebruiken, bijvoorbeeld het symbool "♂". We bedoelen hier de waarde niet letterlijk, maar conceptueel: als verwijzing naar een categorie.
-
-In de voorbeelden hebben we gezien dat een waarde vaak toch net iets meer is dan alleen een letterlijke waarde. De waarde "25 euro" bestaat feitelijk uit een letterlijke waarde (het getal 25) en een categorische waarde die refereert aan een categorie (de valutacategorie «euro»). Het resultaat is een complexe waarde.
-
-> Een COMPLEXE WAARDE is een aanduiding die bestaat uit een samenstel van afzonderlijk benoemde WAARDEn.
-
-#### Categoriën
+#### Classificaties en categoriën
 
 > Een CATEGORISCH KENMERK is een KENMERK van een DOMEINOBJECT waar een CATEGORIE aan kan worden toegekend
 
@@ -238,10 +230,10 @@ En ook de rol(invulling) zelf kunnen we zien als een domeinobject. Zo is een ken
 
 Er zijn kenmerken van domeinobjecten die onveranderlijk zijn. Zo zal het kenmerk «geboortedatum» van een persoon nooit veranderen: een persoon is nu eenmaal geboren op een bepaalde dag, dat zal niet meer veranderen. Het kenmerk «leeftijd» verandert daarentegen elk jaar, maar wel op een hele reguliere manier (elk jaar eentje erbij). Er zijn ook kenmerken die veranderen, zonder dat sprake is van vooraf duidelijke manier. Zo zijn rollen over het algemeen veranderlijk: [Jan] is (nu) werknemer van [Bakkerij Broodjes], maar mogelijk is hij dat over een tijdje niet meer, en er is ook een tijd geweest dat hij het (nog) niet was.
 
-Zo zijn er ook categorische kenmerken die onveranderlijk zijn en categorische kenmerken die juist veranderlijk zijn. Zo zal een levend wezen altijd tot de categorie van zoogdieren behoren, of juist niet. Het kenmerk «(is) werkloos» is echt juist weer veranderlijk, en hangt bovendien ook samen met de rol «werknemer».
+Zo zijn er ook categorische kenmerken die onveranderlijk zijn en categorische kenmerken die juist veranderlijk zijn. Zo zal een levend wezen altijd tot de categorie van zoogdieren behoren, of juist niet. De categorie «werkeloos» is echt juist weer veranderlijk, en hangt bovendien ook samen met de rol «werknemer».
 
 > [!NOTE]
-> Je zult wellicht vinden dat een kenmerk «werkloos» niet gemodelleerd zou moeten worden in een conceptueel model. Vanuit de overtuiging dat de arbeidsrelatie de werkelijk juiste modellering is. Bedenk dan dat we een beschouwingsdomein aan het modelleren zijn. *Wat* we willen beschouwen, hangt van het domein af. Dus ook of we het interessant vinden om alle details te weten over de reden waarom iemand werkloos is. Dat kan nuttig zijn, maar ook volledig overbodig. Daarom kan een dergelijk kenmerk Waarde hebben om te modelleren. Een herkenbaar voorbeeld is dat je minimaal 18 jaar moet zijn om alcohol te mogen kopen. In dit beschouwingsdomein is de geboortedatum van een koper in het geheel niet relevant (en zelfs niet zijn of haar exacte leeftijd), slechts het kenmerk «is minimaal 18 jaar» is relevant in dit domein.
+> Je zult wellicht vinden dat een categorie «werkeloos» een kenmerk is die je niet zou moeten modelleren in een conceptueel model. Vanuit de overtuiging dat de arbeidsrelatie de werkelijk juiste modellering is. Bedenk dan dat we een beschouwingsdomein aan het modelleren zijn. *Wat* we willen beschouwen, hangt van het domein af. Dus ook of we het interessant vinden om alle details te weten over de reden waarom iemand werkeloos is. Dat kan nuttig zijn, maar ook volledig overbodig. Daarom kan een dergelijke categorie nuttig zijn. Een herkenbaar voorbeeld is dat je minimaal 18 jaar moet zijn om alcohol te mogen kopen. In dit beschouwingsdomein is de geboortedatum van een koper in het geheel niet relevant (en zelfs niet zijn of haar exacte leeftijd), slechts de categorie «is minimaal 18 jaar» is relevant in dit domein.
 
 ### De concrete zaken uit het verwerkingsdomein
 
@@ -249,13 +241,13 @@ In het vorige hoofdstuk hebben we de concrete zaken uit het beschouwingsdomein b
 
 Waar we het over "verwerkingsdomein" hebben, bedoelen we expliciet het domein van de gegevensverwerking, dat je ook het "gegevensdomein" of het "gegevensverwerkingsdomein" zou kunnen noemen met de volgende betekenis:
 
-> Een VERWERKINGSDOMEIN is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt over het BESCHOUWINGSDOMEIN
+> Een VERWERKINGSDOMEIN is een afgebakend deel van de werkelijkheid waarin gegevens worden verwerkt
 
 Belangrijke kenmerken van het verwerkingsdomein zijn:
 
 - Ook het verwerkingsdomein is een deel de werkelijkheid: de administratieve werkelijkheid. Immers: het vastleggen van gegevens leidt daadwerkelijk tot iets. Bij fysieke vastlegging op papier zelfs tastbaar, maar ook bij digitale vastlegging is er sprake van verandering in deze (digitale) werkelijkheid.
 - Het gaat ons hier om de verwerking van gegevens, waarbij we die gegevens zelf zien als de te verwerken eenheden;
-- Het verwerkingsdomein is altijd verbonden aan één of meerdere beschouwingsdomeinen waarover de gegevens gaan die we verwerken, het kan daar niet los van worden gezien.
+- Het verwerkingsdomein is altijd verbonden aan een specifiek beschouwingsdomein waarover de gegevens gaan die we verwerken, het kan daar niet los van worden gezien.
 
 #### Gegevens
 
@@ -272,13 +264,13 @@ Kenmerkend aan een gegeven zijn de volgende elementen:
 
 Hoewel gegevens gaan over de domeinobjecten, hun kenmerken en relaties, is het niet direct mogelijk om de gegevens hiermee te verbinden. Gegevens bestaan, zo gezegd, eigenlijk altijd in een andere werkelijkheid dan domeinobjecten. Denk bijvoorbeeld aan een domeinobject als een persoon, of een voertuig of een weg. Van alle drie kun je gegevens vastleggen. Maar om daarbij de relatie te leggen *waarover* deze gegevens gaan, zitten we met een probleem. De enige manier om gegevens en domeinobjecten direct aan elkaar te relateren is letterlijk de gegevens op het domeinobject te "plakken", of (net zo letterlijk): het domeinobject te "oormerken" (!). In onze huidige, digitale, samenleving is dit een uitzondering. We hebben "in" de werkelijkheid van de gegevens iets nodig om te kunnen verwijzen naar de betreffende persoon, voertuig of weg. We moeten ze identificeren. Vaak gebruiken we een toegekend identificerend kenmerk om bij een gegeven aan te kunnen geven over welk domeinobject het gaat.
 
-In ons voorbeeld kunnen we bijvoorbeeld het volgende gegeven uitdrukken, door gebruik te maken van de toegekende identificerend kenmerk «BSN»: "De persoon met BSN 123456782 heeft geboortedatum 10 februari 1970". Dit gegeven is een bewering over de eigenschap «geboortedatum» van het domeinobject dat geïdentificeerd kan worden met het toegekend identificerend kenmerk «BSN» met de waarde "123456782", dwz: onze [Jan].
+In ons voorbeeld kunnen we bijvoorbeeld het volgende gegeven uitdrukken, door gebruik te maken van de toegekende identificerend kenmerk «BSN»: "De persoon met BSN 12345678 heeft geboortedatum 10 februari 1970". Dit gegeven is een bewering over de eigenschap «geboortedatum» van het domeinobject dat geïdentificeerd kan worden met het toegekend identificerend kenmerk «BSN» met de waarde "12345678", dwz: onze [Jan].
 
 NB: Van belang in bovenstaande definitie is dat een gegeven afhankelijk is van de domeinobjecten en kenmerken die je wilt onderkennen! Als je bijvoorbeeld een gegeven over de geboortedatum van Jan wilt vastleggen, dan veronderstelt dit dat je domeinobjecten zoals Jan wilt onderkennen, en daarvan het kenmerk geboortedatum. Hoewel je technisch gezien de uitspraak "De geboortedatum van Jan is 10 februari 1970" kunt vastleggen als gegeven, is een correcte interpretatie van deze uitspraak moeilijk zonder inzicht in het domein, en daarmee welke domeinobjecten en kenmerken je wilt onderkennen.
 
 > Een GEGEVENSGROEP is een groepering van GEGEVENs
 
-Een gegevensgroep is simpelweg het groeperen van enkele gegevens die we op een bepaalde manier bij elkaar vinden horen. Dus bijvoorbeeld een lijstje van geboortedata van personen (we groeperen dan op die eigenschap), of de naam, adres en woonplaats gegevens over hetzelfde domeinobject, bijvoorbeeld onze [Jan]. Merk op dat een gegevensgroep (dus) ook het resultaat kan zijn van een query op een database die via een bericht wordt gedeeld. Het begrip «gegevensgroep» is de basisbouwsteen, bij het modelleren zal het veel vaker gaan over een speciaal soort gegevensgroep: een gegevensobject.
+Een gegevensgroep is simpelweg het groeperen van enkele gegevens die we op een bepaalde manier bij elkaar vinden horen. Dus bijvoorbeeld een lijstje van geboortedata van personen (we groeperen dan op die eigenschap), of enkele gegevens over hetzelfde domeinobject, bijvoorbeeld onze [Jan].
 
 #### Gegevensobject
 
@@ -293,8 +285,8 @@ Merk op: hoewel de identiteit van een gegevensobject gerelateerd is aan de ident
 > [!NOTE]
 > Een gegevensobject kun je *zelf* ook weer zien als een domeinobject. Dus het is niet zo maar een geheel van gegevens, het is een geheel van gegevens die onderscheidbaar zijn in een domein. En in dit geval is dit het verwerkingsdomein van gegevens. Meta-gegevens (gegevens *over* gegevens) kunnen zo ook worden uitgedrukt: een (meta)gegeven is daarmee een vastgelegde uitdrukking over een getypeerde eigenschap van een gegevensobject.
 > Merk op dat als we het hebben over gegevens-over-gegevens, we het over metagegevens hebben. Dergelijke metagegevens bestaan in dit geval *wel* in dezelfde werkelijkheid als de gegevens waarover ze gaan. Het is dan over het algemeen ook veel makkelijker om metagegevens en gegevens bij elkaar te plaatsen. Wel blijft van belang om te blijven erkennen dat het hier om twee verschillende objecten gaat. Onderstaand voorbeeld geeft dit weer:
-> - Een gegeven: "De persoon met BSN 123456782 heeft geboortedatum 10 februari 1970"
-> - Een metagegeven: "Het gegeven: 'De persoon met BSN 123456782 heeft geboortedatum 10 februari 1970' bevat een foutieve waarde voor de eigenschap BSN"
+> - Een gegeven: "De persoon met BSN 12345678 heeft geboortedatum 10 februari 1970"
+> - Een metagegeven: "Het gegeven: 'De persoon met BSN 12345678 heeft geboortedatum 10 februari 1970' bevat een foutieve waarde voor de eigenschap BSN"
 > Het gegeven *gaat over* een persoon, het metagegeven *gaat over* een gegeven.
 
 #### Gebruik van identificerende kenmerken voor verwijzingen
@@ -303,18 +295,18 @@ Een gegeven gaat over een kenmerk van een domeinobject of relatie tussen domeino
 
 > Een SLEUTELWAARDE is de invulling van één of meerdere KENMERKen die gezamenlijk één enkel DOMEINOBJECT uniek aanduiden
 
-Zo is de waarde "123456782" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Maar ook "Jan Janssen, geboren op 15 januari 2008" (de combinatie van de eigenschappen voornaam, achternaam en geboortedatum) kan een sleutelwaarde zijn voor een specifieke persoon in de werkelijkheid.
+Zo is de waarde "12345678" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Maar ook "Jan Janssen, geboren op 15 januari 2008" (de combinatie van de eigenschappen voornaam, achternaam en geboortedatum) kan een sleutelwaarde zijn voor een specifieke persoon in de werkelijkheid.
 
 Voor een gegeven dat gaat over een letterlijk kenmerk, kunnen we direct de waarde van dat kenmerk zelf gebruiken, zoals in het gegeven uit bovenstaand voorbeeld: "10 februari 1970" is de waarde van het kenmerk waarover dit gegeven gaat. De waarde zelf kan letterlijk gebruikt worden in het gegeven, er is geen verschil tussen de manier waarop aan de waarde *refereren* en wat de waarde *betekent*. Dit gaat niet op voor rollen en categorische kenmerken.
 
-Bij een rol is de invulling van de rol geen waarde, maar een (ander) domeinobject. Ook daar zullen we (dus) weer gebruik moeten maken van de identificerende kenmerken van dit domeinobject. Ook hier hebben we een sleutelwaarde nodig. zoals in het gegeven: "De persoon met BSN 123456782 is werknemer van het bedrijf met RSIN 287654321". Met dit gegeven wordt overigens hetzelfde bedoeld als met het gegeven "De persoon met de naam Jan is werknemer van het bedrijf met de naam Bakkerij Broodjes". Laatstgenoemde vorm is echter niet zo precies, aangezien het maar de vraag is of de eigenschap «naam» voldoende identificerend is.
+Bij een rol is de invulling van de rol geen waarde, maar een (ander) domeinobject. Ook daar zullen we (dus) weer gebruik moeten maken van de identificerende kenmerken van dit domeinobject. Ook hier hebben we een sleutelwaarde nodig. zoals in het gegeven: "De persoon met BSN 12345678 is werknemer van het bedrijf met RSIN 87654321". Met dit gegeven wordt overigens hetzelfde bedoeld als met het gegeven "De persoon met de naam Jan is werknemer van het bedrijf met de naam Bakkerij Broodjes". Laatstgenoemde vorm is echter niet zo precies, aangezien het maar de vraag is of de eigenschap «naam» voldoende identificerend is.
 
 Daarnaast zie je bij relaties en rollen dat je hetzelfde gegeven in drie verschillende vormen kunt uitdrukken, met elk dezelfde betekenis:
 
 <pre>
-1. "De persoon met BSN 123456782 is werknemer van het bedrijf met RSIN 287654321"
-2. "De persoon met BSN 123456782 heeft als werkgever het bedrijf met RSIN 287654321"
-3. "Het bedrijf met RSIN 287654321 heeft als werknemer de persoon met BSN 123456782"
+1. "De persoon met BSN 12345678 is werknemer van het bedrijf met RSIN 87654321"
+2. "De persoon met BSN 12345678 heeft werkgever het bedrijf met RSIN 87654321"
+3. "Het bedrijf met RSIN 87654321 heeft werknemer de persoon met BSN 12345678"
 </pre>
 
 Dat hier verschillende vormen mogelijk zijn, komt omdat de relatie zelf geen richting heeft, maar uitspraken over de relatie, de proposities, juist wel. En een gegeven is een vastgelegde uitspraak, dus kent *ook* een richting.
@@ -332,20 +324,20 @@ Bij een indeling in categorieën is de invulling van een categorisch kenmerk gee
 Nu we de begrippen rondom gegevens helder hebben, kunnen we een aantal voorbeelden van gegevens geven. We kunnen het zo over de volgende gegevens hebben:
 
 - Er is een domeinobject met de voornaam "Jan" (de invulling voor de eigenschap «voornaam» van dit domeinobject is de waarde "Jan");
-- Dit domeinobject heeft BSN 123456782 (de invulling voor de toegekende identificerende eigenschap «BSN» van dit domeinobject is de waarde "123456782");
+- Dit domeinobject heeft BSN 12345678 (de invulling voor de toegekende identificerende eigenschap «BSN» van dit domeinobject is de waarde "12345678");
 - Dit domeinobject heeft als geboortedatum 25 mei 1970 (de invulling voor de eigenschap «geboortedatum» van dit domeinobject is de waarde "25 mei 1970");
 - Dit domeinobject is een man (de invulling voor het categoriserend kenmerk «geslacht» is de categorie «mannelijk»);
 - Dit domeinobject is de werknemer van een domeinobject met de naam "Bakkerij Broodjes" (de invulling voor de rol werkgever van [Jan] is [Bakkerij Broodjes]).
 - Dit domeinobject is getrouwd met een domeinobject met de naam "Marie" (de invulling van de rol partner van [Jan] is [Marie]).
 
-Deze zes uitspraken zijn zes gegevens die gegroepeerd kunnen worden tot één gegevensobject met als hoofdonderwerp het domeinobject met als sleutel de eigenschap «BSN» en met de sleutelwaarde "123456782".
+Deze zes uitspraken zijn zes gegevens die gegroepeerd kunnen worden tot één gegevensobject met als hoofdonderwerp het domeinobject met als sleutel de eigenschap «BSN» en met de sleutelwaarde "12345678".
 
 ### Typering van domeinobjecten
 
 Nu we de concrete zaken hebben behandeld, kunnen we de stap maken naar de typering. Typering van domeinobjecten is zo de manier in MIM om aan te geven wat we wensen te identificeren en te onderscheiden, dwz: welke domeinobjecten dit zijn. Dit gebeurt door te beschrijven wat de overeenkomstige kenmerken zijn die domeinobjecten van een bepaald type gemeen hebben en hoe je deze domeinobjecten kunt identificeren met behulp van deze kenmerken.
 
 > [!CAUTION]
-> In de tekst hieronder hebben we de terminologie voor typering zo consistent mogelijk doorgevoerd. Dit betekent daarmee ook dat we een aantal termen uit de huidige versie van MIM hebben aangepast, zonder direct een andere betekenis te beogen. Het gaat om de volgende termen:
+> In de tekst hieronder hebben de terminologie voor typering zo consistent mogelijk doorgevoerd. Dit betekent daarmee ook dat we een aantal termen uit de huidige versie van MIM hebben aangepast, zonder direct een andere betekenis te beogen. Het gaat om de volgende termen:
 > - "attribuutsoort" naar "attribuuttype"
 > - "relatiesoort" naar "relatietype"
 > - "relatiesoortrol" naar "rolinvulling"
@@ -382,7 +374,7 @@ Algemeen gesproken kun je stellen dat voor elk objecttype een overeenkomstige ca
 - Bij elk objecttype horen domeinobjecten die voorkomens zijn van dit objecttype. Vrijwel altijd zal relevant zijn om te kunnen weten van welk objecttype een specifiek domeinobject een voorkomen is. Om een dergelijk gegeven uit te kunnen drukken heb je (conform de definitie van een gegeven!) een kenmerk nodig. In dit geval gaat het om het categorisch kenmerk «type». Zoals in de zin: "[Jan] is een (voorkomen van het type) «persoon»".
 - Objecttypen en categorieën kennen over het algemeen een hiërarchie. Zo zal een model van het dierenrijk een indeling bevatten waarin dieren worden getypeerd en gecategoriseerd conform de bekende biologische hiërarchie. In een dergelijk model zul je op een gegeven moment stoppen om nader te typeren, als over de "lagere" typen/categorieën geen extra informatie meer nodig is, behalve dan *dat* sprake is van een dergelijk categorie. Zo zou bijvoorbeeld (nog) onderscheid gemaakt kunnen worden in katten en honden (omdat we bijvoorbeeld van een kat andere kenmerken relevant vinden dan van honden), maar verder maken we geen afzonderlijke typering per ras. Wel zou het relevant kunnen zijn om een categorisch kenmerk «ras» op te nemen met de nadere onderverdeling.
 - Er zijn meerdere indelingen in categorieën denkbaar voor een domeinobject. Zo wordt in de BRT onder meer onderscheid gemaakt in de objecttypen «wegdeel», «spoorbaan», «gebouw». Van een wegdeel is relevant wat de verhardingssoort is (zoals: asfalt, klinkers, gravel), maar ook het gebruik (zoals: fietspad, autoweg, voetpad). Je kunt langs verschillende facetten groeperingen maken van wegdelen. In de MIM standaard is er echter maar één subtypering mogelijk. Meerdere facetten zijn echter goed te ondersteunen door afzonderlijke categorische kenmerken te onderkennen.
-- Categorieën kunnen tenslotte ook daadwerkelijk als voorkomens van een objecttype worden gemodelleerd, zodat aanvullende informatie over deze categorieën opgenomen kan worden in het model. Zo zou bijvoorbeeld van de categorie «Kat» en «Hond» vastgelegd kunnen worden dat het huisdieren betreffen, en van de categorie «Leeuw» vastgelegd kunnen worden dat dit juist geen huisdier is. Tegelijkertijd kan er een objecttype «Dier» zijn met kenmerken «haarkleur» en «diersoort». Een voorkomen van dit objecttype zou dan de haarkleur «zwart» kunnen hebben en de diersoort «kat». En omdat de categorie «kat» huisdieren betreft, weten we ook dat dit specifieke voorkomen een huisdier is.
+- Tenslotte kan het wenselijk zijn om categorieën daadwerkelijk als voorkomens van een objecttype te beschouwen, zodat aanvullende informatie over deze categorieën opgenomen kan worden in het model. Dit is (over het algemeen) niet goed mogelijk met objecttypen, omdat objecttypen geen onderdeel zijn van de gegevens zelf, maar slechts van het gegevensmodel.
 
 > [!NOTE]
 > Dit onderscheid tussen typen en voorkomens verschilt per technische realisatie. Zo is in een relationele database een strikt onderscheid aanwezig tussen typen en voorkomens (respectievelijk tabellen en rijen) en ook in UML wordt dit onderscheid expliciet gemaakt (M0 versus M1). In RDF is dit onderscheid echter niet aanwezig en kunnen typen en voorkomens door elkaar gebruikt worden. Wel kan dit leiden tot beperkingen in de mogelijkheden voor inferencing (op basis van regels afleiden van nieuwe gegevens).
@@ -406,32 +398,19 @@ Waarden kunnen we daarbij ook typeren. Zo zal een kenmerk «geboortedatum» niet
 
 > Een WAARDETYPE is een typering van gelijksoortige WAARDEn
 
-#### Attribuuttype van classificerende aard
-
-Een speciaal soort attribuuttype is een attribuuttype die gebruikt wordt om een nadere subtypering aan een OBJECTTYPE toe te kennen. Zo kent de BRT onder meer de subtypen «Wegdeel», «Spoordeel», «Waterdeel» en «Gebouw». Het subtype «Wegdeel» zou nog verder onderverdeeld kunnen worden in onder meer «landingsbaan», «autosnelweg» en «regionale weg». Die onderverdeling is in de BRT niet gemaakt met subtypen, maar met een attribuuttype «type weg».
-
-> Een ATTRIBUUTTYPE VAN CLASSIFICERENDE AARD is een ATTRIBUUTTYPE waarmee een nadere subtypering aan een OBJECTTYPE wordt toegekend.
-
-> [!CAUTION]
-> In de huidige versie van MIM geef je bij een attribuuttype op of deze classificerend is (ja/nee). Er is geen afzonderlijke term voor geïntroduceerd. Vandaar de term "attribuuttype van classificerende aard" in dit metamodel. Mogelijk is een andere term beter.
-
-Bij dit attribuuttype hoort een categorisch kenmerk «type weg». De invulling van dit kenmerk is een categorie. Relevant is welke categorieën precies bij het attributtype gebruikt kunnen worden: welke "type wegen" er zijn. Dit is het classificatieschema. Dit kan een lijstje zijn van categorieën die zijn toegestaan, maar kan bijvoorbeeld ook een hiërarchie van categorieën omvatten.
-
-**LET OP!**
-
-Niet elk attribuuttype met categorische waarden is een attribuuttype van classificerende aard. Hier is alleen sprake van als het attribuuttype een subtypering aanduidt. Bij veel categorieën gaat het niet zozeer over subtypering, maar slechts een groepering van domeinobjecten volgens een bepaald classificatieschema. Zo kent de BRT voor het objecttype «Wegdeel» onder meer de volgende attribuuttypen met categorieën, zonder dat sprake is van subtypering:
-
-- Hoofdverkeersgebruik (geen subtypering, maar een groepering naar gebruik van het wegdeel, zoals fietsers of voetgangers).
-- Verhardingstype (geen subtypering, maar een groepering naar de verharding die het wegdeel op dit moment heeft, zoals klinkers of asfalt).
+Een categorisch kenmerk heeft als invulling een categorie. Een attribuuttype van classificerende aard betreft de typering van dergelijke categorieën. Relevant daarbij is bovendien welke categorieën precies bij zo'n attribuuttype gebruikt kunnen worden. Dit is het classificatieschema. Dit kan een lijstje zijn van categorieën die zijn toegestaan, maar kan bijvoorbeeld ook een hiërarchie van categorieën omvatten.
 
 > [!NOTE]
 > We spreken van "classificatieschema" en niet van "categorisatieschema", hoewel dat laatste wellicht meer voor de hand ligt omdat we het hebben over categorieën. Gekozen is voor de term "classificatieschema" omdat dit de algemeen gangbare term is. Daarnaast is een classificatieschema een formele ordening en dat is precies wat we bedoelen met dit schema: een formele ordening van categorieën, in een lijst of in een hiërarchie.
 
+> Een ATTRIBUUTTYPE VAN CLASSIFICERENDE AARD is een ATTRIBUUTTYPE als typering van een CATEGORISCH KENMERK
+
+> [!CAUTION]
+> In de huidige versie van MIM geef je bij een attribuuttype op of deze classificerend is (ja/nee). Er is geen afzonderlijke term voor geïntroduceerd. Vandaar de term "attribuuttype van classificerende aard" in dit metamodel. Mogelijk is een andere term beter.
+
 > Een CLASSIFICATIESCHEMA is een systematische ordening van DOMEINOBJECTen in CATEGORIEën
 
 Een eenvoudig voorbeeld van een classificatieschema is de lijst van primaire kleuren «rood», «geel», «blauw». Een voorbeeld van een hiërarchische classificatieschema is de [biologische indeling van dieren](https://nl.wikipedia.org/wiki/Taxonomie_(biologie)) of de [indeling van boeken in een bibliotheek](https://nl.wikipedia.org/wiki/SISO).
-
-#### Typeren van complexe waarden
 
 In de eerdere sectie kwam het onderscheid tussen een (eenvoudige) waarde en een complexe waarde naar voren. Ook dergelijke complexe waarden wil je typeren:
 
@@ -481,19 +460,16 @@ De beschrijving van objecttypen bestaat niet alleen uit het toewijzen van kenmer
 
 > Een CONDITIE is een noodzakelijke voorwaarde die moet gelden voor een typering
 
-We onderscheiden verschillende soorten condities. De meest prominente specifieke condities zijn:
+We onderscheiden verschillende soorten condities. De meest prominente condities zijn:
 
 - **Cardinaliteit** is een conditie waarbij van een kenmerk wordt aangegeven hoeveel invullingen er voor één domeinobject minimaal en maximaal zijn.
 - **Lengte** is een conditie waarbij van een kenmerk of waardetype wordt aangegeven hoe lang de invulling (de waarde) van dat kenmerk of waarden van een waardetype mag/mogen zijn.
 - **Datatype** is een conditie waarbij van een kenmerk of waardetype wordt aangegeven wat voor datatype de invulling (de waarde) van dat kenmerk of waarden van een waardetype heeft/hebben. Een datatype is bijvoorbeeld: getal, tekst, datum, etc.
-
-Daarnaast kent MIM twee condities waarmee het mogelijk is om aanvullende voorwaarden te beschrijven die niet met een specifieke conditie zijn uit te drukken:
-
 - **Informele conditie** is een conditie die beschreven is in een natuurlijke taal, dwz: in een taal die mensen gebruiken in onderlinge communicatie.
 - **Formele conditie** is een conditie die beschreven is in een machine-interpreteerbare taal.
 
 > [!NOTE]
-> Wat hierbij opvalt is dat condities die gaan over letterlijke waarden (lengte, waardetype) zowel condities kunnen zijn voor gegevenstypen als voor kenmerken: het datatype van een gegevenstype over het kenmerk «geboortedatum» is exact hetzelfde datatype als voor dat kenmerk zelf. Wel kan een dergelijke conditie preciezer worden gemaakt als het gaat om gegevens, soms puur om praktische zin. Zo kan bij een kenmerk "voornaam" een waardetype «voornaamtypering» zijn opgenomen, waarin onder meer is opgenomen dat het gaat om een datatype tekst en dat een voornaam moet bestaan uit letters en geen cijfers mag bevatten. In de gegevensconditie kan daarbij aanvullend nog opgenomen worden dat de lengte maximaal 200 karakters is. Een waardetype kent daarmee een typering die betrekking heeft op het beschouwingsdomein, maar ook een stukje typering die kaders geeft voor het verwerkingsdomein.
+> Wat hierbij opvalt is dat condities die gaan over letterlijke waarden (lengte, waardetype) zowel kunnen gelden als condities voor gegevenstypen (het datatype van een gegevenstype over het kenmerk «geboortedatum» is exact hetzelfde datatype als voor dat kenmerk zelf). Wel kan een dergelijke conditie preciezer worden gemaakt als het gaat om gegevens, soms puur om praktische zin. Zo kan bij een kenmerk "voornaam" een waardetype «voornaamtypering» zijn opgenomen, waarin onder meer is opgenomen dat het gaat om een datatype tekst en dat een voornaam moet bestaan uit letters en geen cijfers mag bevatten. In de gegevensconditie kan daarbij aanvullend nog opgenomen worden dat de lengte maximaal 200 karakters is. Een waardetype kent daarmee een typering die betrekking heeft op het beschouwingsdomein, maar ook een stukje typering die betrekking heeft op verwerkingsdomein.
 
 #### Wat voorbeelden
 
@@ -541,7 +517,7 @@ Een gegevensobject kan gegevens omvatten die alleen gaan over één domeinobject
 
 #### Identificeren van het hoofdonderwerp: sleutels
 
-Om het hoofdonderwerp van een gegevensobject te identificeren gebruiken we een sleutelwaarde. Zo is de waarde "123456782" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Een belangrijk aspect bij het typeren van gegevensobjecten is dan ook welke gegevenstypen bruikbaar zijn voor dergelijke sleutelwaarden. Zo wordt in dit voorbeeld het gegevenstype {Persoon.BSN} gebruikt. Dit gegevenstype is hier de *sleutel* voor het gegevensobjecttype Persoon.
+Om het hoofdonderwerp van een gegevensobject te identificeren gebruiken we een sleutelwaarde. Zo is de waarde "12345678" van een BSN een unieke sleutelwaarde voor een specifieke persoon in de werkelijkheid. Een belangrijk aspect bij het typeren van gegevensobjecten is dan ook welke gegevenstypen bruikbaar zijn voor dergelijke sleutelwaarden. Zo wordt in dit voorbeeld het gegevenstype {Persoon.BSN} gebruikt. Dit gegevenstype is hier de *sleutel* voor het gegevensobjecttype Persoon.
 
 > Een SLEUTEL is een groep van één of meer GEGEVENSTYPEn waarmee een unieke aanduiding voor het HOOFDONDERWERP van een GEGEVENSOBJECT kan worden gevormd
 
@@ -557,7 +533,7 @@ Vier varianten van gegevenstypen kunnen we onderscheiden:
 
 Merk op: er bestaat op het niveau van gegevens (dus) slechts gegevensobjecttypen en gegevenstypen. Er bestaat niet zoiets als een gegevensrelatietype. En hoewel je in een plaatje een lijntje kunt tekenen die "lijkt" op een relatietype, betreft dit lijntje niets meer of minder dan een gegevenstype van variant (4). Een dergelijk lijntje **MOET** dan ook altijd gericht zijn: vertrekken vanuit het gegevensobjecttype waar het betreffende gegevenstype toe behoort.
 
-Merk op: ook een eigenschap «BSN» betreft een gegevenstype waarbij sprake is van een letterlijke waarde. Hoewel een BSN ook gebruikt zou kunnen worden als een sleutelwaarde die refereert aan een ander domeinobject (bijvoorbeeld in een gegeven over een kenmerk «(heeft) ouder»), wordt in dit geval de eigenschap niet gebruikt als referentie, maar als (toegekende) eigenschap aan het onderwerp van het betreffende gegeven. Zo is in het gegeven "[Jan] heeft BSN 123456782" de waarde van de eigenschap een letterlijke waarde (namelijk: "123456782") en wordt hiermee niet een verwijzing naar Jan zelf bedoeld.
+Merk op: ook een eigenschap «BSN» betreft een gegevenstype waarbij sprake is van een letterlijke waarde. Hoewel een BSN ook gebruikt zou kunnen worden als een sleutelwaarde die refereert aan een ander domeinobject (bijvoorbeeld in een gegeven over een kenmerk «(heeft) ouder»), wordt in dit geval de eigenschap niet gebruikt als referentie, maar als (toegekende) eigenschap aan het onderwerp van het betreffende gegeven. Zo is in het gegeven "[Jan] heeft BSN 12345678" de waarde van de eigenschap een letterlijke waarde (namelijk: "12345678") en wordt hiermee niet een verwijzing naar Jan zelf bedoeld.
 
 #### Gegevens over relaties
 In een logisch gegevensmodel bestaan slechts gegevensobjecttypen. Terwijl in een conceptueel informatiemodel zowel objecttypen als relatietypen bestaan. Je kunt je dan ook de vraag stellen hoe we omgaan met gegevens over relaties: hoe leg je die vast?
@@ -576,48 +552,48 @@ Merk op dat als een relatietype eigen kenmerken heeft (zoals bijvoorbeeld de beg
 
 #### Speciaal soort gegevensobjecttypen
 
-Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorf*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één domeinobject van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen.
+Een gegevensobjecttype kan sterk lijken op een objecttype. We noemen dat *isomorf*. In dat geval gaan de gegevens die bij één gegevensobject worden bijgehouden over eigenschappen van één domeinobject van dat objecttype. Maar het is ook denkbaar om gegevens over andere objecten bij een gegevensobject te plaatsen. Hiertoe maken we onderscheid in vier soorten gegevensobjecttypen:
 
-Als een voorkomen van een gegevensobjecttype precies één hoofdonderwerp heeft en de sleutel is bekend, dan is sprake van een *eenduidig gegevensobjecttype*. Je weet dan van een gegevensobject over welk domeinobject dit gegevensobject in hoofdzaak gaat. Zo is bij voorkomens van het gegevensobjecttype {Ingezetene} met als sleutel {Ingezetene.BSN} duidelijk dat dit gegevensobjecttype isomorf is met het objecttype «Ingezetene» en dat gegevensobjecten hiervan 1-op-1 overeenkomen met de afzonderlijke domeinobjecten: precies één gegevensobject gaat over precies één domeinobject.
+- Een **gegevensgroeptype** (of groeperend gegevensobjecttype) is een gegevensobjecttype zonder hoofdonderwerp;
+- Een **eenduidig gegevensobjecttype** is een gegevensobjecttype met precies één hoofdonderwerp waarvan de sleutel bekend is;
+- Een **strikt eenduidig gegevensobjecttype** is een eenduidig gegevensobjecttype over alleen eigenschappen van het hoofdonderwerp.
+- Een **beschrijvend gegevensobjecttype** is een gegevensobjecttype met precies één hoofdonderwerp, zonder dat de sleutel van het hoofdonderwerp bekend is.
 
-Als daarbij ook nog geldt dat de gegevens in dit gegevensobject allemaal over dit ene hoofdonderwerp gaan, dan is sprake van een *strikt eenduidig gegevensobjecttype*. Mocht dit niet het geval zijn, dan is het nodig om een pad te beschrijven voor de gegevenstypen waarvoor dit niet geldt. Als bijvoorbeeld het gegevenstype "woonplaatsnaam" is opgenomen bij een gegevensobjecttype {Persoon}, dan is nodig om te weten hoe je van een persoon komt bij de naam van de woonplaats. Het pad zou kunnen zijn: {Persoon.woonplaatsnaam} = {Persoon} -> woont in -> {Plaats.naam}.
-
-Bij een beschrijvend gegevensobjecttype is er juist geen (goede) sleutel beschikbaar. Een voorbeeld is het gegevensobjecttype {persoonssignalement}. Hoewel dit gegevensobjecttype over precies één hoofdonderwerp gaat (een persoon), is er geen duidelijkheid over welk domeinobject zo'n signalement precies gaat. We weten echter wel bepaalde gegevens over dit domeinobject (bijvoorbeeld: lengte, haarkleur, brildragend, etc). Een ander voorbeeld is het gegevensobjecttype «contactpersoon». Ook hier gaat het om precies één hoofdonderwerp en ook hier is er geen duidelijkheid over welk domeinobject het precies gaat. Wellicht weten we alleen een voornaam en een telefoonnummer. Voor dergelijke gegevensobjecttypen is een administratieve sleutel nodig die niet verwijst naar het domeinobject, maar juist naar het gegevensobject, de beschrijving *zelf*. Technisch gezien kan dit ook opgelost worden door de beschrijving onderdeel te maken van een ander gegevensobjecttype (technisch gezien vergelijkbaar met een complexe waarde, maar logisch gezien net wat anders). Bij een signalement kan dit bijvoorbeeld het gegevensobjecttype «aangifte» zijn, en bij een contactpersoon bijvoorbeeld het gegevensobjecttype «organisatie».
+Bij een beschrijvend gegevensobjecttype is er geen (goede) sleutel beschikbaar. Een voorbeeld is het gegevensobjecttype «persoonssignalement». Hoewel dit gegevensobjecttype over precies één hoofdonderwerp gaat (een persoon), is er geen duidelijkheid over welk domeinobject zo'n signalement precies gaat. We weten echter wel bepaalde gegevens over dit domeinobject (bijvoorbeeld: lengte, haarkleur, brildragend, etc). Een ander voorbeeld is het gegevensobjecttype «contactpersoon». Ook hier gaat het om precies één hoofdonderwerp en ook hier is er geen duidelijkheid over welk domeinobject het precies gaat. Wellicht weten we alleen een voornaam en een telefoonnummer. Voor dergelijke gegevensobjecttypen is een administratieve sleutel nodig die niet verwijst naar het domeinobject, maar juist naar het gegevensobject, de beschrijving *zelf*. Technisch gezien kan dit ook opgelost worden door de beschrijving onderdeel te maken van een ander gegevensobjecttype (technisch gezien vergelijkbaar met een complexe waarde, maar logisch gezien net wat anders). Bij een signalement kan dit bijvoorbeeld het gegevensobjecttype «aangifte» zijn, en bij een contactpersoon bijvoorbeeld het gegevensobjecttype «organisatie».
 
 > [!NOTE]
 > In een logisch gegevensmodel kan de relatie tussen een beschrijvend gegevensobjecttype en het gegevensobjecttype waarbij de gegevens worden geplaatst afgebeeld worden met een composition-relatie. Deze relatie bestaat echter *alleen* op het logisch niveau! Anders dan bijvoorbeeld bij een vliegtuigmotor en een vliegtuig is een persoon immers geen feitelijk onderdeel van een aangifte of organisatie!
 
+Merk op dat het afleidbaar is wanneer een gegevensobjecttype een strikt eenduidig gegevensobjecttype is en wanneer niet. Zolang alle eigenschappen van een gegevensobjecttype behoren tot de eigenschappen van het hoofdonderwerp, is sprake van een strikt eenduidig gegevensobjecttype, en alle andere gevallen niet.
+
+Het is denkbaar om gegevens ook te groeperen, zonder dat er expliciet een hoofdonderwerp is. In zo'n geval spreken we over een gegevensgroep: een groep van gegevens. En zo'n gegevensgroep kun je ook typeren: dan ontstaat een gegevensgroeptype. Het is simpelweg het bij elkaar zetten van enkele gegevens als groep, zonder dat er expliciet een hoofdonderwerp voor die groep van gegevens bestaat (de gegevens gaan over meerdere objecten).
+
 #### Speciaal soort gegevenstypen
 
-Een gegevenstype betreft over het algemeen gegevens over precies één kenmerk van precies één object. Het is ook denkbaar om gegevens vast te leggen die betrekking hebben op een samenstelling van meerdere kenmerken of van meerdere objecten.
+Een gegevenstype betreft over het algemeen gegevens over precies één eigenschap van precies één object. Het is ook denkbaar om gegevens vast te leggen die betrekking hebben op een samenstelling van meerdere eigenschappen of van meerdere objecten. Hiertoe maken we onderscheid in vier soorten gegevenstypen:
 
-- Bij een *direct gegevenstype* is sprake van gegevens over precies één kenmerk van precies één domeinobject. Bijvoorbeeld het gegevenstype {Persoon.lengte}. Dit gegevenstype gaat over het kenmerk «lengte» van een «Persoon»;
-- Bij een *indirect gegevenstype* is sprake van gegevens die gaan over een kenmerk van een ander domeinobject dan het hoofdonderwerp. Bijvoorbeeld het gegevenstype {Persoon.woonplaatsnaam}. Dit gegevenstype gaat over het kenmerk «naam» van een «Plaats». Je kunt niet direct van het hoofdonderwerp bij dit kenmerk uitkomen, dit gaat indirect via de relatie tussen het hoofdonderwerp en zijn woonplaats: {Persoon.woonplaatsnaam} = {Persoon} -> woont in -> {Plaats.naam}.
-- Bij een *samengesteld gegevenstype* is sprake van gegevens die worden gecombineerd tot één gegeven. Bijvoorbeeld een totaalbedrag op een factuur, of de volledige naam van een persoon als samenstelling van de voor- en achternaam.
+- Een **direct gegevenstype** is een gegevenstype over één eigenschap van een domeinobject, gedefinieerd bij een gegevensobjectype dat dit domeinobject als hoofdonderwerp heeft;
+- Een **indirect gegevenstype** is een gegevenstype over één eigenschap van een domeinobject, gedefinieerd bij een gegevensobjecttype dat dit domeinobject niet als hoofdonderwerp heeft;
+- Een **samengesteld enkelvoudig gegevenstype** is een gegevenstype over één eigenschap van meerdere domeinobjecten;
+- Een **samengesteld meervoudig gegevenstype** is een gegevenstype over meerdere eigenschappen van één of meerdere domeinobjecten.
 
-#### Gegevensverzamelingen en referentielijsten
+#### Gegevensverzamelingen: waardelijsten en referentielijsten
 
-Bij de typering van domeinobjecten (zie paragraaf 'Waardetypen vs categorieën en objecttypen') kwam het onderscheid tussen waardelijsten, classificatieschemas en populaties aan bod. Daarbij werd duidelijk dat:
+Bij de typering van domeinobjecten kwam het onderscheid tussen waardelijsten, classificatieschemas en populaties aan bod. Daarbij werd duidelijk dat:
 
 - Een *waardelijst* een lijst van *waarden* is;
 - Een *classificatieschema* een ordening beschrijft in *categorieën*;
 - Een *populatie* een opsomming van *domeinobjecten* betreft.
 
-Bij de typering van gegevensobjecten onderkennen we naast deze drie nog een classificatielijst. Waar een classificatieschema diepgang kent, het kent een boomstructuur van categorieën (bijvoorbeeld de indeling van biologische soorten van flora en fauna), geldt dat voor een classificatielijst niet. Een classificatielijst zou je kunnen zien als een classificatieschema zonder diepgang: alle categorieën in één lijst. Een classificatielijst zou bijvoorbeeld de lijst kunnen zijn van alle categorieën op het niveau van biologische soort.
+Een classificatieschema onderscheid zich daarbij van een classificatielijst. Een classificatieschema kent "diepgang", het kent een boomstructuur van categorieën. Bijvoorbeeld de indeling van biologische soorten van flora en fauna. Een classificatielijst is daarbij een classificatieschema zonder diepgang: alle categorieën in één lijst. Een classificatielijst zou bijvoorbeeld de lijst kunnen zijn van alle categorieën op het niveau van biologische soort.
 
-Het onderscheid tussen waardelijsten, classificatielijsten en populaties is vooral een conceptueel onderscheid. Puur als lijstje van gegevens is het onderscheid hiertussen veel minder duidelijk. Hieronder drie voorbeelden:
+Als we ons beperking tot de classificatielijsten, dan kan het voorkomen dat zowel waardelijsten, classificatielijsten en populaties op dezelfde wijze in een gegevensmodel terecht komen. Hieronder enkele voorbeelden:
 
-A. De lijst getallen uit de Fibonachi-reeks kleiner dan 30. Deze lijst bestaat uit de getallen 1, 2, 3, 5, 8, 13 en 21.
-B. De lijst van olympische sporten die behoren tot de meerkamp van de mannen. Deze lijst bestaat onder meer uit de sporten «100 meter sprint», «verspringen» en «hoogspringen».
-C. De lijst van landen die een ISO 3166-1 landencode hebben. Deze lijst bestaat onder meer uit de landen [België], [Frankrijk], [Egypte], [Thailand] en [Argentinië].
+- De *waardelijst* van getallen uit de fibonachi reeks kleiner dan 30. Deze waardelijst bestaat uit de getallen 1, 2, 3, 5, 8, 13 en 21. Dergelijke waarden kennen geen andere eigenschappen dan de waarde zelf (het is niet zinvol om te spreken over "code" of "label" of iets dergelijks, de waarde betekent immers -per definitie- niets anders dan de waarde zelf);
+- De *classificatielijst* van olympische sporten die behoren tot de meerkamp voor de mannen. Deze bestaat onder meer uit de categorieën «100 meter sprint», «verspringen» en «hoogspringen». Over deze categorieën kun je andere eigenschappen vastleggen, het is (dus) relevant om te beschrijven wat we van deze categorieën willen weten.
+- De *populatie* van de landen die een ISO 3166-1 landencode hebben. We hebben het hier over domeinobjecten van het objecttype «Land». En daarbij een specifieke populatie (dus niet alle mogelijke voorkomens van dit objecttype), namelijk die domeinobjecten met de eigenschap ISO landencode.
 
-Dergelijke lijsten worden vaak gebruikt als referentielijsten. Het gaat dan om lijsten die gebruikt worden om naar te refereren, zonder dat de inhoud van die lijsten als geheel wordt bijgehouden in de betreffende administratie of onderdeel is van een gegevensuitwisseling. Zo kan bijvoorbeeld in een bericht wel verwezen naar het land [België] met de alpha-2 code "BE", maar zal de volledige lijst niet in dit bericht zijn opgenomen, net zo min als de naam van het land ("België"@nl, "Belgique"@fr, "Belgium"@en, of...) Bij dit verwijzen maakt het niet zo heel veel uit of er nu sprake is van een waardelijst, classificatielijst of populatie. Om het gegeven correct te kunnen interpreteren, is echter juist *wel* van belang om te weten dat met "BE" geen letterlijke waarde wordt bedoeld, maar het land [België]. Als verwijzing wordt een waarde gebruikt. Dat kan de letterlijke waarde zelf zijn, de aanduiding van de categorie of de identificatie van het domeinobject, in bovenstaande voorbeelden respectievelijk "1", "verspringen" en "BE".
-
-Toch zijn er wel belangrijke verschillen, waarbij het goed is om deze drie lijsten uit elkaar te houden. Met name omdat bij de beschrijving van deze lijsten zal verschillen, afhankelijk van wat voor soort het lijst het betreft:
-
-- Lijst A betreft een *waardelijst*. De lijst bestaat uit waarden. Dergelijke waarden kennen geen andere kenmerken dan de waarde zelf (het is niet zinvol om te spreken over "code" of "label" of iets dergelijks, de waarde betekent immers -per definitie- niets anders dan de waarde zelf);
-- Lijst B betreft een *classificatielijst*. De lijst bevat categorieën. Met «verspringen» wordt de categorie bedoelt. Het is zelfs niet zomaar ver-springen, maar moet voldoen aan een veelheid aan regels voordat je kunt spreken van verspringen als olympische sport. Je zou van zo'n categorie informatie kunnen vastleggen zodat duidelijk wordt wat er precies met zo'n categorie wordt bedoeld. Bovendien kan ook een ander kenmerk gebruikt worden voor de referentie naar zo'n categorie. Bijvoorbeeld een URI of een code.;
-- Lijst C betreft een *populatie*. We hebben het hier over domeinobjecten van het objecttype «Land». En daarbij een specifieke populatie (dus niet alle mogelijke voorkomens van dit objecttype), namelijk die domeinobjecten met de eigenschap ISO landencode. De modellering van de gegevens over deze populatie zijn feitelijk niet heel anders dan die van elk ander objecttype. En ook hier geldt dat je een ander kenmerk zou kunnen gebruiken voor de referentie naar een voorkomen van dit domeinobject. Bijvoorbeeld een URI of een code (wat bij de ISO-3166-1 landencodelijst wel voor de hand ligt!)
+Waardelijsten en referentielijsten zijn gegevensverzamelingen: het zijn verzamelingen van gegevens. Voor waardelijsten geldt dat deze gegevens alleen maar beweringen zijn over de waardelijst en de waarden zelf, zoals: *De waarde "1" staat op de waardelijst met de naam "fibonachireeks kleiner dan 30"*. Voor referentielijsten geldt dat die gegevensverzameling niet alleen beweringen bevat over de referentielijst en de categorieën dan wel domeinobjecten op die lijst, maar het bevat ook gegevens over deze categorieën en domeinobjecten, zoals we hieronder zullen zien.
 
 #### Gegevenstypen en gegevens m.b.t. waardelijsten
 Een gegevenstype dat gegevens typeert over kenmerken, kun je koppelen aan een waardelijst: dit zijn dan de waarden die je mag gebruiken. Zo kun je een gegevenstype specificeren van het kenmerk "storypoints" met als waardelijst die hierboven genoemde waardelijst. Deze waardelijst bestaat uit de volgende gegevens:
