@@ -16,8 +16,8 @@ De serie documenten omvat:
 
 
 De volgende documenten zijn profielen van MIM implementaties in verschillende modelleertalen:  
-[MIM-UML](https://geonovum.github.io/mim-uml)
+[MIM-UML](https://geonovum.github.io/mim-uml)  
 [MIM-LD](https://geonovum.github.io/mim-ld)  
-[MIM-OmtoUML](https://geonovum.github.io/mim-ontouml)  
+[MIM-OntoUML](https://geonovum.github.io/mim-ontouml)  
 [MIM-FBM](https://geonovum.github.io/mim-fbm)  
 [MIM-ArchiMate](https://geonovum.github.io/mim-archimate)  
